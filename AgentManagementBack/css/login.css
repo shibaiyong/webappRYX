@@ -1,0 +1,98 @@
+.loginbox{
+    position: relative;
+    width:100%;
+}
+
+.loginbanner{
+    height: 55vh;
+    background:url(../img/login/loginbanner.png) no-repeat center center;
+    background-size: 100% 100%;
+    text-align: center;
+}
+
+.loginbanner img{
+    display: inline-block;
+    margin-top:16vh;
+}
+
+.loginfooter{
+    display: flex;
+    align-items: flex-end;
+    justify-content:center;
+    background:#ebf4ff;
+    height: 45vh;
+}
+
+.loginfooter span{
+    display: inline-block;
+    margin-bottom:12px;
+    color:#999;
+}
+
+
+
+.logincontainer{
+    position: absolute;
+    width:32%;
+    left:50%;
+    top:50%;
+    text-align: center;
+    margin:0 auto;
+    margin-top:-110px;
+    transform: translateX(-50%);
+    box-shadow: 0 0 4px #ddd;
+    overflow: hidden;
+    background:white
+}
+.logincontainer h3{
+    margin:40px 0px 30px;
+    color:#4259a7;
+    font-size:24px;
+}
+.logincontainer ul{
+    padding-bottom: 66px;
+}
+.logincontainer ul li{
+    margin-bottom: 10px;
+}
+.logincontainer ul li.loginbtncontainer{
+    margin-top: 28px;
+    margin-bottom:0px;
+}
+.logincontainer ul li input,.logincontainer ul li .btn{
+    display:inline-block;
+    width:72%;
+    height:34px;
+}
+.logincontainer ul li input.username{
+    background:url(../img/login/username.png) no-repeat 4px center;
+    background-size:12px 14px;
+    padding-left:22px;
+}
+.logincontainer ul li input.password{
+    background:url(../img/login/password.png) no-repeat 4px center;
+    background-size:12px 14px;
+    padding-left:22px;
+}
+.logincontainer ul li .btn{
+    background:#4259a7;
+    color:white;
+    font-size:16px;
+}
+.logincontainer ul li .error-tip{
+    display:block;
+    width:72%;
+    margin:0 auto;
+    text-align: left;
+    color:red;
+    font-weight: normal;
+    font-size:12px;
+    height: 12px;
+    margin-top:4px;
+}
+
+@media screen and (min-width: 1600){
+    .loginbanner img{
+        margin-top:25vh;
+    }
+}

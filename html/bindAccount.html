@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>  
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    
+    <title>绑定账号</title>
+    <link rel="stylesheet" href="../plugin/bootstrap3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../css/bindAccount/bindAccount.css"/>
+    <script src="../plugin/jquery.3.3.0.js"></script>
+</head>
+<body>
+
+    <form class="form-horizontal">
+        <div class="form-group">
+          <label for="user" class="col-xs-2 control-label"><img src="../img/staff/account.png"/></label>
+          <div class="col-xs-10">
+            <input type="text" class="form-control" id="user" placeholder="请输入管理账号名称">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="password" class="col-xs-2 control-label"><img src="../img/staff/passwordCheck.png"/></label>
+          <div class="col-xs-10">
+            <input type="password" class="form-control" id="password" placeholder="请输入管理账号密码">
+          </div>
+        </div>
+        
+        <div class="form-group bindAndLogin">
+          <div class="col-xs-8">
+            <button type="submit" class="btn btn-default">绑定并登陆</button>
+          </div>
+        </div>
+    </form>
+</body>
+</html>
+<script src="../js/bindAccount.js"></script>
+<script>
+  $.ajax({
+    url:'http://t.weather.sojson.com/api/weather/city/101030100',
+    data:{},
+    dataType:'json',
+    contentType:'application/json',
+    method:'get',
+    success:function(res){
+      console.log(res);
+    }
+  })
+</script>

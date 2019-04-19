@@ -1,0 +1,142 @@
+.merchantinfo-content{
+    width:100%;
+    position: relative;
+}
+
+.merchantinfo-content-left{
+    float:left;
+    width:200px;
+    font-size:14px;
+    background:#282b33;
+}
+
+.merchantinfo-content-left>p{
+    margin:0;
+    width:100%;
+    padding:0px 36px;
+    box-sizing: border-box;
+    color:#636a7f;
+}
+
+/* .merchantinfo-content-left{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    width:200px;
+    font-size: 14px;
+    background:#282b33;
+} */
+.merchantinfo-content-right{
+    margin-left:200px;
+    background:#eef3f6;
+    overflow: hidden;
+}
+
+.navbarr{
+    width:100%;
+    background:#282b33;
+    border-radius: 0px;
+    margin:0;
+}
+
+.navbarr .navbaritem-content{
+    margin:0 6px;
+}
+.navbarr li.navbar-item>a{
+    display: inline-block;
+    padding: 19px 0px 15px;
+    width:100%;
+    color:white;
+    padding-left:20%;
+}
+
+.navbarr li.navbar-item>a:hover{
+    color:#729aec;
+    background:#393d49;
+}
+
+.navbarr li .navbar-menu>li{
+   box-sizing: border-box;
+}
+.navbarr li .navbar-menu>li>a{
+    display: inline-block;
+    width:100%;
+    padding:12px 0;
+    padding-left:calc(20% + 20px);
+    box-sizing: border-box;
+    color:white;
+ }
+ .navbarr li .navbar-menu>li>a:hover{
+    background:#393d49;
+}
+ .merchantinfo .header .logo{
+     color:white
+ } 
+ .merchantinfo .header{
+    padding:20px 30px;
+    background:#4259a7;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#usercenter{
+    color:white
+}
+
+.navigator-tilte{
+    padding:12px 0;
+    background:white;
+}
+
+.title-info{
+    font-size: 18px;
+    color:black;
+    display: inline-block;
+    vertical-align: middle;
+    padding:0 10px;
+    border-left:4px solid #5b6fb3;
+    margin-left:3%;
+}
+.title-list{
+    display:inline-block;
+    vertical-align: middle;
+    color:#5b6fb3;
+    margin-left:30px;
+}
+.info-list-item{
+    background:white;
+}
+.info-list-item h3{
+   font-size: 16px;
+   color:#5b6fb3;
+   padding-left:10%;
+    box-sizing:border-box;
+    
+}
+.info-list-item h3 img{
+    display:inline-block;
+    vertical-align: middle;
+    width:80%;
+    margin-left:30px;
+ }
+.info-list{
+    width:96%;
+    margin:20px auto;
+    background:white;
+}
+
+.rowcontent{
+    padding-left:15%;
+    margin-top:24px;
+}
+.rowcontent .form-group .control-label:nth-child(2){
+    color:#474b59;
+}
+.control-label{
+    padding-right: 0px;
+    color:#878a8f;
+    font-weight: normal;
+}

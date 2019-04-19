@@ -1,0 +1,26 @@
+*{
+    margin:0;
+    padding:0;
+}
+body,html{
+    background:#edf3ff;
+}
+.imgIcon{
+    text-align: center;
+    width:100%;
+    margin-top:0.68rem;
+    height: 0.72rem;
+}
+
+.imgIcon img{
+    width:0.72rem;
+    height:0.72rem;
+    display: block;
+    margin:0 auto;
+}
+
+p{
+    text-align: center;
+    font-size: 0.14rem;
+    color:black;
+}

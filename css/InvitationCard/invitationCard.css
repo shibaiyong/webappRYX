@@ -1,0 +1,48 @@
+
+
+.invitationCard{
+    width:100%;
+    background: #edf3ff url('../../img/invitation/back3px.png') no-repeat;
+    background-size:100% auto;
+}
+/* 解决top加在父元素上 */
+.invitationCard::before{
+    content:'';
+    display:table;
+}
+.invitationCard img{
+    width:100%;
+}
+
+.twocardcontainer{
+    width:280px;
+    padding:20px 16px;
+    padding-bottom:50px;
+    text-align: center;
+    margin:0 auto;
+   margin-top:70px;
+    background:white;
+    box-shadow: 0 0 white;
+    border-radius: 4px;
+}
+.twocardcontainer a{
+    display:inline-block;
+    width:90%;
+    word-wrap: break-word;
+    color:#999;
+}
+.twocardcontainer img{
+    width:43%;
+}
+
+.bottomlogo{
+    width:100%;
+    text-align:center;
+    margin-top:50px;
+}
+.bottomlogo img{
+    width:90%;
+}
+.sharelink{
+    margin-top:38px;
+}
