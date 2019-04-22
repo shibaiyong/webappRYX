@@ -1,0 +1,17 @@
+.usermanageform #dataform{
+    margin-top:32px;
+    padding-left:10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.info-list form.row .form-group {
+    margin-left: 0;
+}
+.info-list form.row .form-group+.form-group {
+    margin-left:0;
+}
+
+.info-list .control-label {
+    font-size: 13px;
+}
