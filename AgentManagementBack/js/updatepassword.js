@@ -1,5 +1,4 @@
 
-
 $("#passwordform").validate({
     onsubmit: true,// 是否在提交是验
     onkeyup:false,
@@ -40,4 +39,34 @@ $("#passwordform").validate({
 $.validator.addMethod("checkpassword",function(value,element){ 
     var checkpassword = /^(?=.*[a-z])(?=.*\d)[^]{8,}$/i; 
     return this.optional(element)||(checkpassword.test(value)); 
-  },"*新密码必须至少八个字节，且同时包含字母和数字！"); 
+  },"*新密码必须至少八个字节，且同时包含字母和数字！");
+  
+  
+
+
+//弹窗相关的js
+
+var showtoast = new ShowToast({
+    elem:'.showtoastcontainer',
+    title:'修改成功',
+    content:'密码修改成功',
+    comfirmText:'完成'
+})
+
+$('.btn-primary').click(function(){
+    showtoast.inite({
+        confirmfun:fun1,
+        cancelfun:fun2
+    }); 
+})
+
+
+function fun1(){
+    alert(1);
+}
+
+function fun2(){
+    alert(2);
+}
+
+
