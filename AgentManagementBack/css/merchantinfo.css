@@ -140,3 +140,9 @@
     color:#878a8f;
     font-weight: normal;
 }
+
+
+.info-list #dataform .form-control[readonly]{
+    background-color: white;
+    opacity: 1;
+}
