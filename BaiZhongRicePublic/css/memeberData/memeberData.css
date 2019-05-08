@@ -1,36 +1,49 @@
-html,body{
-    position: relative;
-    height:100%;
-    width:100%;
+
+body{
+    background:#edf3ff;
 }
-.filter img,.filter a{
-    display: inline-block;
-    vertical-align: middle;
-    text-decoration: none;
+.outer{
+    margin-top: 0.14rem;
 }
-.filter{
-    width:72px;
+.bankcardcontainer,.bankcardcontainer .bankinfo{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background:white;
 }
 
-.filter img{
-    width:20px;
-    height:16px;
+.bankcardcontainer .bankinfo img{
+    width:0.4rem;
+    height:0.4rem;
 }
 
-.filter a{
-    color:white;
-    font-size: 12px;
-    font-weight: normal;
-    margin-left:2px;
+.bankcardcontainer .bankoperate .btn{
+    width:0.6rem;
+    height:0.26rem;
+    border:1px solid rgb(61,72,227);
+    color: rgb(61,72,227);
+    font-size: 0.12rem;
+
 }
 
-.table th{
-    color:white;
-    background:#3d48e3;
+.bankcardcontainer .bankinfo ul{
+    margin-left: 0.2rem;
+    font-size:0.12rem;
+    margin-bottom: 0px;
+}
+.bankcardcontainer{
+    padding:0.2rem 0.2rem;
+    border-bottom:1px solid #c7d9fd;
 }
 
-.table tbody tr:nth-child(2n){
-    background:#e9f1fb;
+.bankcardcontainer .bankinfo ul li.title{
+    font-size:0.14rem;
+    font-weight:bold;
+    color:black;
+}
+.bankcardcontainer .bankinfo ul li.status{
+    margin:0.1rem 0;
+    color:rgb(246,101,21);
 }
 
 .activecolor{
@@ -55,7 +68,7 @@ html,body{
 
 .alertmodelcontainer .alert-body{
     background:white;
-    padding:30px 20px 30px 20px;
+    padding:20px 20px 20px 20px;
 }
 
 .opreatBtn .btn-default{
@@ -72,13 +85,14 @@ html,body{
 }
 .compelet .btn{
     width:100%;
-    background:#444bf4;
+    background:#3f41ec;
     border:none;
     color:white;
+    height:0.4rem;
 }
 .compelet{
     text-align:center;
-    margin-top:20px;
+    margin-top:30px;
 }
 .opreatBtn .btnactivecolor{
     background:#3d48e3;
@@ -100,124 +114,43 @@ html,body{
 }
 
 .form-group{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom:0.5px solid #949494;
+    
+    border-bottom:0.5px solid #c7d9fd;
     margin-bottom:0px;
     padding:6px 0px;
     margin-top:6px;
 }
 
+.form-group.row{
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.form-group.row .col-xs-12{
+    padding:0;
+}
+.form-group.row .col-xs-12 .form-control{
+    padding:0;
+    border:none;
+    outline: none;
+    box-shadow: none;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0); /*去除点击高亮的颜色*/
+}
+.form-group.row .col-xs-12 .form-control[readonly]{
+    background:white;
+}
 .control-label{
     padding-right:0px;
+    padding-left:0px;
 }
-
-/* .table thead{
-    position: fixed;
-    left:0;top:0;
-} */
-.fixed-table-header{
-    /* position: absolute;
-    left:0;top:0;
-    table-layout:fixed;
-    margin-bottom: 0px; */
-    position: relative;
+.hasend{
+    color:#3e40eb;
 }
-
-/*上拉加载*/
-/* .dropload-down{
-    margin-left:190%;
-    width:200px;
-} */
-
-
-*{
-    margin: 0;
-    padding:0;
-    -webkit-tap-highlight-color:rgba(0,0,0,0);
-    -webkit-text-size-adjust:none;
+.yanzheng{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 }
-html{
-    font-size:10px;
-}
-body{
-    background-color: #f5f5f5;
-    font-size: 1.2em;
-}
-.header{
-    height: 44px;
-    line-height: 44px;
-    border-bottom: 1px solid #ccc;
-    background-color: #eee;
-}
-.header h1{
-    text-align: center;
-    font-size: 2rem;
-    font-weight: normal;
-}
-.content{
-    max-width: 640px;
-    margin: 0 auto;
-    background-color: #fff;
-}
-.content .item{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align:center;
-    -webkit-box-align:center;
-    box-align:center;
-    -webkit-align-items:center;
-    align-items:center;
-    padding:3.125%;
-    border-bottom: 1px solid #ddd;
-    color: #333;
-    text-decoration: none;
-}
-.content .item img{
-    display: block;
-    width: 40px;
-    height: 40px;
-    border:1px solid #ddd;
-}
-.content .item h3{
-    display: block;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    width: 100%;
-    max-height: 40px;
-    overflow: hidden;
-    line-height: 20px;
-    margin: 0 10px;
-    font-size: 1.2rem;
-}
-.content .item .date{
-    display: block;
-    height: 20px;
-    line-height: 20px;
-    color: #999;
-}
-.opacity{
-    -webkit-animation: opacity 0.3s linear;
-    animation: opacity 0.3s linear;
-}
-@-webkit-keyframes opacity {
-    0% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
-}
-@keyframes opacity {
-    0% {
-        opacity:0;
-    }
-    100% {
-        opacity:1;
-    }
+.yanzheng .form-control{
+    width:75%;
 }

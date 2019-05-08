@@ -2,12 +2,12 @@ $('.cancelIco').click(function () {
     $('.alertmodelcontainer').hide();
 })
 
-$('.filter a').click(function () {
+$('.search').click(function () {
     $('.alertmodelcontainer').show();
 })
 
 $('.opreatBtn .btn').click(function () {
-    $(this).addClass('btnactivecolor').siblings().removeClass('btnactivecolor');    
+    $(this).addClass('btnactivecolor').siblings().removeClass('btnactivecolor');
 })
 
 //提交表单数据
@@ -19,23 +19,11 @@ $('.compelet .btn').click(function () {
 })
 
 $(function () {
-    // 按钮操作
-    $('.header .btn').on('click', function () {
-        var $this = $(this);
-        if (!!$this.hasClass('lock')) {
-            $this.attr('class', 'btn unlock');
-            $this.text('解锁');
-            // 锁定
-            dropload.lock();
-            $('.dropload-down').hide();
-        } else {
-            $this.attr('class', 'btn lock');
-            $this.text('锁定');
-            // 解锁
-            dropload.unlock();
-            $('.dropload-down').show();
-        }
-    });
+
+    // 页数
+    var page = 0;
+    // 每页展示5个
+    var size = 5;
 
     // dropload
     var dropload = $('.inner').dropload({
@@ -51,37 +39,6 @@ $(function () {
             domLoad: '<div class="dropload-load"><span class="loading"></span>加载中...</div>',
             domNoData: '<div class="dropload-noData">暂无数据</div>'
         },
-        // loadUpFn: function (me) {
-        //     $.ajax({
-        //         type: 'GET',
-        //         url: 'json/update.json',
-        //         dataType: 'json',
-        //         success: function (data) {
-        //             var result = '';
-        //             var arrLen = data.lists.length;
-        //             for (var i = 0; i < arrLen; i++) {
-        //                 result += '<tr>' +
-        //                     '<td>' + data.lists[i].link + '</td>' +
-        //                     '<td>' + data.lists[i].title + '</td>' +
-        //                     '<td>' + data.lists[i].date + '</td>' +
-        //                     '<td>' + data.lists[i].title + '</td>' +
-        //                     '<td></td>' +
-        //                     '</tr>'
-        //             }
-        //             // 为了测试，延迟1秒加载
-        //             setTimeout(function () {
-        //                 $('.lists').html(result);
-        //                 // 每次数据加载完，必须重置
-        //                 dropload.resetload();
-        //             }, 1000);
-        //         },
-        //         error: function (xhr, type) {
-        //             alert('Ajax error!');
-        //             // 即使加载出错，也得重置
-        //             dropload.resetload();
-        //         }
-        //     });
-        // },
         loadDownFn: function (me) {
             $.ajax({
                 type: 'GET',
@@ -89,19 +46,32 @@ $(function () {
                 dataType: 'json',
                 success: function (data) {
                     var result = '';
-                    var arrLen = data.lists.length;
-                    for (var i = 0; i < arrLen; i++) {
-                        result += '<tr>' +
-                            '<td>' + data.lists[i].link + '</td>' +
-                            '<td>' + data.lists[i].title + '</td>' +
-                            '<td>' + data.lists[i].date + '</td>' +
-                            '<td>' + data.lists[i].title + '</td>' +
-                            '<td></td>' +
-                            '</tr>'
+                    //var arrLen = data.lists.length;
+                    var arrLen = data.length;
+                    if (arrLen > 0) {
+                        for (var i = 0; i < arrLen; i++) {
+                            result += '<tr>' +
+                                '<td>' + data[i].id + '</td>' +
+                                '<td>' + data[i].link + '</td>' +
+                                '<td>' + data[i].date + '</td>' +
+                                '<td>' + data[i].title + '</td>' +
+                                '<td></td>' +
+                                '</tr>'
+                        }
+
+                    } else {
+                        // 锁定
+                        me.lock();
+                        // 无数据 
+                        me.noData();
+                        if (page > 1) {
+                            $('.dropload-down').hide();
+                        }
                     }
+
                     // 为了测试，延迟1秒加载
                     setTimeout(function () {
-                        $('.lists').append(result);
+                        $('.wrapperr').append(result);
                         // 每次数据加载完，必须重置
                         dropload.resetload();
                     }, 1000);
