@@ -14,6 +14,7 @@ html{
     flex:1;
     height: calc(100% - 0.14rem);
     background:white;
+    width:100%;
 }
 .bankcardwrapper{
     padding:0 0.1rem;
@@ -104,6 +105,7 @@ html{
     color:white;
     height:0.4rem;
 }
+.btn:focus,.btn:active{outline:0;}
 .compelet{
     text-align:center;
     margin-top:30px;
@@ -167,4 +169,13 @@ html{
 }
 .yanzheng .form-control{
     width:75%;
+}
+.form-group.errorcontainer{
+    margin:0;
+    padding:0;
+    border:none;
+    display:none;
+}
+.error-tip{
+    font-size:12px;
 }

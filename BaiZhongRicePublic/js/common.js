@@ -44,3 +44,28 @@
   window.addEventListener('load', self.changePage, false);
 
 })(document,360);
+
+//封装http请求
+function ajaxRequest({url,type,data,datatype,success,error,async}){
+  var successCB,errorCB;
+  if(success){
+    successCB = success;
+  }else{
+    successCB = function(){}
+  }
+  if(error){
+    errorCB = error;
+  }else{
+    errorCB = function(){}
+  }
+  $.ajax({
+    url: url ? url : '',
+    type: type ? type : 'get',
+    data: data ? data : {},
+    dataType: datatype ? datatype :'json',
+    async: async ? async : true,
+    success: successCB,
+    error: errorCB
+  })
+
+}

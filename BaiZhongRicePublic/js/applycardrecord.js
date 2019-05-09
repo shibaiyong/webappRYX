@@ -1,22 +1,4 @@
-$('.cancelIco img').click(function () {
-    $('.alertmodelcontainer').hide();
-})
 
-$('.search').click(function () {
-    $('.alertmodelcontainer').show();
-})
-
-$('.opreatBtn .btn').click(function () {
-    $(this).addClass('btnactivecolor').siblings().removeClass('btnactivecolor');
-})
-
-//提交表单数据
-
-$('.compelet .btn').click(function () {
-    var username = $('#bankname').val();
-    var status = $('.btnactivecolor').attr('val');
-    window.open('http://www.baidu.com');
-})
 
 $(function () {
 
@@ -85,3 +67,34 @@ $(function () {
         }
     });
 });
+
+//点击查询按钮
+
+$('.cancelIco img').click(function () {
+    $('.alertmodelcontainer').hide();
+})
+
+$('.opreatBtn .btn').click(function () {
+    $(this).addClass('btnactivecolor').siblings().removeClass('btnactivecolor');
+})
+
+//提交表单数据
+
+$('.compelet .btn').click(function () {
+    var username = $('#bankname').val();
+    var status = $('.btnactivecolor').attr('val');
+    window.open('http://www.baidu.com');
+})
+
+$('.bankcardwrapper').click(function(){
+    $('.alertmodelcontainer').show();
+})
+
+ajaxRequest({
+    url: 'json/more.json',
+    success: function (res) {
+        
+    },
+    error: function (xhr, type) {
+    }
+})
