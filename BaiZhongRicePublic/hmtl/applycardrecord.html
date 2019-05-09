@@ -8,12 +8,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-    <link rel="stylesheet" href="../css/memeberData/common.css" />
+    <link rel="stylesheet" href="../css/applycardrecord/common.css" />
     <link rel="stylesheet" href="../../plugin/bootstrap3.3.7/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/memeberData/memeberData.css" />
+    <link rel="stylesheet" href="../css/applycardrecord/applycardrecord.css" />
     <link rel="stylesheet" href="../../plugin/dropload/dropload.css" />
-    <link rel="stylesheet" href="">
-    <script src="../../plugin/jquery.3.3.0.js"></script>
     <title>申卡记录</title>
 </head>
 
@@ -27,7 +25,7 @@
                             <img src="../img/invitation/merchantsBank.jpg" />
                             <ul>
                                 <li class="title">招商银行</li>
-                                <li class="status">已建档</li>
+                                <li class="status">审核通过</li>
                                 <li><span>进度更新时间:</span><span>2019/09/12</span></li>
                             </ul>
                         </div>
@@ -43,7 +41,37 @@
                             <ul>
                                 <li class="title">招商银行</li>
                                 <li class="status">已建档</li>
-                                <li><span>进度更新时间:</span><span>2019/09/12</span></li>
+                                <li><span>进度更新时间&nbsp;:&nbsp;</span><span>——</span></li>
+                            </ul>
+                        </div>
+                        <div class="bankoperate">
+                            <button class="btn btn-default search">查询</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bankcardwrapper">
+                    <div class="bankcardcontainer">
+                        <div class="bankinfo">
+                            <img src="../img/invitation/merchantsBank.jpg" />
+                            <ul>
+                                <li class="title">招商银行</li>
+                                <li class="status">审核中</li>
+                                <li><span>进度更新时间&nbsp;:&nbsp;</span><span>2019/09/12</span></li>
+                            </ul>
+                        </div>
+                        <div class="bankoperate">
+                            <button class="btn btn-default search">查询</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="bankcardwrapper">
+                    <div class="bankcardcontainer">
+                        <div class="bankinfo">
+                            <img src="../img/invitation/merchantsBank.jpg" />
+                            <ul>
+                                <li class="title">招商银行</li>
+                                <li class="status">审核拒绝</li>
+                                <li><span>进度更新时间&nbsp;:&nbsp;</span><span>2019/09/12</span></li>
                             </ul>
                         </div>
                         <div class="bankoperate">
@@ -62,16 +90,17 @@
                 <div class="form-group row">
                     <label for="username" class="col-xs-4 control-label">手机号</label>
                     <div class="col-xs-12">
-                        <input type="text" class="form-control" id="username" value="1232344" readonly placeholder="请输入姓名">
+                        <input type="text" class="form-control" id="username" value="1232344" readonly
+                            placeholder="请输入姓名">
                     </div>
                 </div>
                 <div class="form-group row">
-                        <label for="username" class="col-xs-4 control-label">短信验证码</label>
-                        <div class="col-xs-12 yanzheng">
-                            <input type="text" class="form-control" id="yanzheng" placeholder="请输入姓名">
-                            <span class="hasend">已发送</span>
-                        </div>
+                    <label for="username" class="col-xs-4 control-label">短信验证码</label>
+                    <div class="col-xs-12 yanzheng">
+                        <input type="text" class="form-control" id="yanzheng" placeholder="请输入姓名">
+                        <span class="hasend">已发送</span>
                     </div>
+                </div>
                 <div class="form-grounp compelet">
                     <button type="button" class="btn btn-default">完成</button>
                 </div>
@@ -81,6 +110,7 @@
 </body>
 
 </html>
+<script src="../../plugin/jquery.3.3.0.js"></script>
 <script src="../js/common.js"></script>
 <script src="../../plugin/dropload/dropload.min.js"></script>
-<script src="../js/memeberData.js"></script>
+<script src="../js/applycardrecord.js"></script>

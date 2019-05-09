@@ -1,4 +1,4 @@
-$('.cancelIco').click(function () {
+$('.cancelIco img').click(function () {
     $('.alertmodelcontainer').hide();
 })
 

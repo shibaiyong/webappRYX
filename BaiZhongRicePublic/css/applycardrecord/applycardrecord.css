@@ -1,9 +1,23 @@
 
 body{
     background:#edf3ff;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    height: 100%;
+}
+html{
+    height: 100%;
 }
 .outer{
     margin-top: 0.14rem;
+    flex:1;
+    height: calc(100% - 0.14rem);
+    background:white;
+}
+.bankcardwrapper{
+    padding:0 0.1rem;
+    background:white;
 }
 .bankcardcontainer,.bankcardcontainer .bankinfo{
     display:flex;
@@ -18,12 +32,12 @@ body{
 }
 
 .bankcardcontainer .bankoperate .btn{
-    width:0.6rem;
+    width:0.5rem;
     height:0.26rem;
     border:1px solid rgb(61,72,227);
     color: rgb(61,72,227);
     font-size: 0.12rem;
-
+    padding:5px 12px;
 }
 
 .bankcardcontainer .bankinfo ul{
@@ -32,7 +46,7 @@ body{
     margin-bottom: 0px;
 }
 .bankcardcontainer{
-    padding:0.2rem 0.2rem;
+    padding:0.2rem 0.1rem;
     border-bottom:1px solid #c7d9fd;
 }
 
