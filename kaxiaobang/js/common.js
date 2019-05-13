@@ -64,8 +64,12 @@ function ajaxRequest({url,type,data,datatype,success,error,async}){
     data: data ? data : {},
     dataType: datatype ? datatype :'json',
     async: async ? async : true,
-    success: successCB,
-    error: errorCB
-  })
+    success: function(res){
+      successCB(res);
+    },
+    error: function(err){
+      errorCB(err)
+    }
 
+  })
 }
