@@ -68,7 +68,7 @@ function ajaxRequest({url,type,data,datatype,success,error,async}){
       successCB(res);
     },
     error: function(err){
-      errorCB(err)
+      errorCB(err);
     }
 
   })
