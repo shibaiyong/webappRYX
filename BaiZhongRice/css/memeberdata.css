@@ -1,0 +1,60 @@
+	body {
+		background: white;
+	}
+	.memeberdata{
+		padding: 0 0.21rem;
+		box-sizing: border-box;
+	}
+	
+.memeberdata .bankname{
+	margin-top:0.25rem;
+}
+
+.memeberdata h3 {
+	font-size: 0.18rem;
+}
+
+.memeberdata .cardstatus{
+	margin-top:0.2rem;
+}
+.memeberdata .cardstatus input{
+	border: 1px solid #C7D9FD;
+	width:50%;
+	border-radius: 10px;
+	height:0.3rem;
+	font-size: 0.14rem;
+	padding-right:0.25rem;
+	background:url(../img/cardstatus@2x.png) no-repeat 95% center;
+	background-size:0.2rem 0.2rem;
+}
+.memeberdata .memeberinfo{
+	margin-top:0.3rem;
+}
+.memeberdata .memeberinfo .mui-input-clear{
+	border:none;
+	border-bottom:1px solid #C7D9FD;
+	margin-bottom:0;
+	font-size: 0.14rem;
+	padding-left:0.25rem;
+}
+
+.memeberdata .memeberinfo .username{
+	background:url(../img/username@2x.png) no-repeat left center;
+	background-size:0.18rem 0.18rem;
+}
+
+.memeberdata .memeberinfo .password{
+	background:url(../img/phonenumber@2x.png) no-repeat left center;
+	background-size:0.14rem 0.2rem;
+}
+
+.memeberdata .memeberinfo .mui-input-row{
+	margin-top:0.2rem;
+}
+
+.complete .mui-btn-primary{
+	width:100%;
+	margin-top:0.7rem;
+	padding:0.11rem 0.12rem;
+}
+

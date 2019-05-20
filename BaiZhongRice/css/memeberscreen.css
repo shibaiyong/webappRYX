@@ -1,0 +1,92 @@
+body,
+html {
+	height: 100%;
+}
+
+.carddata {
+	background: #edf3ff;
+	padding: 0.13rem 0.11rem;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+.carddata .totaldatainfo {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 6px;
+	align-items: center;
+}
+
+.carddata .totaldatainfo div {
+	font-size: 0.14rem;
+	margin-left:0.18rem;
+}
+
+.carddata .totaldatainfo div span:nth-child(2) {
+	color:#4e59e2;
+}
+
+.carddata .totaldatainfo a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.12rem;
+	width: 70px;
+	height: 23px;
+	border: 1px solid rgba(76,87,225,1);
+	border-radius: 12px;
+	text-align: center;
+	line-height: 23px;
+	color: rgba(76,87,225,1);
+}
+.carddata .totaldatainfo a img{
+	width:0.16rem;
+	height: 0.13rem;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+.carddata .bankcardinfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.1rem 0.22rem;
+	box-sizing: border-box;
+	background: white;
+	border-radius:6px;
+}
+
+.carddata .bankcardinfo ul li>span{
+	font-size: 0.15rem;
+}
+.carddata .bankcardinfo ul li>img{
+	width:0.28rem;
+	height: 0.28rem;
+	margin-right:10px;
+}
+.carddata .bankcardinfo ul li:nth-child(1){
+	padding-bottom: 10px;
+	border-bottom: 1px solid #C7D9FD;
+}
+
+.carddata .bankcardinfo ul li.anynumber{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top:10px;
+	font-size:0.14rem;
+	color:#9BA9C6;
+}
+
+.carddata .bankcardinfo ul li.anynumber div span:nth-child(2){
+	color:#4E59E2;
+	font-size:0.18rem;
+}
+
+.carddata .bankcardinfo ul{
+	width:100%;
+}
+
+.bankcardinfo+.bankcardinfo {
+	margin-top: 0.11rem;
+}
+

@@ -59,10 +59,10 @@ var showtoast = new ShowToast({
 })
 
 $('.btn-primary').click(function () {
-    // showtoast.inite({
-    //     confirmfun:fun1,
-    //     cancelfun:fun2
-    // });
+    showtoast.inite({
+        confirmfun:fun1,
+        cancelfun:fun2
+    });
 })
 
 function fun1() {

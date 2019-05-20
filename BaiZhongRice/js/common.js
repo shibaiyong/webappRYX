@@ -43,7 +43,7 @@
   //document.addEventListener('DOMContentLoaded', self.changePage, false);
   window.addEventListener('load', self.changePage, false);
 
-})(document,360);
+})(document,375);
 
 //封装http请求
 function ajaxRequest({url,type,data,datatype,success,error,async}){

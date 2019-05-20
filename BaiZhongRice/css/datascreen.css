@@ -1,0 +1,81 @@
+body {
+	background: white;
+}
+.datascreen .bankname{
+	margin-top:0.25rem;
+}
+
+.datascreen h3 {
+	font-size: 0.18rem;
+}
+
+.datascreen {
+	padding: 0 0.21rem;
+	box-sizing: border-box;
+}
+
+.datascreen .bankitem ul li {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top:0.14rem;
+	-webkit-flex-wrap: wrap;
+}
+
+.datascreen .bankitem ul li span {
+	display: inline-block;
+	width: 0.7rem;
+	height: 26px;
+	font-size: 14px;
+	text-align: center;
+	background: rgba(243, 244, 245, 1);
+	border-radius: 10px;
+	line-height: 26px;
+	color: #101D37;
+	margin-right: 0.12rem;
+	margin-bottom: 0.12rem;
+}
+.datascreen .bankitem ul li span:nth-child(4n) {
+	margin-right:0;
+}
+.datascreen .bankitem ul li span.backnameactive {
+	background:#4E59E2;
+	color:white;
+}
+.datascreen .bankitem input {
+	display: inline-block;
+	width: 42%;
+	height: 30px;
+	margin: 0;
+	padding: 0;
+	padding-left: 0.1rem;
+	border: 1px solid #C7D9FD;
+	font-size: 16px;
+	padding-right:0.25rem;
+	background:url(../img/timeicon@2x.png) no-repeat 95% center;
+	background-size:0.2rem 0.2rem;
+}
+
+.datascreen .bankitem .time {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top:0.35rem;
+}
+
+.changedate{
+	margin-top:0.32rem;
+}
+
+.datascreen .bankitem .time span {
+	font-size: 0.14rem;
+}
+.complete .mui-btn-primary{
+	width:100%;
+	margin-top:0.7rem;
+	padding:0.11rem 0.12rem;
+}
+
+
+
+

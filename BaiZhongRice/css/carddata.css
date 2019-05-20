@@ -1,0 +1,87 @@
+body,
+html {
+	height: 100%;
+}
+
+.carddata {
+	background: #edf3ff;
+	padding: 0.13rem 0.11rem;
+	box-sizing: border-box;
+	height: 100%;
+}
+
+.carddata .totaldatainfo {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 6px;
+	align-items: center;
+	
+}
+
+.carddata .totaldatainfo div {
+	font-size: 0.14rem;
+	margin-left:0.18rem;
+}
+
+.carddata .totaldatainfo div span:nth-child(2) {
+	color:#4e59e2;
+}
+
+.carddata .totaldatainfo a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.12rem;
+	width: 70px;
+	height: 23px;
+	border: 1px solid rgba(76,87,225,1);
+	border-radius: 12px;
+	text-align: center;
+	line-height: 23px;
+	color: rgba(76,87,225,1);
+}
+.carddata .totaldatainfo a img{
+	width:0.16rem;
+	height: 0.13rem;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+
+.carddata .bankcardinfo {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.2rem 0.23rem;
+	box-sizing: border-box;
+	background: white;
+	border-radius:6px;
+}
+
+.bankcardinfo+.bankcardinfo {
+	margin-top: 0.11rem;
+}
+
+.bankcardinfo .bankmemeber li:first-child {
+	font-size: 0.15rem;
+	margin-bottom: 0.15rem;
+}
+
+.bankcardinfo .bankmemeber li:nth-child(2) {
+	font-size: 0.14rem;
+	color:#9BA9C6;
+}
+
+.bankcardinfo .bankstatus {
+	text-align: right;
+}
+
+.bankcardinfo .bankstatus li:first-child {
+	font-size: 0.15rem;
+	margin-bottom: 0.15rem;
+	color: #4E59E2
+}
+
+.bankcardinfo .bankstatus li:nth-child(2) {
+	font-size: 0.14rem;
+	color:#9BA9C6;
+}
