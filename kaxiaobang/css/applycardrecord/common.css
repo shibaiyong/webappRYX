@@ -20,4 +20,59 @@ a:hover{text-decoration:none !important;}
     height: 12px;
 }
 
+input::-webkit-input-placeholder{
+  color: #9ba9c6;
+}
+
+input::-moz-placeholder{
+  color: #9ba9c6;
+}
+
+input:-ms-input-placeholder {
+  color: #9ba9c6;
+}
+
+/* 点击a标签消除底色阴影 */
+
+.carddata .totaldatainfo a:active{
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	-webkit-tap-highlight-color: transparent;
+	outline:none; 
+	background: none;
+	text-decoration: none;
+}
+
+/* 头部筛选的公共样式 */
+
+.filter_text{
+	width:100%;
+	margin-top:0.3rem;
+	display:flex;
+	justify-content: space-between;
+}
+.filter_text p, .filter_text img{
+	display: inline-block;
+	vertical-align: bottom;
+}
+.filter_text img{
+	width:0.24rem;
+	height:0.24rem;
+	margin-bottom: 0.16rem;
+}
+
+.filter_text p{
+	width:91%;
+	text-align: center;
+	margin:0;
+	padding-bottom:0.16rem;
+	border-bottom:1px solid #C7D9FD;
+	color:black;
+	font-size: 0.18rem;
+}
+
+/* 完成按钮的颜色样式 */
+
+.complete .mui-btn-primary{
+	background:#4e59e2;
+}
 

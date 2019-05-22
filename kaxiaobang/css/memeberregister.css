@@ -1,0 +1,94 @@
+body{
+    background: white;
+    
+}
+html{
+    height: 100%;
+}
+.memeberregister .banner{
+	width:100%;
+}
+.memeberregister .banner img{
+	width:100%;
+}
+.memeberregister .memeberinfo{
+	background:white;
+	padding:0 0.14rem;
+}
+.memeberregister .memeberinfo .mui-input-clear{
+	border:none;
+	border-bottom:1px solid #C7D9FD;
+	margin-bottom:0;
+	font-size: 0.12rem;
+	padding-left:0.32rem;
+	border-radius: none;
+	border-radius: 0;
+}
+
+.memeberregister .memeberinfo .agentnumber{
+	background:url(../img/agentaccount@2x.png) no-repeat 0.04rem center;
+	background-size:0.2rem 0.2rem;
+}
+
+.memeberregister .memeberinfo .realname{
+	background:url(../img/name@2x.png) no-repeat 0.04rem center;
+	background-size:0.2rem 0.2rem;
+}
+
+.memeberregister .memeberinfo .mobile{
+	background:url(../img/moblie@2x.png) no-repeat 0.04rem center;
+	background-size:0.2rem 0.2rem;
+}
+
+.memeberregister .memeberinfo .idcard{
+	background:url(../img/idcard@2x.png) no-repeat 0.04rem center;
+	background-size:0.2rem 0.2rem;
+}
+
+.memeberregister .memeberinfo .verifycode{
+	background:url(../img/vertifycode@2x.png) no-repeat 0.04rem center;
+	background-size:0.2rem 0.2rem;
+}
+
+.memeberregister .memeberinfo .messagecode{
+	background:url(../img/message@2x.png) no-repeat 0.04rem center;
+	background-size:0.2rem 0.2rem;
+}
+
+.memeberregister .memeberinfo .mui-input-row{
+		margin-top:0.2rem;
+		position:relative;
+}
+.complete{
+	padding:0 0.14rem;
+}
+.complete .mui-btn-primary{
+	width:100%;
+	margin-top:0.7rem;
+	padding:0.11rem 0.12rem;
+}
+
+#verifycode{
+	width:0.96rem;
+	height:0.32rem;
+	background:red;
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+
+#messagecode{
+	display:inline-block;
+	width:0.96rem;
+	height:0.32rem;
+	background:white;
+	position:absolute;
+	border:1px solid #0062CC;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 0.32rem;
+	color:#3D48E3;
+	top:0px;
+	right:0px;
+	font-size:0.14rem;
+}

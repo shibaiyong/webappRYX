@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no"/>
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../../plugin/mui/mui.min.css" />
+		<link rel="stylesheet" href="../../plugin/mui/mui.picker.min.css" />
+		<link rel="stylesheet" href="../css/invitationrecord.css" />
+		<title>办卡数据-筛选</title>
+	</head>
+	<body>
+		<div class="datascreen">
+			<div class="filter_text">
+				<p>筛选</p><img src="../img/close@2x.png"/>
+			</div>
+			<div class="bankitem bankname">
+				<h3>银行名称</h3>
+				<ul>
+					<li><span class="backnameactive">全部</span><span>招商银行</span><span>平安银行</span><span>光大银行</span><span>中国银行</span><span>招商银行</span><span>平安银行</span><span>光大银行</span>
+					<span>中国银行</span><span>招商银行</span><span>平安银行</span><span>光大银行</span></li>
+				</ul>
+			</div>
+
+			<div class="bankitem changedate">
+				<h3>申卡状态</h3>
+				<div class="time cardstatus">
+					<input id="starttime" class="timeinput" type="text" placeholder="请选择状态"/>
+				</div>
+			</div>
+			
+			<div class="complete">
+				<button type="button" class="mui-btn mui-btn-primary">完成</button>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../../plugin/mui/mui.min.js"></script>
+<script src="../../plugin/mui/mui.picker.min.js"></script>
+<script src="../js/invitationrecord.js"></script>

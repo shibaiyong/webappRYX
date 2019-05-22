@@ -1,0 +1,126 @@
+body{
+	background:#EDF3FF;
+}
+.banklistcontainer .banner img{
+	width:100%;
+}
+
+.banklistcontainer h3{
+	font-size: 0.14rem;
+	padding:9px 0;
+	padding-left:0.16rem;
+	border-bottom:0.005rem solid #C7D9FD;
+	background:white;
+	margin:0;
+	margin-top:8px;
+}
+
+.banklistcontainer .recommendbank{
+		display:flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		padding:0.17rem 0.16rem 0 0.16rem;
+		background:white;
+}
+
+.banklistcontainer .recommendbank .recommendbank-item{
+		width:50%;
+		display:flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 0.18rem;
+}
+
+.banklistcontainer .recommendbank .recommendbank-item ul li{
+	font-size:0.14rem;
+}
+
+.banklistcontainer .recommendbank .recommendbank-item .name{
+	font-size: 0.13rem;
+	font-weight:bold;
+}
+
+.banklistcontainer .recommendbank .recommendbank-item .detail{
+	font-size: 0.11rem;
+	line-height: 0.20rem;
+	color:#555B6C
+}
+
+.banklistcontainer .recommendbank .recommendbank-item .feature{
+	font-size: 0.10rem;
+	color:#F66515;
+}
+
+.banklistcontainer .recommendbank .recommendbank-item .feature span{
+	display:inline-block;
+	border:1px solid #F66515;
+	width:0.5rem;
+	height:15px;
+	border-radius:8px;
+	text-align: center;
+	line-height:15px;
+	overflow:hidden;
+}
+
+.banklistcontainer .recommendbank .recommendbank-item .feature span+span{
+	margin-left: 4px;
+}
+
+.banklistcontainer .recommendbank .recommendbank-item>img{
+		width:0.4rem;
+		height:0.4rem;
+		margin-right: 0.06rem;
+}
+
+.hotbank{
+	background:white;
+	padding:0 0.18rem;
+}
+
+.hotbank .hotbank-item{
+	border-bottom: 0.5px solid #C7D9FD;
+	padding:0.16rem;
+}
+
+.hotbank .hotbank-item dl,.hotbank .hotbank-item ul{
+	display:inline-block;
+	vertical-align: bottom;
+}
+
+.hotbank .hotbank-item dl{
+	margin-right: 0.14rem;
+	text-align: center;
+	font-size: 0.13rem;
+	font-weight: bold;
+}
+
+.hotbank .hotbank-item dl dt img{
+	width:0.4rem;
+	height: 0.4rem;
+}
+
+.hotbank .hotbank-item dl dt{
+	margin-bottom:0.17rem;
+}
+
+.hotbank .hotbank-item ul li:nth-child(1){
+	font-size: 0.13rem;
+	margin-bottom: 0.17rem;
+}
+.hotbank .hotbank-item ul li:nth-child(2) span{
+	display:inline-block;
+	border:1px solid #6C8FFF;
+	width:0.58rem;
+	height:18px;
+	border-radius:8px;
+	text-align: center;
+	line-height:18px;
+	overflow:hidden;
+	font-size: 0.12rem;
+	color:#6C8FFF;
+}
+
+.hotbank .hotbank-item ul li:nth-child(2) span+span{
+	margin-left:0.06rem;
+}

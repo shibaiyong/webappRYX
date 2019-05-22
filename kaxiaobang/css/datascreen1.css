@@ -1,0 +1,105 @@
+.dataview .banner{
+	width:100%;
+}
+.dataview .banner img{
+	width:100%;
+}
+.dataview .numberviewcontainer{
+	background:#edf3ff;
+	display:flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	height: 1.3rem;
+}
+
+.dataview .numberitem{
+	width:1.17rem;
+	backgorund:white;
+	text-align: center;
+	padding:0.19rem 0 0.25rem 0;
+	background:white;
+	margin-top:-0.4rem;
+}
+
+.dataview .numberitem li:nth-child(2){
+	font-size: 0.12rem;
+	margin:0.14rem 0;
+}
+
+.dataview .numberitem li:nth-child(3){
+	font-size: 0.18rem;
+	color:#4C57E1;
+}
+
+.dataview .numberitem img{
+	width:0.43drem;
+	height:0.43rem;
+}
+
+.dataview .filter a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 0.12rem;
+	width: 70px;
+	height: 23px;
+	border: 1px solid rgba(76,87,225,1);
+	border-radius: 12px;
+	text-align: center;
+	line-height: 23px;
+	color: rgba(76,87,225,1);
+	margin-left: auto;
+}
+.dataview .filter a img{
+	width:0.16rem;
+	height: 0.13rem;
+	vertical-align: middle;
+	margin-right: 3px;
+}
+.applystatus{
+	padding:0 0.3rem;
+	padding-top:0.17rem;
+	background:white;
+	padding-bottom:0.6rem;
+}
+.applystatus ul li{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:0.13rem 0.2rem 0.13rem 0.43rem;
+	font-size:0.15rem;
+	border-bottom:1px solid #C7D9FD
+	
+}
+.applystatus ul li{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:0.13rem 0.2rem 0.13rem 0.43rem;
+	font-size:0.15rem;
+	border-bottom:1px solid #C7D9FD;
+	background-size:0.2rem 0.2rem;
+}
+.applystatus ul{
+	margin-top:0.2rem;
+}
+.applystatus ul li:nth-child(1){
+	background:url(../img/build@2x.png) no-repeat 2% center;
+	background-size:0.2rem 0.2rem;
+}
+.applystatus ul li:nth-child(2){
+	background:url(../img/passing@2x.png) no-repeat 2% center;
+	background-size:0.2rem 0.2rem;
+}
+.applystatus ul li:nth-child(3){
+	background:url(../img/passed@2x.png) no-repeat 2% center;
+	background-size:0.2rem 0.2rem;
+}
+.applystatus ul li:nth-child(4){
+	background:url(../img/reject@2x.png) no-repeat 2% center;
+	background-size:0.2rem 0.2rem;
+}
+
+.applystatus ul li span:nth-child(2){
+	color:#4c57e1
+}

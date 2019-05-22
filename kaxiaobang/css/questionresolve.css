@@ -1,0 +1,15 @@
+body,
+html {
+	height: 100%;
+	background: #EDF3FF;
+}
+
+.mui-card .mui-table-view-cell a img {
+	margin-right: 0.1rem;
+	width: 0.4rem;
+	height: 0.4rem;
+}
+
+.mui-card .mui-active.mui-active a {
+	background: white
+}

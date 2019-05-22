@@ -24,6 +24,7 @@ var size = 5;
 
 // dropload
 var dropload = $('.table1').dropload({
+	
     scrollArea : window,
     loadDownFn : function(me){
         page++;
@@ -49,6 +50,7 @@ var dropload = $('.table1').dropload({
                 }else{
                     // 锁定
                     me.lock();
+					
                     // 无数据 
                     me.noData();
                     if( page > 1 ){
