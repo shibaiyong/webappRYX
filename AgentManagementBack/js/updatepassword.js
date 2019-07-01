@@ -37,10 +37,11 @@ $("#passwordform").validate({
 });
 
 $.validator.addMethod("checkpassword", function (value, element) {
-    var checkpassword1 = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$/i;
-    var checkpassword2 = /^(?![^a-zA-Z]+$)(?!\D+$)[0-9a-zA-Z]{6,35}$/i;
-    return this.optional(element) || (checkpassword2.test(value));
-}, "*新密码必须至少八个字节，且同时包含字母和数字！");
+    var checkpassword1 = /^(?![0-9]+$)(?![a-zA-Z]+$)[0-9A-Za-z]{8,16}$/i
+    var checkpassword2 = /^(?![^a-zA-Z]+$)(?!\D+$)[0-9a-zA-Z]{6,35}$/i
+	var checkpassword3 = /Windows(?=95|98|NT|2000)/i
+    return this.optional(element) || (checkpassword3.test(value))
+}, "*新密码必须至少八个字节，且同时包含字母和数字！")
 //2. (?![^a-zA-Z]+$)
 //断言此位置后,字符串结尾之前,所有的字符不能全部由数字（[^a-zA-Z]表示非英文字母,结合下文,这里匹配数字）组成.
 //由于当前位置是字符串开始,所以表示整个字符串不能全是数字.

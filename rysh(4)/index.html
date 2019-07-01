@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache" />
+	<title>在线办卡</title>
+	<link rel="stylesheet" href="res/dist/css/frozen.css">
+	<link rel="stylesheet" href="res/css/app.css?v=20180403001">
+	<style>
+		body{
+			background:#f8f8f8;
+		}
+		.ui-container{
+			background:#fff;
+		}
+		.ui-slider-indicators li{
+			width:0 !important;
+		}
+	</style>
+</head>
+
+<body ontouchstart="" >
+	<section class="ui-container">
+		<script id="slider-template" type="text/html">
+			<ul class="ui-slider-content" style="width:{{advertRows.length}}00%">
+				<!--
+				<li onclick="goOutLink('https://c.pingan.com/ca/index?sign=87ecb3bb8d4be378d4ace48ddc6ed203&versionNo=R10310&scc=232000312&channel=WX&onlineSQFlag=N&cardCatenaNo=01a02a03a04a05&isDisplayRecommend=N&isDisplaySales=N&bt9=ZY&mt=SC200000033&ccp=1a2a3a4a8a9')"><span style="background-image:url('res/img/banklogo/baner-r.png')"></span></li>-->
+				<li onclick="goOutLink('https://creditcard.cmbc.com.cn/wsv2/?enstr=iVJZb4E3BsX6NR6w54Ym6O7TwUbr3vL9nU8fFp86HD0%2f07lVbHyXcKUWbn2FL2NAZawv8POzrbsizMbWa1vhpqU9tHJ0VDIpGPkdJTWT3tDuNIJ8gvvdhulbeKjY0F%2frL609kV7EI%2begwf%2bpQu1pW4crfoihVPxdpEUvLRaGh5196PwPZe0EhpPGQhjxlTuWeK007h%2b4IIeZaiksJWHWKi1UMXx0xEKj9XqkZwYPIATle0PbgxJFAjasKhdnO5HZ8XOMww2q8Aqy29N0hTM%2b2u4K4wf1wyxL23%2fWb8rrnpVwGIKT7xhaeMNDHnqDMP0%2fFGnwqSRaADFyqGNLZo%2fD0w%3d%3d')"><span style="background-image:url('res/img/banklogo/baner-y.png')"></span></li>
+    			<li onclick="goOutLink('https://creditcard.ecitic.com/h5/shenqing/index.html?sid=XK')"><span style="background-image:url('res/img/banklogo/baner-zhongxin.jpg')"></span></li>
+			</ul>
+		</script>
+		<div id="slider" class="ui-slider">
+		</div>
+		<div class="bank-list">
+			<div class="list-title">
+				<div>热门银行推荐</div><div style="text-align: right;color: #0d9dbf"></div>
+			</div>
+			<script id="bank-template" type="text/html">
+				{{each common bank}} 
+				<li data-links="{{ bank.url}}" class="ui-border-t">
+					<div class="ui-list-img">
+						<span style="background-image:url('res/img/banklogo/{{ bank.icon}}?v=20180428001')"></span>
+					</div>
+					<div class="ui-list-info">
+						<h4 class="ui-nowrap">{{ bank.name}}
+								<i class="recommend divide"></i>
+								{{include 'recommend-template' bank}}
+						</h4>
+						<p>{{ bank.time}}</p>
+						<p>{{ bank.limit}}</p>
+						{{include 'tag-template' bank}}
+					</div>
+				</li>
+			{{/each}}
+			</script>
+			<script id="recommend-template" type="text/html">
+				{{each recommends recommend}}
+				<i class="recommend" style="background:{{recommend.color}}">{{recommend.text}}</i>
+				{{/each}}
+			</script>
+			<script id="tag-template" type="text/html">
+				{{each tags tag}}
+				<i class="tag">{{tag.text}}</i>
+				{{/each}}
+			</script>
+			<ul id="bank-list" class="ui-list ui-list-link ui-border-tb">
+			</ul>
+		</div>
+	</section>
+	<script src="res/dist/lib/zepto.min.js"></script>
+	<script src="res/dist/js/frozen.js"></script>
+	<script src="res/js/template-web.js?v=20180403001"></script>
+	<script src="data/data.js?v=20190312001"></script>
+	<script src="res/js/app.js?v=20180403001"></script>
+	<script>
+		$.ajax({ 
+			url: "https://www.ruiyinxin.com/app/adms/api/api.php?mod=advert&act_get=list&posi_id=9&osType=web",
+			dataType:'json',
+			success: function(data){
+				console.log('hahahaha')
+				console.log(data);
+				data.advertRows=data.advertRows.slice(3);
+				console.log(data);
+					var sliderHtml = template('slider-template', data);
+					$('#slider').html(sliderHtml);
+					init();
+			}
+		});
+
+		function init () {
+			document.getElementById("slider").addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+        //幻灯
+        (function(){
+            var slider = new fz.Scroll('.ui-slider', {
+                role: 'slider',
+                indicator: true,
+                autoplay: true,
+                interval: 3000
+            });
+
+            slider.on('beforeScrollStart', function(from, to) {
+                
+            });
+
+            slider.on('scrollEnd', function(cruPage) {
+      
+            });
+
+        })();
+		}
+		$(function(){
+			var compare = function (obj1, obj2) {
+				var val1 = obj1.order;
+				var val2 = obj2.order;
+				if (val1 < val2) {
+					return -1;
+				} else if (val1 > val2) {
+					return 1;
+				} else {
+					return 0;
+				}            
+			} 
+			var tmpList = bankList.common.sort(compare);
+			bankList.common = tmpList;
+			var bankHtml = template('bank-template', bankList);
+			$('#bank-list').html(bankHtml);
+		});
+        </script>
+</body>
+
+</html>

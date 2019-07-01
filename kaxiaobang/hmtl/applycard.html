@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<script src="../js/common.js"></script>
+		<link rel="stylesheet" href="../css/applycardrecord/common.css" />
+		<link rel="stylesheet" href="../../plugin/mui/mui.min.css" />
+		<link rel="stylesheet" href="../css/memeberregister.css" />
+		<title>用户申请办卡</title>
+		<style>
+			.banner{
+					padding:0 0.14rem;
+					box-sizing:border-box;
+					margin-top:0.26rem;
+				}
+				.tips{
+					width:100%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					padding:0.12rem 0;
+					border:1px dotted #fc652e;
+				}
+				.tips dl{
+					width:27%;
+					text-align: center;
+					font-size:0.16rem;
+					color:#fc652e;
+					border-right: 1px dotted #fc652e;
+				}
+				.tips dl dt{
+					margin-bottom:6px;
+				}
+				.tips p{
+					width:73%;
+					font-size:13px;
+					padding:0 12px;
+					margin:0;
+					color:#fc652e;
+				}
+				.agreee{
+					margin-top:0.26rem;
+				}
+				.complete .mui-btn-primary {
+					margin-top:0.26rem;
+				}
+				.extramessage{
+					color:#fc652e;
+					font-size: 0.15rem;
+					text-align: center;
+					margin-top:0.26rem;
+					letter-spacing: 1px;
+				}
+				.mui-radio label{
+					font-size: 14px;
+				}
+				.mui-radio a{
+					position:absolute;
+					right:0.9rem;
+					top:0.07rem;
+					font-size: 14px;
+				}
+			</style>
+	</head>
+	<body>
+		<div class="memeberregister">
+			<div class="banner">
+				<div class="tips">
+					<dl>
+						<dt><span class="mui-icon mui-icon-info"></span></dt>
+						<dd>温馨提示</dd>
+					</dl>
+					<p>为了全面落实《信用卡管理暂行办法》,后续申请办卡信息必须与注册信息一致</p>
+				</div>
+			</div>
+			<div class="bankitem memeberinfo">
+				<div class="mui-input-row">
+					<input type="text" class="mui-input-clear agentnumber" placeholder="请输入代理商编号" />
+				</div>
+				<div class="mui-input-row">
+					<input type="text" class="mui-input-clear realname" placeholder="请输入真实姓名" />
+				</div>
+				<div class="mui-input-row">
+					<input type="text" class="mui-input-clear mobile" placeholder="请输入手机号码" />
+				</div>
+				<div class="mui-input-row">
+					<input type="text" class="mui-input-clear idcard" placeholder="请输入身份证号码" />
+				</div>
+				<div class="mui-input-row">
+					<input type="text" class="mui-input-clear verifycode" placeholder="请输入验证码" />
+					<span id="verifycode"></span>
+				</div>
+				<div class="mui-input-row">
+					<input type="text" class="mui-input-clear messagecode" placeholder="请输入短信验证码" />
+					<span id="messagecode">获取验证码</span>
+				</div>
+			</div>
+			<div class="agreee">
+				<div class="mui-input-row mui-radio mui-left">
+					<label for="name1">我已阅读并同意</label>
+					<input id="name1" name="radio1" type="radio"/><a href="www.baidu.com" style="color:#3e47e0">《注册服务协议》</a>
+				</div>
+			</div>
+			<div class="complete">
+				<button type="button" class="mui-btn mui-btn-primary">完成</button>
+			</div>
+			<div class="extramessage">查询办卡进度，请关注公众号：卡小邦</div>
+		</div>
+	</body>
+</html>
+<script src="../../plugin/mui/mui.min.js"></script>
+<script type="text/javascript" src="../js/memeberregister.js"></script>

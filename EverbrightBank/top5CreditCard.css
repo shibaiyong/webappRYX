@@ -1,0 +1,73 @@
+body,html{
+    height: 100%;
+    font-size: 0px;
+}
+body,html,div,ul,ul li,p,h2,h3,h4,ol,dl,dd,dt{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    display:inline-block;
+    text-decoration: none;
+}
+
+.credit-card-container{
+    background: url(img/activesBg.jpg) no-repeat center top;
+    background-size:100% auto;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+
+
+.credit-card-item:first-child{
+    margin-top:2.8rem;
+    width:100%;
+}
+.credit-card-item{
+    margin-bottom:0.3rem;
+    padding:0px 0.13rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.credit-card-item:last-child{
+    margin-bottom:0.45rem;
+}
+.credit-card-item a:active{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    background: none;
+    text-decoration: none;
+}
+.credit-card-item img:first-child{
+    width:100%;
+    display: block;
+}
+.applybtn{
+    width:1.2rem;
+    height:0.26rem;
+    position: absolute;
+    right: 0.13rem;
+    bottom:0.1rem;
+}
+.credit-card-item .number,.credit-card-item .card{
+    position: absolute;
+    display: block;
+}
+.credit-card-item .number{
+    display:inline-block;
+    left:0.2rem;
+    top:-0.2rem;
+    width:0.75rem;
+    height:0.7rem;
+}
+.credit-card-item .card{
+    left:0.25rem;
+    top:50%;
+    bottom:0;
+    margin-top:-0.43rem;
+    z-index:66;
+    width:1.35rem;
+    height:0.85rem;
+}

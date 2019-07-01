@@ -93,8 +93,8 @@
 					</div>
 					<div class="ui-list-info">
 						<h4 class="ui-nowrap">{{ bank.name}}
-								<i class="recommend divide"></i>
-								{{include 'recommend-template' bank}}
+							<i class="recommend divide"></i>
+							{{include 'recommend-template' bank}}
 						</h4>
 						<p>{{ bank.time}}</p>
 						<p>{{ bank.limit}}</p>
@@ -151,9 +151,9 @@
             dataType: 'json',
             success: function (data) {
                 if (data.posiRow.rcode == 'y040102' && data.advertRows.length > 0) {
-                    var sliderHtml = template('slider-template', data);
-                    $('#slider').html(sliderHtml);
-                    init();
+                    var sliderHtml = template('slider-template', data)
+                    $('#slider').html(sliderHtml)
+                    init()
                 }
             }
         });

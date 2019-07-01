@@ -7,7 +7,7 @@ body{
 
 .banklistcontainer h3{
 	font-size: 0.14rem;
-	padding:9px 0;
+	padding:20px 0;
 	padding-left:0.16rem;
 	border-bottom:0.005rem solid #C7D9FD;
 	background:white;
@@ -104,9 +104,14 @@ body{
 	margin-bottom:0.17rem;
 }
 
+.hotbank .hotbank-item dl dd{
+	color:#000000;
+}
+
 .hotbank .hotbank-item ul li:nth-child(1){
 	font-size: 0.13rem;
 	margin-bottom: 0.17rem;
+	color:#555b6c;
 }
 .hotbank .hotbank-item ul li:nth-child(2) span{
 	display:inline-block;
