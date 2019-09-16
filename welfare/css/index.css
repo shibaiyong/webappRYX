@@ -1,0 +1,114 @@
+.welfare .banner {
+	padding: 0.1rem 0.12rem 0;
+	box-sizing: border-box;
+	background: white;
+}
+
+.welfare .banner img {
+	width: 100%;
+}
+
+.notice {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 0.16rem 0.12rem;
+	box-sizing: border-box;
+	font-size: 0.13rem;
+	position: relative;
+	background: white;
+	margin-bottom: 0.1rem;
+}
+
+.notice .noticeico {
+	width: 0.16rem;
+	height: 0.14rem;
+}
+
+.notice ul {
+	margin-left: 0.15rem;
+}
+
+.notice .backico {
+	width: 0.08rem;
+	height: 0.14rem;
+	position: absolute;
+	right: 0.12rem;
+	top: 50%;
+	margin-top: -0.08rem;
+}
+
+.basewelfare {
+	font-size: 0.15rem;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.26rem;
+	box-sizing: border-box;
+	background: white;
+	padding-bottom: 0.18rem;
+}
+
+.basewelfare dl img {
+	width: 0.51rem;
+}
+
+h3 {
+	font-size: 0.16rem;
+	padding: 0.18rem 0.16rem;
+	box-sizing: border-box;
+	background: white;
+}
+
+.selectwelfare {
+	padding: 0rem 0.16rem 0 0.16rem;
+	background: white;
+}
+
+.selectwelfare .recommendbank .recommendbank-item {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 0.18rem 0;
+	border-bottom: 1px solid rgb(228, 236, 253);
+}
+
+.selectwelfare .recommendbank .recommendbank-item ul li {
+	font-size: 0.14rem;
+}
+
+.selectwelfare .recommendbank .recommendbank-item .name {
+	font-size: 0.15rem;
+	margin-bottom: 0.1rem;
+}
+
+.selectwelfare .recommendbank .recommendbank-item .feature {
+	font-size: 0.10rem;
+	color: rgb(253, 153, 40);
+}
+
+.selectwelfare .recommendbank .recommendbank-item .feature span {
+	display: inline-block;
+	border: 1px solid rgb(253, 169, 86);
+	padding: 0 0.06rem;
+	height: 15px;
+	border-radius: 8px;
+	text-align: center;
+	line-height: 15px;
+	overflow: hidden;
+}
+
+.selectwelfare .recommendbank .recommendbank-item .feature span+span {
+	margin-left: 4px;
+}
+
+.selectwelfare .recommendbank .recommendbank-item>img {
+	width: 0.32rem;
+	height: 0.32rem;
+	margin-right: 0.17rem;
+	margin-left: 0.08rem;
+}
+
+
+	

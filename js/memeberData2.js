@@ -66,7 +66,7 @@ var dropload = $('.table1').dropload({
                 },1000);
             },
             error: function(xhr, type){
-                alert('Ajax error!');
+                //alert('Ajax error!');
                 // 即使加载出错，也得重置
                 me.resetload();
             }

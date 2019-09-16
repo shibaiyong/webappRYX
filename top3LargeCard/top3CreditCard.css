@@ -1,0 +1,144 @@
+body,html{
+    height: 100%;
+    font-size: 0px;
+}
+body,html,div,ul,ul li,p,h2,h3,h4,ol,dl,dd,dt{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    display:inline-block;
+    text-decoration: none;
+}
+
+.credit-card-container{
+    background: url(img/activesBg.jpg) no-repeat center top;
+    background-size:100% auto;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+
+
+.credit-card-item:first-child{
+    margin-top:2.8rem;
+    width:100%;
+}
+.credit-card-item{
+    margin-bottom:0.3rem;
+    padding:0px 0.13rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.credit-card-item:last-child{
+    margin-bottom:0.45rem;
+}
+.credit-card-item a:active{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline:none;
+    background: none;
+    text-decoration: none;
+}
+.credit-card-item img:first-child{
+    width:100%;
+    display: block;
+}
+.applybtn{
+    width:1.2rem;
+    height:0.26rem;
+    position: absolute;
+    right: 0.13rem;
+    bottom:0.1rem;
+}
+.credit-card-item .number,.credit-card-item .card{
+    position: absolute;
+    display: block;
+}
+.credit-card-item .number{
+    display:inline-block;
+    left:0.2rem;
+    top:-0.2rem;
+    width:0.75rem;
+    height:0.7rem;
+}
+.credit-card-item .card{
+    left:0.25rem;
+    top:50%;
+    bottom:0;
+	transform:translateY(-50%);
+    z-index:66;
+    width:1.35rem;
+}
+
+/* 弹窗样式 */
+
+.showtoastcontainer{
+    position: fixed;
+    top:0;left:0;bottom:0;right: 0;
+    background:rgba(0,0,0,0.7);
+	z-index:1000;
+}
+.showtoast{
+    width:280px;
+    /* box-shadow: 0 0 10px #ddd; */
+    text-align: center;
+    background:white;
+    border-radius: 4px;
+    overflow: hidden;
+    margin:0 auto;
+    margin-top:36%;
+}
+.showtoast1{
+    display: none;
+    position: fixed;
+    width:300px;
+    height:200px;
+    box-shadow: 0 0 10px #ddd;
+    text-align: center;
+    left:50%;top:0px;
+    margin-left: -100px;
+    background:white;
+}
+
+.showtoast .showtoastcontent{
+    display: inline-block;
+    text-align: center;
+    word-break: break-all;
+    box-sizing: border-box;
+}
+
+.showtoast .showtoastcontent img{
+    width:100%
+}
+.showtoast .showtoastcontent span{
+    display: inline-block;
+    margin-top:10px;
+}
+.showtoast_footer{
+    text-align: center;
+    border-top: 1px solid #eee;
+    box-sizing: border-box
+}
+.showtoast_footer .confirm{
+    display:inline-block;
+    width:60%;
+    margin:20px 0;
+	border: none;
+    outline: none;
+    font-size: 0.15rem;
+    letter-spacing: 2px;
+}
+.toast_title{
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+    background:white;
+	font-size:0.15rem;
+	color:#353535;
+}
+.showtoastcontainer .closeicon{
+    margin-top:30px;
+    text-align: center;
+}

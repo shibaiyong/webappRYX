@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="credit-card-container">
+    <!-- <div class="credit-card-container">
 
         <div class="credit-card-item">
             <a href="https://creditcard.cmbc.com.cn/wsv2/step?cardId=51&encryptStr=yuzGeh8Oc3W3vcxoZP28Odwj%2F02%2BtdLAhhgsUxZqF8kgX9l%2Bd2y9ojjztmsig%2FvQtrKWqYLlbq65MWtznNp9%2Fqi3ptKuQBMPmAy5WUvVvlStgPrKq4OKAF9ZDEZBDragRsslWLPA79MY6vXaGjNSk6m4KEfXSMwa6MYIRa8rmTpq4i3TFeyrAtUkmQwAg%2BF1FNL9OoOkcOCX84AwAbA28uEHgio6QdRYraB8oYhzUU93HkH%2Fmh2zle6uvjiR5aank7O9dFPuLqcOScwVMuCqhEicTUlqYY33zfF%2BF88GhYcdlPTH7OWYJiMLtcANra5KlL7l8H6YZv%2FPMKd7GT8kng%3D%3D&source=YX-HYXC26"
@@ -42,7 +42,74 @@
             </a>
         </div>
         
-    </div>
+    </div> -->
+	
+	&lt;template&gt;
+<span class="hljs-regexp">//</span>better-scroll作用于子元素，所以要有一层wrapper封装
+&lt;div ref=<span class="hljs-string">"wrapper"</span>&gt;
+  &lt;slot&gt;
+  <span class="hljs-regexp">//</span>slot插槽中即为具体滚动的内容，来自调用此插件的组件
+  &lt;/slot&gt;
+&lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+<span class="hljs-reserved">import</span> BScroll from <span class="hljs-string">'better-scroll'</span>
+<span class="hljs-reserved">export</span> <span class="hljs-reserved">default</span> {
+<span class="hljs-regexp">//</span>props中所涉及属性的作用自行查看better-scroll文档
+  <span class="hljs-attribute">props</span>: {
+    <span class="hljs-attribute">probeType</span>: {
+      <span class="hljs-attribute">type</span>: Number,
+      <span class="hljs-attribute">default</span>: <span class="hljs-number">1</span>
+    },
+    <span class="hljs-attribute">click</span>: {
+      <span class="hljs-attribute">type</span>: Boolean,
+      <span class="hljs-attribute">default</span>: <span class="hljs-literal">true</span>
+    },
+    <span class="hljs-attribute">data</span>: {
+      <span class="hljs-attribute">type</span>: Array,
+      <span class="hljs-attribute">default</span>: <span class="hljs-literal">null</span>
+    }
+  },
+  mounted() {
+    setTimeout<span class="hljs-function"><span class="hljs-params">(() =&gt; {
+      <span class="hljs-keyword">this</span>._initScroll()
+    }, <span class="hljs-number">20</span>)</span>
+  },
+  <span class="hljs-title">methods</span>: {
+
+    <span class="hljs-title">_initScroll</span><span class="hljs-params">()</span> {
+      <span class="hljs-title">if</span> <span class="hljs-params">(!<span class="hljs-keyword">this</span>.$refs.wrapper)</span> {
+        <span class="hljs-title">return</span>
+      }
+      <span class="hljs-title">this</span>.<span class="hljs-title">scroll</span> = <span class="hljs-title">new</span> <span class="hljs-title">BScroll</span><span class="hljs-params">(<span class="hljs-keyword">this</span>.$refs.wrapper, {
+        probeType: <span class="hljs-keyword">this</span>.robeType,
+        click: <span class="hljs-keyword">this</span>.click,
+      })</span>
+    },
+
+    <span class="hljs-title">enable</span><span class="hljs-params">()</span> {
+      <span class="hljs-title">this</span>.<span class="hljs-title">scroll</span> &amp;&amp; <span class="hljs-title">this</span>.<span class="hljs-title">scroll</span>.<span class="hljs-title">enable</span><span class="hljs-params">()</span>
+    },
+    <span class="hljs-title">disable</span><span class="hljs-params">()</span> {
+
+      <span class="hljs-title">this</span>.<span class="hljs-title">scroll</span> &amp;&amp; <span class="hljs-title">this</span>.<span class="hljs-title">scroll</span>.<span class="hljs-title">disable</span><span class="hljs-params">()</span>
+    },
+    <span class="hljs-title">refresh</span><span class="hljs-params">()</span> {
+      <span class="hljs-title">this</span>.<span class="hljs-title">scroll</span> &amp;&amp; <span class="hljs-title">this</span>.<span class="hljs-title">scroll</span>.<span class="hljs-title">refresh</span><span class="hljs-params">()</span>
+    }
+  },
+  <span class="hljs-title">watch</span>: {
+ 
+    <span class="hljs-title">data</span><span class="hljs-params">()</span> {
+      <span class="hljs-title">setTimeout</span><span class="hljs-params">(() =&gt; {
+        <span class="hljs-regexp">//</span> <span class="hljs-keyword">this</span>.scroll.refresh()
+        <span class="hljs-keyword">this</span>.refresh()
+      }, <span class="hljs-number">20</span>)</span>;
+    }
+  }
+}
+&lt;/<span class="hljs-title">script</span>&gt;</span>
 </body>
 
 </html>
