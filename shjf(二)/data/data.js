@@ -40,21 +40,21 @@ var bankList = {
 				"text": "最高额度30万"
 			}]
 		},
-		{
-			"order": 3,
-			"icon": "PuFa.png",
-			"name": "浦发银行",
-			"url": "https://ecentre.spdbccc.com.cn/creditcard/indexActivity.htm?data=ZF2837522&itemcode=0000016881",
-			"recommends": [{
-				"text": "热门",
-				"color": "#E91E63"
-			}],
-			"time": "天天五折享美食",
-			"limit": "消费即可得浦发红包，最高4888元",
-			"tags": [{
-				"text": "额度最高8万元"
-			}]
-		},
+		// {
+		// 	"order": 3,
+		// 	"icon": "PuFa.png",
+		// 	"name": "浦发银行",
+		// 	"url": "https://ecentre.spdbccc.com.cn/creditcard/indexActivity.htm?data=ZF2837522&itemcode=0000016881",
+		// 	"recommends": [{
+		// 		"text": "热门",
+		// 		"color": "#E91E63"
+		// 	}],
+		// 	"time": "天天五折享美食",
+		// 	"limit": "消费即可得浦发红包，最高4888元",
+		// 	"tags": [{
+		// 		"text": "额度最高8万元"
+		// 	}]
+		// },
 		{
 			"order": 1,
 			"icon": "XingYe.png",

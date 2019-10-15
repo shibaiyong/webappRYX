@@ -1,5 +1,7 @@
 var bankList = {
-	"common": [{
+	"common": [
+		/**
+		{
 			"order": 4,
 			"icon": "BoHai.jpg",
 			"name": "渤海银行",
@@ -14,6 +16,7 @@ var bankList = {
 				"text": "额度最高10万"
 			}]
 		},
+		*/
 		// {
 		// 	"order": 8,
 		// 	"icon": "ZhaoShang.png",
@@ -39,21 +42,21 @@ var bankList = {
 				"text": "最高额度30万"
 			}]
 		},
-		{
-			"order": 3,
-			"icon": "PuFa.png",
-			"name": "浦发银行",
-			"url": "https://ecentre.spdbccb.com.cn/creditcard/indexActivity.htm?data=ZF2876490&itemcode=0000023776",
-			"recommends": [{
-				"text": "热门",
-				"color": "#E91E63"
-			}],
-			"time": "天天五折享美食",
-			"limit": "消费即可得浦发红包，最高4888元",
-			"tags": [{
-				"text": "额度最高8万元"
-			}]
-		},
+		// {
+		// 	"order": 3,
+		// 	"icon": "PuFa.png",
+		// 	"name": "浦发银行",
+		// 	"url": "https://ecentre.spdbccb.com.cn/creditcard/indexActivity.htm?data=ZF2876490&itemcode=0000023776",
+		// 	"recommends": [{
+		// 		"text": "热门",
+		// 		"color": "#E91E63"
+		// 	}],
+		// 	"time": "天天五折享美食",
+		// 	"limit": "消费即可得浦发红包，最高4888元",
+		// 	"tags": [{
+		// 		"text": "额度最高8万元"
+		// 	}]
+		// },
 		{
 			"order": 1,
 			"icon": "XingYe.png",
@@ -101,7 +104,7 @@ var bankList = {
 			"order": 7,
 			"icon": "JiaoTong.png",
 			"name": "交通银行",
-			"url": "https://creditcardapp.bankcomm.com/applynew/front/apply/mgm/account/wechatEntry.html?recomId=22860240&saleCode=761000256&entryRecomId=&trackCode=A012514502018&isNewCardMgm=0",
+			"url": "https://creditcardapp.bankcomm.com/applynew/front/apply/mgm/account/wechatEntry.html?recomId=22935636&saleCode=761000256&entryRecomId=&trackCode=A051516203152&isNewCardMgm=0",
 			"recommends": [],
 			"time": "新户5积分兑好礼",
 			"limit": "最红星期五5%返现",
@@ -231,19 +234,19 @@ var bankList = {
 			}]
 		},
 		
-		{
-			"order": 13,
-			"icon": "ShangHai.png",
-			"name": "上海银行",
-			"url": "https://mbank.bankofshanghai.com/Latte/#/CreditHot?YLLink=0000001970",
-			"recommends": [],
-
-			"time": "800万旅行保障",
-			"limit": "新户达标送好礼",
-			"tags": [{
-				"text": "刷卡免年费"
-			}]
-		},
+ 		{
+ 			"order": 13,
+ 			"icon": "ShangHai.png",
+ 			"name": "上海银行",
+ 			"url": "https://mbank.bankofshanghai.com/Latte/#/CreditHot?YLLink=0000001970",
+ 			"recommends": [],
+ 
+ 			"time": "800万旅行保障",
+ 			"limit": "新户达标送好礼",
+ 			"tags": [{
+ 				"text": "刷卡免年费"
+ 			}]
+ 		},
 
 		{
 			"order": 14,

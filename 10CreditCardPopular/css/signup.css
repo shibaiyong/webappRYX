@@ -1,0 +1,86 @@
+.signUp .signUpForm label{
+	display: inline-block;
+	font-size: 0.15rem;
+	color:rgb(51,51,51);
+	width:0.5rem;
+	text-align:justify;
+	text-justify:distribute-all-lines;
+	text-align-last:justify;
+	margin-right: 0.12rem;
+}
+
+.signUp .signUpForm li{
+	margin-top:0.2rem;
+}
+
+.signUp .signUpForm input{
+	display: inline-block;
+	border:0.008rem solid rgb(51,51,51);
+	width:2.1rem;
+	height:0.4rem;
+	outline:none;
+	padding-left:0.1rem;
+	box-sizing: border-box;
+}
+
+.signUp .explain{
+	font-size: 0.14rem;
+	color:rgb(153,153,153);
+	/* padding-left:0.2rem;
+	box-sizing:border-box; */
+	text-align: center;
+}
+
+
+
+.showtoastcontainer{
+    position: fixed;
+    top:0;left:0;bottom:0;right: 0;
+    background:rgba(0,0,0,0.7);
+		z-index:1000;
+    display: none;
+}
+.showtoast{
+    border:0.1rem solid #5b4af8;
+		border-radius: 0.11rem;
+		box-sizing: border-box;
+		background:white;
+		width:2.8rem;
+		margin:0 auto;
+		margin-top:45%;
+}
+
+.showtoast .showtoastcontent{
+  font-size:0;
+	text-align: center;
+}
+.showtoast .showtoastcontent img{
+  display:inline-block;
+	width:1rem;
+	margin:0.35rem 0 0.2rem;
+}
+.showtoast .showtoastcontent span{
+  font-size:0.22rem;
+}
+.showtoast_footer{
+  text-align: center;
+	font-size:0;
+	margin:0.55rem 0 0.2rem;
+}
+.showtoast_footer .confirm{
+  border: none;
+  outline: none;
+	background:#5b4af8;
+	color:white;
+	width:2.35rem;
+	height:0.4rem;
+	border-radius: 0.2rem;
+}
+.showtoastcontainer .closeicon{
+   text-align: center;
+	 font-size: 0;
+	 margin-top:0.4rem;
+}
+.showtoastcontainer .closeicon img{
+  width:0.3rem;
+}

@@ -1,0 +1,272 @@
+.mui-content{
+	background:#4936d0;
+}
+
+.mui-content .banner{
+	width:100%;
+	position:relative;
+}
+
+.mui-content .banner img{
+	width:100%;
+}
+.sendphonebill{
+	margin:0 0.16rem;
+	background:white;
+	padding:0 0.1rem 0.16rem 0.1rem;
+	box-sizing:border-box;
+	text-align: center;
+	margin-top:-0.9rem;
+	position: relative;
+	border-radius: 0.07rem;
+	font-size: 0;
+}
+.mui-content .banner .activeRules{
+	position: absolute;
+	top:0.4rem;
+	right:0;
+	width:0.75rem;
+}
+.activeTime{
+	position: absolute;
+	top:1.8rem;
+	left:0;
+	text-align: center;
+	width:100%;
+	color:rgb(255,233,133);
+	font-size: 0.12rem;
+}
+.phonelist{
+	position: absolute;
+	top:2.15rem;
+	left:50%;
+	margin-left:-1.5rem;
+	width:3rem;
+	padding:0 0.22rem;
+	box-sizing: border-box;
+	background:rgb(74,58,229);
+	color:rgb(255,233,133);
+	font-size: 0.13rem;
+	border-radius: 0.18rem;
+}
+.phonelist .phone-item{
+		display:flex;
+		justify-content: space-between;
+		height: 0.36rem;
+		align-items: center;
+}
+.phonelist .swiper-container{
+	height: 0.36rem;
+}
+.sendphonebill.stepsBill{
+	margin-top:0.3rem;
+}
+
+.sendphonebill .explain{
+	font-size:0.12rem;
+	text-align: left;
+	margin-top:0.16rem;
+}
+
+.sendphonebill .billtitle{
+	background:url(../img/banksTitle@2x.png) no-repeat center center;
+	background-size: 100% 100%;
+	height: 0.48rem;
+	display: inline-block;
+	width:1.92rem;
+	line-height:0.58rem;
+	color:white;
+	font-size:0.16rem;
+	margin-top:-0.2rem;
+	position: relative;
+}
+
+.sendphonebill .notice{
+	padding:0.1rem 0.4rem;
+	box-sizing: border-box;
+	background:rgb(255,242,220);
+	color:rgb(255,2,44);
+	font-size:0.14rem;
+	border-radius:0.1rem;
+	margin:0.15rem 0 0.12rem 0;
+}
+.sendphonebill p{
+	margin-bottom: 0.15rem;
+}
+.sendphonebill p span{
+	display: inline-block;
+	vertical-align: middle;
+	font-size:0.10rem;
+}
+.sendphonebill p img{
+	width:0.12rem;
+	vertical-align: middle;
+	margin-right:3px;
+}
+.sendphonebill .bank-list{
+	display:flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.sendphonebill .bank-list .bank-item{
+	width:32%;
+	font-size:0.11rem;
+}
+.bank-item .banklogo img{
+	width:1.04rem;
+}
+.bank-item .bank-item-top{
+	padding:0.1rem 0.11rem;
+	box-sizing: border-box;
+	height:0.48rem;
+}
+
+.bank-item-bottom ul li span{
+	display: inline-block;
+	width:0.94rem;
+}
+.bank-item-bottom ul li span img{
+	width:100%;
+}
+.bank-item .bank-item-bottom{
+	border-top:1px solid rgb(251,167,193);
+	padding:0.1rem 0 0 0;
+	font-size:0.13rem;
+	height:0.51rem;
+}
+.sendphonebill .bank-list .bank-item dd{
+	border:1px solid #4a54e1;
+	padding:0.12rem 0;
+	box-sizing:border-box;
+	border-radius: 0.1rem;
+}
+
+.bank-item.bank-item-disable .bank-item-bottom {
+	border-top:1px solid transparent;
+	font-size:0.16rem;
+}
+
+.bank-item.bank-item-disable .bank-item-bottom  ul li span{
+	margin-top:0.05rem;
+}
+
+.sendphonebill .bank-list .bank-item.bank-item-disable dd{
+	border:1px solid transparent;
+	padding:0.12rem 0;
+	box-sizing:border-box;
+	border-radius: 0.1rem;
+	background:rgba(0,0,0,0.3);
+	color:white;
+	font-size:0.16rem;
+}
+
+
+.stepsBill .step{
+	text-align: left;
+	margin-top: 0.2rem;
+}
+.stepsBill .step.first-step{
+	margin-top: 0.3rem;
+}
+.stepsBill .step img{
+	display: inline-block;
+	vertical-align: top;
+	width:0.22rem;
+	margin-right: 0.04rem;
+}
+.stepsBill .step dl{
+	display: inline-block;
+	vertical-align: top;
+	width:2.8rem;
+}
+
+.stepsBill .step dl dt{
+	font-size: 0.15rem;
+	color:rgb(51,51,51);
+	font-weight: bold;
+}
+.stepsBill .step dl dd{
+	font-size: 0.13rem;
+	color:rgb(77,77,77);
+	line-height:0.22rem;
+}
+
+
+.bottom-tip{
+	padding:0.15rem 0 0.4rem 0;
+	text-align: center;
+	color:rgba(255,255,255,0.32);
+	font-size:0.13rem;
+}
+.signup{
+	background:rgb(255,233,82);
+	color:rgb(44,21,202);
+	padding:0.15rem 0;
+	text-align: center;
+	font-size: 0.2rem;
+}
+
+
+.showtoastcontainer{
+    position: fixed;
+    top:0;left:0;bottom:0;right: 0;
+    background:rgba(0,0,0,0.7);
+		z-index:1000;
+		display: none;
+}
+.showtoast{
+    border:0.1rem solid #5b4af8;
+		border-radius: 0.11rem;
+		box-sizing: border-box;
+		background:#5b4af8;
+		width:3.45rem;
+		margin:0 auto;
+		margin-top:10%;	
+}
+.showtoast .showtoast-title{
+	font-size: 0.16rem;
+	color:white;
+	padding:0.1rem 0;
+}
+
+.showtoast ul{
+	background:white;
+	padding:0.1rem;
+	border-radius: 0.1rem;
+}
+
+.showtoastcontainer .showtoast ul li{
+	font-size:0.13rem;
+	margin-top:0.05rem;
+}
+showtoastcontainer .showtoast ul li:first-child{
+	marign-top:0;
+}
+.showtoast ul li span{
+	vertical-align: top;
+}
+.showtoast ul li span:nth-child(1){
+	display:inline-block;
+	width:0.13rem;
+	height:0.13rem;
+	border-radius: 50%;
+	border:1px solid #4a68fc;
+	color:#4a68fc;
+	font-size:0.11rem;
+	text-align: center;
+	line-height: 0.13rem;
+}
+
+.showtoast ul li span:nth-child(2){
+	display:inline-block;
+	width:2.75rem;
+	line-height:0.17rem;
+}
+.showtoastcontainer .closeicon{
+   text-align: center;
+	 font-size: 0;
+	 margin-top:0.4rem;
+}
+.showtoastcontainer .closeicon img{
+  width:0.3rem;
+}

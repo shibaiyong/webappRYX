@@ -264,3 +264,18 @@
 <script src="../../plugin/laydate5.0.9/laydate.js"></script>
 <script src="../js/merchantinfo.js"></script>
 <script src="../js/applycard.js"></script>
+
+<script>
+$.ajax({
+            url: "http://manage02.bzqmall.com.cn/api/activity/banklist",
+            type: "get",
+            dataType: "json",
+            data: {},
+            success: function (res) {
+				console.log(res)
+            },
+            error: function (err) {
+
+            }
+        });
+</script>

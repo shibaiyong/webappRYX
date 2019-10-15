@@ -1,28 +1,26 @@
 var bankList = {
-	"common": [{
-			"order": 1,
-			"icon": "BoHai.jpg",
-			"name": "渤海银行",
-			"url": "https://web.u51.com/U51WenzhouCreditBankWebBiz/#/?bankId=92&entranceType=2&channelCode=sw_ryx_01&channel_wz=sw_ryx_01",		
-			"recommends": [{
-				"text": "上新",
-				"color": "#F44336"
-			}],
-			"time": "秒批，高额度",
-			"limit": "终身免年费，随借随还",
-			"tags": [{
-				"text": "额度最高10万"
-			}]
-		},
+	"common": [
+		// {
+		// 	"order": 2,
+		// 	"icon": "BoHai.jpg",
+		// 	"name": "渤海银行",
+		// 	"url": "https://web.u51.com/U51WenzhouCreditBankWebBiz/#/?bankId=92&entranceType=2&channelCode=sw_ryx_01&channel_wz=sw_ryx_01",		
+		// 	"recommends": [{
+		// 		"text": "秒批",
+		// 		"color": "#F44336"
+		// 	}],
+		// 	"time": "秒批，高额度",
+		// 	"limit": "终身免年费，随借随还",
+		// 	"tags": [{
+		// 		"text": "额度最高10万"
+		// 	}]
+		// },
 		{
-			"order": 8,
+			"order": 10,
 			"icon": "ZhaoShang.png",
 			"name": "招商银行",
 			"url": "http://w3z.gzfsnet.cn/1WNSSB",
-			"recommends": [{
-				"text": "热门",
-				"color": "#F44336"
-			}],
+			"recommends": [],
 			"time": "新户刷卡赢好礼",
 			"limit": "取现额度100%，每月首笔免费取现",
 			"tags": [{
@@ -44,26 +42,28 @@ var bankList = {
 				"text": "最高额度30万"
 			}]
 		},
+		
+		// {
+		// 	"order": 3,
+		// 	"icon": "PuFa.png",
+		// 	"name": "浦发银行",
+		// 	"url": "https://ecentre.spdbccc.com.cn/creditcard/indexActivity.htm?data=ZF2840889&itemcode=0000017178",
+		// 	"recommends": [{
+		// 		"text": "大额度",
+		// 		"color": "#E91E63"
+		// 	}],
+		// 	"time": "天天五折享美食",
+		// 	"limit": "消费即可得浦发红包，最高4888元",
+		// 	"tags": [{
+		// 		"text": "额度最高8万元"
+		// 	}]
+		// },
+		
 		{
-			"order": 2,
-			"icon": "PuFa.png",
-			"name": "浦发银行",
-			"url": "https://ecentre.spdbccb.com.cn/creditcard/indexActivity.htm?data=ZF2876490&itemcode=0000023775",
-			"recommends": [{
-				"text": "大额度",
-				"color": "#E91E63"
-			}],
-			"time": "天天五折享美食",
-			"limit": "消费即可得浦发红包，最高4888元",
-			"tags": [{
-				"text": "额度最高8万元"
-			}]
-		},
-		{
-			"order": 3,
+			"order": 4,
 			"icon": "XingYe.png",
 			"name": "兴业银行",
-			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=5cb268ab487147498466218f74ccedf6",
+			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=ecbdc8e54232434f86bbc82690b2e927",
 			"recommends": [{
 				"text": "易下卡",
 				"color": "#E91E63"
@@ -83,12 +83,12 @@ var bankList = {
 		},
 
 		{
-			"order": 4,
+			"order": 1,
 			"icon": "PingAn.png",
 			"name": "平安银行",
-			"url": "https://c.pingan.com/ca/index?sign=742e80c9ff3aebf21e6f33be823fdc44&versionNo=R10310&scc=910000751&channel=WX&onlineSQFlag=N&cardCatenaNo=18a17a01a02a03a04a05a06&mt=pabf008&ccp=3a1a2a9a8at4a5a10",
+			"url": "https://c.pingan.com/ca/index?sign=742e80c9ff3aebf21e6f33be823fdc44&versionNo=R10310&scc=910000751&channel=WX&onlineSQFlag=N&cardCatenaNo=18a17a01a02a03a04a05a06&mt=pabf005&ccp=3a1a2a9a8at4a5a10",
 			"recommends": [{
-				"text": "秒批",
+				"text": "大额度",
 				"color": "#a91a63"
 			}],
 			"time": "72小时失卡保障",
@@ -103,14 +103,11 @@ var bankList = {
 		},
 
 		{
-			"order": 7,
+			"order": 9,
 			"icon": "JiaoTong.png",
 			"name": "交通银行",
-			"url": "https://creditcardapp.bankcomm.com/applynew/front/apply/mgm/account/wechatEntry.html?recomId=22860240&saleCode=761000084&entryRecomId=&trackCode=A012514502018&isNewCardMgm=0",
-			"recommends": [{
-				"text": "力荐",
-				"color": "#4CAF50"
-			}],
+			"url": "https://creditcardapp.bankcomm.com/applynew/front/apply/mgm/account/wechatEntry.html?recomId=21437258&saleCode=761000081&entryRecomId=&trackCode=A051516203152&isNewCardMgm=0",
+			"recommends": [],
 			"time": "新户5积分兑好礼",
 			"limit": "最红星期五5%返现",
 			"tags": [{
@@ -127,7 +124,10 @@ var bankList = {
 			"icon": "MinSheng.png",
 			"name": "民生银行",
 			"url": "http://msurl.zhikewl.com/?Id=minshengryx113",
-			"recommends": [],
+			"recommends": [{
+				"text": "三秒核卡",
+				"color": "#4CAF50"
+			}],
 			"time": "免费体检，机场礼遇，特惠商户",
 			"limit": "境外笔笔1%返现",
 			"tags": [{
@@ -153,10 +153,10 @@ var bankList = {
 		// },
 
 		{
-			"order": 8,
+			"order": 7,
 			"icon": "ZhongXin.png",
 			"name": "中信银行",
-			"url": "https://creditcard.ecitic.com/h5/shenqing/index.html?sid=SJSSJKJ38",
+			"url": "http://wz4.in/1l1HA",
 			"recommends": [],
 			"time": "9积分兑豪礼，网购2倍积分",
 			"limit": "刷卡免年费",
@@ -169,24 +169,24 @@ var bankList = {
 			]
 		},
 
+// 		{
+// 			"order": 15,
+// 			"icon": "ShangHai.png",
+// 			"name": "上海小赢卡",
+// 			"url": "https://wallet.xiaoying.com/fe/wallet-landing/blueRegPage/index.html?landId=1032&source=100025162",
+// 			"recommends": [],
+// 			"time": "无需网点面签",
+// 			"limit": "0年费，超高下卡率",
+// 			"tags": [{
+// 				"text": "额度最高6万"
+// 			}]
+// 		},
+// 
 		{
-			"order": 10,
-			"icon": "ShangHai.png",
-			"name": "上海小赢卡",
-			"url": "https://wallet.xiaoying.com/fe/wallet-landing/blueRegPage/index.html?landId=1032&source=100025162",
-			"recommends": [],
-			"time": "无需网点面签",
-			"limit": "0年费，超高下卡率",
-			"tags": [{
-				"text": "额度最高6万"
-			}]
-		},
-
-		{
-			"order": 11,
+			"order": 8,
 			"icon": "GuangFa.png",
 			"name": "广发银行",
-			"url": "http://95508.com/zctdI4Rx",
+			"url": "http://95508.com/zctVDMOX",
 			"recommends": [],
 			"time": "广发日9大品牌5折优惠",
 			"limit": "新客开卡返现6%",
@@ -200,7 +200,7 @@ var bankList = {
 		},
 
 		{
-			"order": 12,
+			"order": 11,
 			"icon": "ICBC.png",
 			"name": "工商银行",
 			"url": "http://elife.icbc.com.cn/OFSTCARD/creditCard/apply.do?channel=109RYXBRYXB000200000000000&paraPromoCode=EW88802001683824492",
@@ -219,7 +219,7 @@ var bankList = {
 			]
 		},
 		{
-			"order": 13,
+			"order": 12,
 			"icon": "JianShe.png",
 			"name": "建设银行",
 			"url": "http://m.ccb.com/cn/creditcard/mobilev3/cards/product_list.html?Rcmd_insID=A00000325",
@@ -237,7 +237,7 @@ var bankList = {
 		},
 		
 		{
-			"order": 14,
+			"order": 13,
 			"icon": "HuaXia.png",
 			"name": "华夏银行",
 			"url": "https://creditapply.hxb.com.cn?requestId=156&requestPage=974",
@@ -251,19 +251,19 @@ var bankList = {
 			}]
 		},
 		
-		{
-			"order": 15,
-			"icon": "ShangHai.png",
-			"name": "上海银行",
-			"url": "https://mbank.bankofshanghai.com/Latte/#/CreditHot?YLLink=0000001772",
-			"recommends": [],
-
-			"time": "800万旅行保障",
-			"limit": "新户达标送好礼",
-			"tags": [{
-				"text": "刷卡免年费"
-			}]
-		},
+ 		{
+ 			"order": 14,
+ 			"icon": "ShangHai.png",
+ 			"name": "上海银行",
+ 			"url": "https://mbank.bankofshanghai.com/Latte/#/CreditHot?YLLink=0000001772",
+ 			"recommends": [],
+ 
+ 			"time": "800万旅行保障",
+ 			"limit": "新户达标送好礼",
+ 			"tags": [{
+ 				"text": "刷卡免年费"
+ 			}]
+ 		},
 
 		{
 			"order": 16,
