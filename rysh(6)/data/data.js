@@ -19,7 +19,7 @@ var bankList = {
 			"order": 10,
 			"icon": "ZhaoShang.png",
 			"name": "招商银行",
-			"url": "http://w3z.gzfsnet.cn/1WNSSB",
+			"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxfhwt/remote?webAddress=N57FHXM2073F672300HZ&dsid=SBJRYX003",
 			"recommends": [],
 			"time": "新户刷卡赢好礼",
 			"limit": "取现额度100%，每月首笔免费取现",

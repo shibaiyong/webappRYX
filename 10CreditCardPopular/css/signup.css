@@ -9,7 +9,7 @@
 	margin-right: 0.12rem;
 }
 
-.signUp .signUpForm li{
+.signUp .signUpForm li:nth-child(1){
 	margin-top:0.2rem;
 }
 
@@ -83,4 +83,21 @@
 }
 .showtoastcontainer .closeicon img{
   width:0.3rem;
+}
+.signUp .signUpForm li.error-tip{
+	height:0.2rem;
+	font-size: 0.12rem;
+	margin:0;
+	visibility: hidden;
+}
+
+.signUp .signUpForm li.error-tip span{
+	width:2.1rem;
+	text-align: left;
+}
+
+.signUp .signUpForm li.error-tip label,.signUp .signUpForm li.error-tip span{
+	display: inline-block;
+	height:0.2rem;
+	vertical-align: middle;
 }
