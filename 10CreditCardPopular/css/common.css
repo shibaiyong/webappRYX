@@ -21,7 +21,13 @@ a:hover{text-decoration:none !important;}
 }
 
 .amount-tip{
-	color:red;
+	color:#ed004a;
+}
+
+a.amount-tip-big{
+	display:inline-block;
+	color:#ed004a;
+	font-size: 0.15rem;
 }
 
 input::-webkit-input-placeholder{
@@ -38,13 +44,17 @@ input:-ms-input-placeholder {
 
 /* 点击a标签消除底色阴影 */
 
-.carddata .totaldatainfo a:active{
+a:active{
 	-webkit-tap-highlight-color:rgba(0,0,0,0);
 	-webkit-tap-highlight-color: transparent;
 	outline:none; 
 	background: none;
 	text-decoration: none;
 }
+
+/*清除ie浏览器中输入框的清空标志*/
+
+::-ms-clear,::-ms-reveal{display:none;}
 
 /* 头部筛选的公共样式 */
 

@@ -1,5 +1,5 @@
 (function (D,screenwidth) {
-    
+
   var self = {};
   self.resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
   self.Html = D.getElementsByTagName("html")[0];

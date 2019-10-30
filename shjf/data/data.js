@@ -17,18 +17,18 @@ var bankList = {
 			}]
 		},
 		*/
-		// {
-		// 	"order": 8,
-		// 	"icon": "ZhaoShang.png",
-		// 	"name": "招商银行",
-		// 	"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxapphj/remote?dscontr=89&webAddress=N5700DJ2097261250001",
-		// 	"recommends": [],
-		// 	"time": "新户刷卡赢好礼",
-		// 	"limit": "取现额度100%，每月首笔免费取现",
-		// 	"tags": [{
-		// 		"text": "积分永久有效"
-		// 	}]
-		// },
+		{
+			"order": 8,
+			"icon": "ZhaoShang.png",
+			"name": "招商银行",
+			"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxfhwt/remote?webAddress=N57FHXM2073F672300HZ&dsid=SBJDGFB01",
+			"recommends": [],
+			"time": "新户刷卡赢好礼",
+			"limit": "取现额度100%，每月首笔免费取现",
+			"tags": [{
+				"text": "积分永久有效"
+			}]
+		},
 		
 		{
 			"order": 6,
@@ -104,7 +104,7 @@ var bankList = {
 			"order": 7,
 			"icon": "JiaoTong.png",
 			"name": "交通银行",
-			"url": "https://creditcardapp.bankcomm.com/applynew/front/apply/mgm/account/wechatEntry.html?recomId=22935636&saleCode=761000256&entryRecomId=&trackCode=A051516203152&isNewCardMgm=0",
+			"url": "https://creditcardapp.bankcomm.com/applynew/front/apply/mgm/account/wechatEntry.html?recomId=22935636&saleCode=761000256&entryRecomId=&trackCode=A051516203152&isNewCardMgm=0&availableDate=31b02185449a6f6c7326b9bed7e789c9",
 			"recommends": [],
 			"time": "新户5积分兑好礼",
 			"limit": "最红星期五5%返现",
@@ -216,23 +216,23 @@ var bankList = {
 				}
 			]
 		},
-		{
-			"order": 12,
-			"icon": "JianShe.png",
-			"name": "建设银行",
-			"url": "http://m.ccb.com/cn/creditcard/mobilev3/cards/product_list.html?Rcmd_insID=A00000326",
-			"recommends": [],
-		
-			"time": "龙卡星期六，吃喝玩乐购",
-			"limit": "刷卡免年费",
-			"tags": [{
-				"text": "开卡礼"
-			},{
-				"text": "专属卡面"
-			},{
-				"text": "特色礼遇"
-			}]
-		},
+		// {
+		// 	"order": 12,
+		// 	"icon": "JianShe.png",
+		// 	"name": "建设银行",
+		// 	"url": "http://m.ccb.com/cn/creditcard/mobilev3/cards/product_list.html?Rcmd_insID=A00000326",
+		// 	"recommends": [],
+		// 
+		// 	"time": "龙卡星期六，吃喝玩乐购",
+		// 	"limit": "刷卡免年费",
+		// 	"tags": [{
+		// 		"text": "开卡礼"
+		// 	},{
+		// 		"text": "专属卡面"
+		// 	},{
+		// 		"text": "特色礼遇"
+		// 	}]
+		// },
 		
  		{
  			"order": 13,

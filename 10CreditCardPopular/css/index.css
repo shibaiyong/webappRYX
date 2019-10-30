@@ -69,7 +69,7 @@
 }
 
 .sendphonebill .billtitle{
-	background:url(../img/banksTitle@2x.png) no-repeat center center;
+	background:url('http://actives.bzqmall.com.cn/assets/activity/images/banksTitle@2x.png') no-repeat center center;
 	background-size: 100% 100%;
 	height: 0.48rem;
 	display: inline-block;
@@ -204,6 +204,15 @@
 	padding:0.15rem 0;
 	text-align: center;
 	font-size: 0.2rem;
+	margin-top:50px;
+	position: fixed;
+	width:100%;
+	bottom:0;
+	left:0;
+}
+
+.signupcontainer{
+	height:0.55rem;
 }
 
 
@@ -221,7 +230,7 @@
 		background:#5b4af8;
 		width:3.45rem;
 		margin:0 auto;
-		margin-top:10%;	
+		margin-top:16%;	
 }
 .showtoast .showtoast-title{
 	font-size: 0.16rem;
@@ -239,7 +248,7 @@
 	font-size:0.13rem;
 	margin-top:0.05rem;
 }
-showtoastcontainer .showtoast ul li:first-child{
+.showtoastcontainer .showtoast ul li:first-child{
 	marign-top:0;
 }
 .showtoast ul li span{
@@ -265,7 +274,7 @@ showtoastcontainer .showtoast ul li:first-child{
 .showtoastcontainer .closeicon{
    text-align: center;
 	 font-size: 0;
-	 margin-top:0.4rem;
+	 margin-top:0.3rem;
 }
 .showtoastcontainer .closeicon img{
   width:0.3rem;

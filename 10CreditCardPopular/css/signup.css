@@ -13,6 +13,8 @@
 	margin-top:0.2rem;
 }
 
+
+
 .signUp .signUpForm input{
 	display: inline-block;
 	border:0.008rem solid rgb(51,51,51);
@@ -31,15 +33,77 @@
 	text-align: center;
 }
 
+.mui-content .banner .goback{
+	position: absolute;
+    top: 0.45rem;
+    left: 0;
+    width: 0.75rem;
+}
 
-
-.showtoastcontainer{
+.showtoastcontainer1{
     position: fixed;
     top:0;left:0;bottom:0;right: 0;
     background:rgba(0,0,0,0.7);
 		z-index:1000;
-    display: none;
+		display: none;
 }
+.showtoastcontainer1 .showtoast{
+    border:0.1rem solid #5b4af8;
+		border-radius: 0.11rem;
+		box-sizing: border-box;
+		background:#5b4af8;
+		width:3.45rem;
+		margin:0 auto;
+		margin-top:16%;	
+}
+.showtoastcontainer1 .showtoast .showtoast-title{
+	font-size: 0.16rem;
+	color:white;
+	padding:0.1rem 0;
+}
+
+.showtoastcontainer1 .showtoast ul{
+	background:white;
+	padding:0.1rem;
+	border-radius: 0.1rem;
+}
+
+.showtoastcontainer1 .showtoast ul li{
+	font-size:0.13rem;
+	margin-top:0.05rem;
+}
+.showtoastcontainer1 .showtoast ul li:first-child{
+	marign-top:0;
+}
+.showtoastcontainer1 .showtoast ul li span{
+	vertical-align: top;
+}
+.showtoastcontainer1 .showtoast ul li span:nth-child(1){
+	display:inline-block;
+	width:0.13rem;
+	height:0.13rem;
+	border-radius: 50%;
+	border:1px solid #4a68fc;
+	color:#4a68fc;
+	font-size:0.11rem;
+	text-align: center;
+	line-height: 0.13rem;
+}
+
+.showtoastcontainer1 .showtoast ul li span:nth-child(2){
+	display:inline-block;
+	width:2.75rem;
+	line-height:0.17rem;
+}
+.showtoastcontainer1 .closeicon{
+   text-align: center;
+	 font-size: 0;
+	 margin-top:0.3rem;
+}
+.showtoastcontainer1 .closeicon img{
+  width:0.3rem;
+}
+
 .showtoast{
     border:0.1rem solid #5b4af8;
 		border-radius: 0.11rem;
@@ -79,7 +143,7 @@
 .showtoastcontainer .closeicon{
    text-align: center;
 	 font-size: 0;
-	 margin-top:0.4rem;
+	 margin-top:0.3rem;
 }
 .showtoastcontainer .closeicon img{
   width:0.3rem;
