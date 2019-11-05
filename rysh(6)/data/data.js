@@ -106,7 +106,7 @@ var bankList = {
 			"order": 9,
 			"icon": "JiaoTong.png",
 			"name": "交通银行",
-			"url": "https://creditcardapp.bankcomm.com/applynew/front/apply/mgm/account/wechatEntry.html?recomId=21437258&saleCode=761000081&entryRecomId=&trackCode=A051516203152&isNewCardMgm=0&availableDate=31b02185449a6f6c7326b9bed7e789c9",
+			"url": "https://creditcardapp.bankcomm.com/applynew/front/apply/mgm/account/wechatEntry.html?recomId=22935636&saleCode=761000081&entryRecomId=&trackCode=A051516203152&isNewCardMgm=0&availableDate=c866c45f17329272987110035288799d",
 			"recommends": [],
 			"time": "新户5积分兑好礼",
 			"limit": "最红星期五5%返现",
@@ -182,22 +182,22 @@ var bankList = {
 // 			}]
 // 		},
 // 
-		// {
-		// 	"order": 8,
-		// 	"icon": "GuangFa.png",
-		// 	"name": "广发银行",
-		// 	"url": "http://95508.com/zctVDMOX",
-		// 	"recommends": [],
-		// 	"time": "广发日9大品牌5折优惠",
-		// 	"limit": "新客开卡返现6%",
-		// 	"tags": [{
-		// 			"text": "自选商户3倍积分"
-		// 		},
-		// 		{
-		// 			"text": "加油返现"
-		// 		}
-		// 	]
-		// },
+		{
+			"order": 8,
+			"icon": "GuangFa.png",
+			"name": "广发银行",
+			"url": "http://95508.com/zct3oIst",
+			"recommends": [],
+			"time": "广发日9大品牌5折优惠",
+			"limit": "新客开卡返现6%",
+			"tags": [{
+					"text": "自选商户3倍积分"
+				},
+				{
+					"text": "加油返现"
+				}
+			]
+		},
 
 		{
 			"order": 11,
@@ -236,20 +236,20 @@ var bankList = {
 		// 	}]
 		// },
 		
-		{
-			"order": 13,
-			"icon": "HuaXia.png",
-			"name": "华夏银行",
-			"url": "https://creditapply.hxb.com.cn?requestId=156&requestPage=974",
-			"recommends": [],
-			"time": "每日首笔取现免手续费",
-			"limit": "生日月双倍积分",
-			"tags": [{
-				"text": "免年费"
-			},{
-				"text": "首刷送好礼"
-			}]
-		},
+		// {
+		// 	"order": 13,
+		// 	"icon": "HuaXia.png",
+		// 	"name": "华夏银行",
+		// 	"url": "https://creditapply.hxb.com.cn?requestId=156&requestPage=974",
+		// 	"recommends": [],
+		// 	"time": "每日首笔取现免手续费",
+		// 	"limit": "生日月双倍积分",
+		// 	"tags": [{
+		// 		"text": "免年费"
+		// 	},{
+		// 		"text": "首刷送好礼"
+		// 	}]
+		// },
 		
  		{
  			"order": 14,

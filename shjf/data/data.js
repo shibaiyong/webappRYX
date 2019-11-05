@@ -104,7 +104,7 @@ var bankList = {
 			"order": 7,
 			"icon": "JiaoTong.png",
 			"name": "交通银行",
-			"url": "https://creditcardapp.bankcomm.com/applynew/front/apply/mgm/account/wechatEntry.html?recomId=22935636&saleCode=761000256&entryRecomId=&trackCode=A051516203152&isNewCardMgm=0&availableDate=31b02185449a6f6c7326b9bed7e789c9",
+			"url": "https://creditcardapp.bankcomm.com/applynew/front/apply/mgm/account/wechatEntry.html?recomId=21437258&saleCode=761000256&entryRecomId=&trackCode=A051516203152&isNewCardMgm=0&availableDate=c866c45f17329272987110035288799d",
 			"recommends": [],
 			"time": "新户5积分兑好礼",
 			"limit": "最红星期五5%返现",
