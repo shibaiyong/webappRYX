@@ -1,0 +1,88 @@
+.performereview{
+	padding:0 0.15rem;
+	box-sizing: border-box;
+}
+
+.performereview .carddata{
+	background:#2483ec;
+	border-radius:0.06rem;
+}
+
+.performereview .carddata ul{
+	padding:0 0.16rem;
+	box-sizing: border-box;
+}
+
+.performereview .carddata li{
+	display: flex;
+	justify-content: space-around;
+	padding:0.18rem 0;
+	color:white;
+}
+
+.performereview .carddata li{
+	text-align: center;
+}
+
+.performereview .carddata li:nth-child(1){
+	border-bottom: 0.005rem solid white;
+}
+
+.performereview .carddata li dt{
+	margin-bottom: 0.1rem;
+	font-size: 0.12rem;
+}
+
+.performereview .carddata li dd{
+	font-size: 0.15rem;
+}
+
+.performereview .carddata.teamperformer li{
+	color:rgb(51,51,51);
+}
+
+.performereview .carddata.teamperformer{
+	background:white;
+	border-radius: 6px;
+	box-shadow: #eee 0 0 0.1rem 0.05rem;
+}
+.performereview .carddata.teamperformer li dd span{
+	display: inline-block;
+	width:0.65rem;
+	height:0.2rem;
+	font-size: 0.12rem;
+	text-align: center;
+	line-height: 0.2rem;
+	background:url(../imgB/addNumBanner@2x.png) no-repeat;
+	background-size:100% 100%;
+	color:white;
+	margin-top:0.05rem;
+}
+.performereview h4{
+	font-size: 0.16rem;
+	font-weight: normal;
+	margin: 0.15rem 0;
+	position:relative;
+}
+
+.performereview h4 .instructor{
+	position:absolute;
+	right: 0;
+	top:0;
+	
+}
+
+.performereview h4 .instructor a{
+	display:inline-block;
+	font-size:0.14rem;
+	color:#2483ec;
+
+}
+
+.performereview h4 .instructor img {
+	display: inline-block;
+	height: 0.14rem;
+	vertical-align: middle;
+	width:0.08rem;
+	margin-left:0.04rem;
+}

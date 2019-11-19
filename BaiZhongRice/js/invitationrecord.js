@@ -22,3 +22,4 @@ mui('.cardstatus input').each(function(index, item) {
 		})
 	})
 })
+

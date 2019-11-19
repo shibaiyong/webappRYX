@@ -1,0 +1,48 @@
+body{
+	background:#fafafa;
+}
+
+.progressquery .searcharea{
+	padding:0.2rem 0.15rem;
+	box-sizing: border-box;
+	background:white;
+}
+
+.progressquery .searcharea input{
+	border: none;
+	outline:none;
+	background:#f6f6f6 url(../img/searchico@2x.png) no-repeat 3.15rem center;
+	background-size: 0.18rem;
+	width:100%;
+	height:0.3rem;
+	border-radius: 0.15rem;
+	padding-left:0.13rem;
+	padding-right: 0.32rem;
+	box-sizing: border-box;
+}
+
+
+.cardstatus{
+	padding: 0 0.3rem;
+	margin-top:0.15rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.13rem;
+	font-weight: bold;
+}
+
+.cardstatus span{
+	display: inline-block;
+	color:rgb(51,51,51);
+	line-height: 0.28rem;
+	height: 0.28rem;
+}
+
+
+.cardstatus span.bottomline{
+	background:url(../img/bottomline@2x.png) no-repeat center bottom;
+	background-size:100% 0.04rem;
+}
+
+

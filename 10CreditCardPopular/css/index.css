@@ -143,7 +143,7 @@
 
 .bank-item.bank-item-disable .bank-item-bottom {
 	border-top:1px solid transparent;
-	font-size:0.16rem;
+	font-size:0.13rem;
 }
 
 .bank-item.bank-item-disable .bank-item-bottom  ul li span{
@@ -155,7 +155,7 @@
 	padding:0.12rem 0;
 	box-sizing:border-box;
 	border-radius: 0.1rem;
-	background:rgba(0,0,0,0.3);
+	background:rgba(0,0,0,0.2);
 	color:white;
 	font-size:0.16rem;
 }
@@ -236,16 +236,19 @@
 	font-size: 0.16rem;
 	color:white;
 	padding:0.1rem 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .showtoast ul{
 	background:white;
-	padding:0.1rem;
+	padding:0.05rem;
 	border-radius: 0.1rem;
 }
 
 .showtoastcontainer .showtoast ul li{
-	font-size:0.13rem;
+	font-size:0.12rem;
 	margin-top:0.05rem;
 }
 .showtoastcontainer .showtoast ul li:first-child{
@@ -268,14 +271,15 @@
 
 .showtoast ul li span:nth-child(2){
 	display:inline-block;
-	width:2.75rem;
+	width:2.9rem;
 	line-height:0.17rem;
 }
 .showtoastcontainer .closeicon{
    text-align: center;
 	 font-size: 0;
-	 margin-top:0.3rem;
+
 }
 .showtoastcontainer .closeicon img{
-  width:0.3rem;
+  width:0.2rem;
+  margin-right: 0.04rem;
 }

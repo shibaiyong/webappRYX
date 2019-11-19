@@ -1,0 +1,82 @@
+.debitcard{
+	background:#f8f8f8;
+	padding: 0.14rem 0.14rem;
+	box-sizing: border-box;
+}
+
+.debitcard h4{
+	font-size: 0.16rem;
+	font-weight: normal;
+	margin: 0.12rem 0;
+	position:relative;
+}
+
+.debitcard h4>img{
+	width:0.12rem;
+	margin-right:0.1rem;
+}
+
+.debitcard h4 .instructor{
+	position:absolute;
+	right: 0;
+	top:0;
+}
+
+.debitcard h4 .instructor a{
+	display:inline-block;
+	font-size:0.14rem;
+	color:#2483ec;
+
+}
+
+.debitcard h4 .instructor img {
+	display: inline-block;
+	height: 0.14rem;
+	vertical-align: middle;
+	width:0.08rem;
+	margin-left:0.04rem;
+}
+
+.debitcard .bankcard {
+	display:flex;
+	align-items: top;
+	color:white;
+	background:rgb(36,131,236);
+	padding:0.23rem 0.12rem;
+	border-radius: 6px;
+}
+
+.debitcard .banklogo{
+	display:inline-block;
+	width:0.44rem;
+	height:0.44rem;
+	background:white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	margin-right: 0.14rem;
+}
+
+.debitcard .bankcard img{
+	width:0.32rem;
+	height:0.32rem;
+}
+
+.debitcard .bankcard .cardname{
+	font-size:0.2rem;
+}
+
+.debitcard .bankcard .cardtype{
+	font-size:0.12rem;
+	color:rgb(217,217,217);
+	margin:0.1rem 0 0.2rem;
+}
+
+.debitcard .bankcard .cardnum{
+	font-size:0.14rem;
+}
+
+.bottomBg img{
+	width:100%;
+}

@@ -1,0 +1,76 @@
+body{
+	background:#f8f8f8;
+}
+.withdrawprocess{
+	padding:0 0.15rem;
+	box-sizing: border-box;
+}
+
+.withdrawprocess .bank{
+	background:white;
+	padding:0.2rem 0;
+	padding-left:0.2rem;
+	box-sizing: border-box;
+	color:rgb(51,51,51);
+	font-size: 0.16rem;
+}
+
+.withdrawprocess .bank.beforeProcess{
+	background: white url(../imgB/stopstate@2x.png) no-repeat left center;
+	background-origin:content-box;
+	background-size:0.2rem 100%;
+}
+
+.withdrawprocess .bank.startProcess{
+	background: white url(../imgB/startstate@2x.png) no-repeat left center;
+	background-origin:content-box;
+	background-size:0.2rem 100%;
+}
+
+.withdrawprocess .bank.finishProcess{
+	background: white url(../imgB/successstate@2x.png) no-repeat left center;
+	background-origin:content-box;
+	background-size:0.2rem 100%;
+}
+
+.withdrawprocess .bank .withdrawmoney{
+	font-size:0.13rem;
+	color:rgb(51,51,51);
+}
+
+.withdrawprocess .bank ul{
+	margin-left:0.4rem;
+}
+
+.withdrawprocess .bank ul li:last-child{
+	font-size:0.15rem;
+	margin-top:0.35rem;
+}
+
+.withdrawprocess .bank ul li+li{
+	margin-top:0.15rem;
+}
+
+.withdrawprocess .bank ul li div img{
+	width:0.13rem;
+	vertical-align: middle;
+}
+
+.withdrawprocess .bank ul li div span{
+	vertical-align: middle;
+	margin-left: 0.04rem;
+	font-size:0.13rem;
+}
+
+.complete{
+	padding:0.3rem 0.1rem;
+	margin-top:1.6rem;
+}
+
+.complete .mybtn{
+	width:100%;
+	height: 0.45rem;
+	background: rgb(36,131,236);
+	color:white;
+	border-radius:6px;
+}

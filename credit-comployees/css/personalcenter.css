@@ -1,0 +1,110 @@
+.personalcenter{
+	padding:0 0.2rem;
+	box-sizing: border-box;
+}
+
+.personalcenter .userinfo{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top:0.2rem;
+}
+
+.personalcenter .userinfo .message{
+	position: relative;
+}
+.personalcenter .userinfo .message span{
+	display: inline-block;
+	position: absolute;
+	top:0;right: -0.12rem;
+	font-size: 0.1rem;
+	color:white;
+	background:#eb4949;
+	padding:0 0.04rem;
+	box-sizing: border-box;
+	border-radius: 0.06rem;
+	text-align: center;
+}
+.personalcenter .userinfo .message img{
+	width:0.16rem;
+}
+.personalcenter .userinfo li img{
+	width:0.16rem;
+	vertical-align: middle;
+	margin-right: 0.1rem;
+}
+
+.personalcenter .userinfo li span{
+	vertical-align: middle;
+}
+
+.personalcenter .userinfo li+li{
+	margin-top:0.1rem;
+}
+
+.personalcenter .userinfo li:nth-child(1) span{
+	font-size: 0.18rem;
+}
+
+.personalcenter .userinfo li:nth-child(2) span{
+	font-size: 0.15rem;
+}
+
+.personalcenter .carddata{
+	background:url(../img/personalcenter/bgcard@2x.png) no-repeat center center;
+	background-size: 100%;
+	color:white;
+	display: flex;
+	justify-content: space-around;
+	padding:0.23rem 0;
+	border-radius: 0.08rem;
+	text-align: center;
+	margin: 0.25rem 0;
+}
+
+.personalcenter .carddata span{
+	display: inline-block;
+	height:0.5rem;
+	width:0.01rem;
+	background: #eee;
+}
+
+.personalcenter .carddata dt{
+	font-size: 0.13rem;
+}
+
+.personalcenter .carddata dd{
+	margin-top: 0.1rem;
+	font-size: 0.3rem;
+}
+.personalcenter .carddata dd a{
+	color:white;
+}
+
+.personalcenter .item-list img{
+	width:0.17rem;
+	vertical-align: middle;
+	margin-right: 0.04rem;
+}
+
+.personalcenter .item-list li{
+	font-size:0.14rem;
+	color:rgb(51,51,51);
+	background:url(../img/personalcenter/rightarow@2x.png) no-repeat right center;
+	background-size: 0.08rem 0.15rem;
+	padding:0.1rem 0;
+}
+
+.personalcenter .item-list li+li{
+	border-top:0.01rem solid #eee;
+}
+
+.personalcenter .item-list li span{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.personalcenter .item-list li span.worktime{
+	color:rgb(167,167,167);
+	font-size: 0.11rem;
+}

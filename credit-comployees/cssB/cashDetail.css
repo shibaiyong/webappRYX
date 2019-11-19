@@ -1,0 +1,90 @@
+.cashdetail{
+	padding:0 0.2rem;
+	box-sizing: border-box;
+}
+
+.cashdetail .carddata{
+	background:url(../imgB/cashdetailbanner@2x.png) no-repeat center center;
+	background-size: 100% 100%;
+	color:white;
+	padding:0.15rem;
+	box-sizing: border-box;
+	border-radius: 0.08rem;
+	margin: 0.25rem 0;
+	height:1.16rem;
+	display: flex;
+	align-items: center;
+}
+.cashdetail .carddata ul li{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 0.16rem;
+}
+
+.cashdetail .carddata ul li:nth-child(1){
+	margin-bottom: 0.16rem;
+}
+
+.cashdetail .carddata ul li .money{
+	font-size: 0.24rem;
+}
+
+
+.cardstatus{
+	margin:0.15rem 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-size: 0.14rem;
+	font-weight: bold;
+}
+
+.cardstatus span{
+	display: inline-block;
+	color:rgb(51,51,51);
+	line-height: 0.28rem;
+	height: 0.28rem;
+}
+
+
+.cardstatus span.bottomline{
+	background:url(../img/bottomline@2x.png) no-repeat center bottom;
+	background-size:100% 0.04rem;
+}
+
+.bankcardinfo{
+	background: white;
+}
+
+.bankcardinfo .bankcardbottom{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:0.12rem 0;
+	box-sizing: border-box;
+	
+}
+
+.bankcardinfo .bankcardbottom .bankmemeber li:nth-child(1){
+	margin-bottom:0.07rem;
+	font-size: 0.14rem;
+	color:rgb(51,51,51);
+}
+
+.bankcardinfo .bankcardbottom .bankmemeber li:nth-child(2){
+	font-size: 0.12rem;
+	color:rgb(102,102,102);
+}
+
+.bankcardinfo+.bankcardinfo {
+	border-top:0.005rem solid #ddd;
+}
+
+.bankstatus span{
+	display: inline-block;
+	color:rgb(236,17,17);
+	font-size: 0.13rem;
+	padding:0.05rem 0.1rem;
+}
+

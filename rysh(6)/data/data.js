@@ -63,7 +63,7 @@ var bankList = {
 			"order": 4,
 			"icon": "XingYe.png",
 			"name": "兴业银行",
-			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=ecbdc8e54232434f86bbc82690b2e927",
+			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=7e4ca97362774cfcb4b61c6222645eb8",
 			"recommends": [{
 				"text": "送话费",
 				"color": "#a91a63"
@@ -106,7 +106,7 @@ var bankList = {
 			"order": 9,
 			"icon": "JiaoTong.png",
 			"name": "交通银行",
-			"url": "https://creditcardapp.bankcomm.com/applynew/front/apply/mgm/account/wechatEntry.html?recomId=22935636&saleCode=761000081&entryRecomId=&trackCode=A051516203152&isNewCardMgm=0&availableDate=c866c45f17329272987110035288799d",
+			"url": "https://creditcardapp.bankcomm.com/applynew/front/apply/mgm/account/wechatEntry.html?recomId=23136592&saleCode=761000081&entryRecomId=&trackCode=A051516203152&isNewCardMgm=0&availableDate=8aa73739016e708953adcf7dfa8ce90d",
 			"recommends": [],
 			"time": "新户5积分兑好礼",
 			"limit": "最红星期五5%返现",

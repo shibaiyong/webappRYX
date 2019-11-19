@@ -1,0 +1,70 @@
+.mui-icon-clear{
+	display: none !important;
+}
+
+.memeberinfo{
+	background:white;
+	padding:0 0.14rem;
+}
+
+.memeberinfo .mui-input-row span{
+	color:rgb(17,17,17);
+}
+
+.memeberinfo .mui-input-clear{
+	border:none;
+	margin-bottom:0;
+	font-size: 0.14rem;
+	padding-left:0.32rem;
+	border-radius: none;
+	border-radius: 0;
+	height:0.5rem;
+	width:70%;
+}
+
+.memeberinfo .mui-input-row{
+	position:relative;
+	border-bottom:0.005rem solid #b2b2b2;
+	padding-bottom: 2px;
+	font-size: 0.14rem;
+}
+
+.memeberinfo .mui-input-row:last-child{
+	border-bottom:none;
+}
+
+.agreement{
+	color:rgb(106,106,106);
+	font-size: 0.12rem;
+	box-sizing: border-box;
+	margin-top:0.15rem;
+	padding:0.35rem 0.1rem 0.15rem;
+}
+
+.agreement a{
+	color:rgb(81,159,255);
+}
+
+.adduser .complete{
+	padding:0 0.1rem;
+}
+
+.adduser .complete .mui-btn-primary{
+	width:100%;
+	height: 0.4rem;
+	background: rgb(36,131,236);
+}
+
+#code{
+	position: absolute;
+	right: 0;
+	top:50%;
+	color:rgb(36,131,236);
+	transform: translateY(-50%);
+}
+.adduser .mes{
+	font-size:0.12rem;
+	color:#999;
+	background:#fff1f1;
+	padding:0.06rem 0.08rem;
+}

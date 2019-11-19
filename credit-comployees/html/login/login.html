@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<script src="../../js/rem.js"></script>
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="../../css/login/login.css" />
+		<link rel="stylesheet" href="../../plugin/mui/mui.min.css" />
+		<title>登录</title>
+		
+	</head>
+	<body>
+		
+		<div class="title">登录/注册</div>
+		<div class="logincontainer">
+			<div class="mui-input-row">
+				<div class="infolabel">请输入手机号</div>
+				<input type="text" class="mui-input-clear" id="phone"/>
+				<span id="messagecode">获取验证码</span>
+			</div>
+			<div class="mui-input-row">
+				<div class="infolabel">请输入验证码</div>
+				<input type="text" class="mui-input-clear" id="code"/>
+			</div>
+	</div>
+	<div class="agreement">
+		<div class="checkboxContainer checkedBg">
+			<label for="mycheck1"></label>
+			<input type="checkbox" class="checks" checked id="mycheck1"/>
+		</div>
+		<a href="#">同意《用户注册协议》</a>
+	</div>
+	
+	<div class="agreement">
+		<div class="checkboxContainer checkedBg">
+			<label for="mycheck2"></label>
+			<input type="checkbox" class="checks" checked id="mycheck2"/>
+		</div>
+		<a href="#">同意《用户隐私保护政策》</a>
+	</div>
+	
+	<div class="complete">
+		<button type="button" class="mui-btn mui-btn-primary">登录/注册</button>
+	</div>
+	</body>
+</html>
+<script src="../../plugin/jquery.3.3.0.js"></script>
+<script src="../../plugin/mui/mui.min.js"></script>
+<script src="../../js/login.js"></script>

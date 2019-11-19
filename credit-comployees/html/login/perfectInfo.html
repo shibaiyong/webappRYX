@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<script src="../../js/rem.js"></script>
+		<link rel="stylesheet" href="../../css/common.css" />
+		<link rel="stylesheet" href="../../css/login/login.css" />
+		<link rel="stylesheet" href="../../plugin/mui/mui.min.css" />
+		<title>登录</title>
+		
+	</head>
+	<body>
+		<div class="title">完善信息</div>
+		<div class="logincontainer">
+			<div class="mui-input-row">
+				<div class="infolabel">请输入姓名</div>
+				<input type="text" class="mui-input-clear" id="name" />
+			</div>
+			<div class="mui-input-row">
+				<div class="infolabel">请输入身份证号</div>
+				<input type="text" class="mui-input-clear" id="iccard"/>
+			</div>
+	</div>
+	<div class="agreement"><a href="javascript:;">请填写真实信息，以便查询办卡进度</a></div>
+	
+	<div class="complete">
+		<button type="button" class="mui-btn mui-btn-primary">完 成</button>
+	</div>
+	</body>
+</html>
+<script src="../../plugin/jquery.3.3.0.js"></script>
+<script src="../../plugin/mui/mui.min.js"></script>
+<script type="text/javascript">
+	$('.mui-btn-primary').click(function () {
+		
+		if ($.trim($('#name').val()).length == 0) {
+				mui.toast('请输入姓名',{ duration:'long', type:'div' })
+				return false;
+		}
+
+		if ($.trim($('#iccard').val()).length == 0) {
+			mui.toast('请输入身份证号',{ duration:'long', type:'div' })
+			return false;
+		}else{
+			var idcard = /^[1-9]{1}[0-9]{14}$|^[1-9]{1}[0-9]{16}([0-9]|[xX])$/;
+			if(idcard.test($.trim($('#idcard').val())) == false) {
+				mui.toast('请输入正确的身份证号',{ duration:'long', type:'div' })
+				return false;
+			}
+		}
+		
+		$.ajax({
+			type: 'POST',
+			url: '#',
+			data: {
+				
+			},
+			success: function (data) {
+				console.log(data)
+			}
+		})
+	})
+</script>
