@@ -154,6 +154,10 @@ body{
 	display: none;
 }
 
+.showtoastcontainer .banner img{
+	height:2.5rem;
+}
+
 .showtoast{
 		background: white;
 		border-radius: 0.11rem;
@@ -209,6 +213,13 @@ body{
 	background:red;
 	/* display: none; */
 	z-index:999;
+}
+
+.bottomBg{
+	margin-bottom:0.12rem;
+}
+.bottomBg img{
+  width:100%;
 }
 
 

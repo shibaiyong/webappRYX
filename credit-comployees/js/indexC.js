@@ -1,3 +1,5 @@
+var SwiperAlertBanner;
+
 var SwiperBanner = new Swiper ('.swiper-banner', {
     //loop: true, // 循环模式选项
 		autoplay: {
@@ -20,13 +22,10 @@ var SwiperBanner = new Swiper ('.swiper-banner', {
 				disableOnInteraction: true,
 	    }
 	  })
-	$('.closeicon img').click(function(){
-		$('.showtoastcontainer').hide()
-	})
 	
 	$('.asideIco').click(function(){
 		$('.showtoastcontainer').show()
-		var SwiperBanner = new Swiper ('.swiper-alert', {
+		SwiperAlertBanner = new Swiper ('.swiper-alert', {
 			//loop: true, // 循环模式选项
 			autoplay: {
 				delay: 3000,
@@ -39,6 +38,10 @@ var SwiperBanner = new Swiper ('.swiper-banner', {
 		})
 	})
 	
+	$('.closeicon img').click(function(){
+		SwiperAlertBanner.destroy(true,true);
+		$('.showtoastcontainer').hide()
+	})
 	
 	//带边界检测 移动端实现
 	var flag = true;

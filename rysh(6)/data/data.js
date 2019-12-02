@@ -65,7 +65,7 @@ var bankList = {
 			"name": "兴业银行",
 			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=7e4ca97362774cfcb4b61c6222645eb8",
 			"recommends": [{
-				"text": "送话费",
+				"text": "易下卡",
 				"color": "#a91a63"
 			}],
 			"time": "1元办签证，境外刷卡笔笔返现",
@@ -88,7 +88,7 @@ var bankList = {
 			"name": "平安银行",
 			"url": "https://c.pingan.com/ca/index?sign=742e80c9ff3aebf21e6f33be823fdc44&versionNo=R10310&scc=910000751&channel=WX&onlineSQFlag=N&cardCatenaNo=18a17a01a02a03a04a05a06&mt=pabf005&ccp=3a1a2a9a8at4a5a10",
 			"recommends": [{
-				"text": "送话费",
+				"text": "大额度",
 				"color": "#a91a63"
 			}],
 			"time": "72小时失卡保障",
@@ -102,30 +102,30 @@ var bankList = {
 			]
 		},
 
-		{
-			"order": 9,
-			"icon": "JiaoTong.png",
-			"name": "交通银行",
-			"url": "https://creditcardapp.bankcomm.com/applynew/front/apply/mgm/account/wechatEntry.html?recomId=23136592&saleCode=761000081&entryRecomId=&trackCode=A051516203152&isNewCardMgm=0&availableDate=8aa73739016e708953adcf7dfa8ce90d",
-			"recommends": [],
-			"time": "新户5积分兑好礼",
-			"limit": "最红星期五5%返现",
-			"tags": [{
-					"text": "免年费"
-				},
-				{
-					"text": "免息期长达56天"
-				}
-			]
-		},
+		// {
+		// 	"order": 9,
+		// 	"icon": "JiaoTong.png",
+		// 	"name": "交通银行",
+		// 	"url": "https://creditcardapp.bankcomm.com/applynew/front/apply/mgm/account/wechatEntry.html?recomId=20006996&saleCode=761000224&entryRecomId=&trackCode=A012514502018&isNewCardMgm=0&availableDate=07a9c29f67db7b4c2fdcb7ba305cbe37",
+		// 	"recommends": [],
+		// 	"time": "新户5积分兑好礼",
+		// 	"limit": "最红星期五5%返现",
+		// 	"tags": [{
+		// 			"text": "免年费"
+		// 		},
+		// 		{
+		// 			"text": "免息期长达56天"
+		// 		}
+		// 	]
+		// },
 
 		{
 			"order": 6,
 			"icon": "MinSheng.png",
 			"name": "民生银行",
-			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=dwe2bcbzwVoypbx1TPIjVphtjisDJQXALpvdpUhdyHnJUqmT8vJb003BCfy%2b1pgjXLnwJNZLbPt19GsT1392wTb%2fNp4Z4PulOvzm2cS%2fkq0W4QF4g5sxpQqj4MbEjAwqO3HuGvw7hGIqgvTEZu4biuEby2LRLRrX3CkpnSD5Qw6rR9iCBdpqaE58qg%2bfhht9%2b65LU4I2VOMD9VN4A8XS%2fpr9Vweg9TME5wlwZbhOK0h5cPqmRXDTkJY9h6xcDA6rVgHTmnxGbOXDu5cjnaKmAeKu5YInfP7w6UNKOS%2fmGIq%2ftztHBDz7kS%2b0%2bc51P4WxjR5kV6lDtp8SkjeJMK3dnw%3d%3d",
+			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=TEG6NAiOVIMYZywVq8oJSIGIUb4GhcbVJuYll0gVmVhzLfEaCDqhp6Vbfdlc20sxD%2bfJLiFIzB4jPO9XmEovhdECeK8zH2J%2f5OGLpT0EDRUITOSKpMZJjbIm5gWQmGloTvNxesPFi%2bNH7esDTZ7nj7DsF%2bKOEdH5ToFVoylreheuN%2fRkXCArEu%2bLhwCkv0LkQeNVhfuknYfer7ni8y6KJwAMCjG16PeZCtBtuLwIAIHNw6kMkhjJwWvLO%2buOoqt8VvSTagf9HL%2bvHXvRHQtKF9wRlUtB1zRhcycnGNxbhPItd04FX4Mck%2fCO1vAp7AThJ0GtKXFJe7axdJQ9LRzmkQ%3d%3d",
 			"recommends": [{
-				"text": "送话费",
+				"text": "三秒核卡",
 				"color": "#a91a63"
 			}],
 			"time": "免费体检，机场礼遇，特惠商户",
@@ -256,10 +256,7 @@ var bankList = {
  			"icon": "ShangHai.png",
  			"name": "上海银行",
  			"url": "https://mbank.bankofshanghai.com/Latte/#/CreditHot?YLLink=0000001772",
- 			"recommends": [{
-				"text": "送话费",
-				"color": "#a91a63"
-			}],
+ 			"recommends": [],
  			"time": "800万旅行保障",
  			"limit": "新户达标送好礼",
  			"tags": [{
@@ -285,7 +282,7 @@ var bankList = {
 			"order": 17,
 			"icon": "GuangZhou.png",
 			"name": "广州银行",
-			"url": "https://i.creditcard.gzcb.com.cn/web/index.html?channel=gzzx&id=APPgz043",
+			"url": "https://ccmp.creditcard.gzcb.com.cn/ccmp/applypc/index.html#/?td_channelid=gzzx_APPgz043&channelCd=gzzx&channelSource=APPgz043",
 			"recommends": [],
 			"time": "额度最高8万",
 			"limit": "取现比例高",
