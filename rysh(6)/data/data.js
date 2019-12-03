@@ -186,7 +186,7 @@ var bankList = {
 			"order": 8,
 			"icon": "GuangFa.png",
 			"name": "广发银行",
-			"url": "http://95508.com/zct3oIst",
+			"url": "http://95508.com/zct3alXd",
 			"recommends": [],
 			"time": "广发日9大品牌5折优惠",
 			"limit": "新客开卡返现6%",
