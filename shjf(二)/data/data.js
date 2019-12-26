@@ -15,18 +15,18 @@ var bankList = {
 		// 		"text": "额度最高10万"
 		// 	}]
 		// },
-		{
-			"order": 8,
-			"icon": "ZhaoShang.png",
-			"name": "招商银行",
-			"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxfhwt/remote?webAddress=N57FHXM2073F672300HZ&dsid=SBJRKTX01",
-			"recommends": [],
-			"time": "新户刷卡赢好礼",
-			"limit": "取现额度100%，每月首笔免费取现",
-			"tags": [{
-				"text": "积分永久有效"
-			}]
-		},
+		// {
+		// 	"order": 8,
+		// 	"icon": "ZhaoShang.png",
+		// 	"name": "招商银行",
+		// 	"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxfhwt/remote?webAddress=N57FHXM2073F672300HZ&dsid=SBJRKTX01",
+		// 	"recommends": [],
+		// 	"time": "新户刷卡赢好礼",
+		// 	"limit": "取现额度100%，每月首笔免费取现",
+		// 	"tags": [{
+		// 		"text": "积分永久有效"
+		// 	}]
+		// },
 		
 		// {
 		// 	"order": 6,
@@ -59,7 +59,7 @@ var bankList = {
 			"order": 1,
 			"icon": "XingYe.png",
 			"name": "兴业银行",
-			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=94a08655825a46bba68807109914927d",
+			"url": "https://wm.cib.com.cn/html/webapp/fast-issue-con/home.html?id=efb8fde812754a72b4bf2b39a53bc630",
 			"recommends": [{
 				"text": "大额度",
 				"color": "#E91E63"

@@ -10,81 +10,36 @@
 		<link rel="stylesheet" href="../css/common.css" />
 		<title>宣传页</title>
 		<style>
-			.hotbank img{
+			
+			.hotbank .bg{
 				width:100%;
 			}
-			.asideIco{
-				width:0.7rem;
-				height: 0.62rem;
-				position:fixed;
-				right:0;
-				top:50%;
-				/* display: none; */
-				z-index:999;
+			
+			.hotbank{
+				position:relative;
 			}
-			.asideIco img{
-				width:100%;
-				height: 100%;
+			
+			.bt-icon{
+				width:2.5rem;
+				height: 0.45rem;
+				position:absolute;
+				left:50%;
+				margin-left:-1.25rem;
+				bottom:0.35rem;
+				z-index:1;
 			}
+			
 		</style>
 	</head>
 	<body>
 		<div class="hotbank">
-			<img src="../img/promotion.png"/>
-		</div>
-		
-		<div class="asideIco">
-			<img src="../img/promotionRegister@2x.png">
+			<img class="bg" src="../img/promotion@2x.png"/>
+			<img class="bt-icon" src="../img/promotionRegister@2x.png"/>
 		</div>
 		
 	</body>
 </html>
 <script src="../plugin/jquery.3.3.0.js"></script>
 <script>
-	$('.asideIco').click(function(){
-		window.location.href="http://www.baidu.com"
-	})
 	
-	//带边界检测 移动端实现
-	var flag = true;
-	var touchStart_x = null,touchStart_y = null,touchMove_x = null,touchMove_y = null,boxStartX=null,boxStartY=null;
-	$(".asideIco").on("touchstart",function(e){
-		touchStart_x = e.targetTouches[0].pageX;
-		touchStart_y = e.targetTouches[0].pageY;
-		boxStartX = $(".asideIco").position().left;
-		boxStartY = $(".asideIco").position().top;
-	})
-	document.body.addEventListener('touchmove', function (e) {
-		if(!flag){
-			e.preventDefault();
-		}
-		},{passive: false});
-	$(".asideIco").on("touchend",function(e){
-		flag = true
-	})
-	$(".asideIco").on("touchmove",function(e){
-			flag = false
-			touchMove_x = e.targetTouches[0].pageX-touchStart_x;
-			touchMove_y = e.targetTouches[0].pageY-touchStart_y;
-			var left = boxStartX + touchMove_x;
-			var top = boxStartY + touchMove_y;
-			var maxLeft = $(window).width()-$(".asideIco").width();
-			var maxTop = $(window).height()-$(".asideIco").height();
-			if(left <=0 ){
-				left = 0
-			}
-			if(left >= maxLeft){
-				left = maxLeft
-			}
-			if(top <=0 ){
-				top = 0
-			}
-			if(top >= maxTop){
-				top = maxTop
-			}
-			$(".asideIco").css({
-					left:left,
-					top:top
-			})
-	})
 </script>

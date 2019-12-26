@@ -4,7 +4,7 @@ var bankList = {
 			"order": 1,
 			"icon": "XingYe.png",
 			"name": "兴业银行",
-			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=aeddb46a37224028a88fcb36512aec3e",
+			"url": "https://wm.cib.com.cn/html/webapp/fast-issue-con/home.html?id=b193b57fe5e44dc6979df72d227c3550",
 			"recommends": [{
 				"text": "大额度",
 				"color": "#E91E63"
@@ -75,17 +75,17 @@ var bankList = {
 		// 		"text": "特色礼遇"
 		// 	}]
 		// },
-		{
-			"order": 5,
-			"icon": "ZhaoShang.png",
-			"name": "招商银行",
-			"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxfhwt/remote?webAddress=N57FHXM2073F672300HZ&dsid=SBJJXZC01",
-			"recommends": [],
-			"time": "新户刷卡赢好礼",
-			"limit": "取现额度100%，每月首笔免费取现",
-			"tags": [{
-				"text": "积分永久有效"
-			}]
-		}
+		// {
+		// 	"order": 5,
+		// 	"icon": "ZhaoShang.png",
+		// 	"name": "招商银行",
+		// 	"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxfhwt/remote?webAddress=N57FHXM2073F672300HZ&dsid=SBJJXZC01",
+		// 	"recommends": [],
+		// 	"time": "新户刷卡赢好礼",
+		// 	"limit": "取现额度100%，每月首笔免费取现",
+		// 	"tags": [{
+		// 		"text": "积分永久有效"
+		// 	}]
+		// }
 	]
 }

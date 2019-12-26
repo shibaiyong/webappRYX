@@ -22,6 +22,25 @@ var SwiperBanner = new Swiper ('.swiper-banner', {
 				disableOnInteraction: true,
 	    }
 	  })
+		
+	if(sessionStorage.getItem('entertime')=='1'||!sessionStorage.getItem('entertime')){
+		$('.showtoastcontainer').show()
+		SwiperAlertBanner = new Swiper ('.swiper-alert', {
+			//loop: true, // 循环模式选项
+			autoplay: {
+				delay: 3000,
+				stopOnLastSlide: false,
+				disableOnInteraction: true
+			},
+			pagination: {
+				el: '.swiper-pagination'
+			}
+		})
+		sessionStorage.setItem('entertime',2)
+	}else{
+		//SwiperAlertBanner.destroy(true,true);
+		$('.showtoastcontainer').hide();
+	}
 	
 	$('.asideIco').click(function(){
 		$('.showtoastcontainer').show()

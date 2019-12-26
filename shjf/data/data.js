@@ -17,18 +17,18 @@ var bankList = {
 			}]
 		},
 		*/
-		{
-			"order": 8,
-			"icon": "ZhaoShang.png",
-			"name": "招商银行",
-			"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxfhwt/remote?webAddress=N57FHXM2073F672300HZ&dsid=SBJDGFB01",
-			"recommends": [],
-			"time": "新户刷卡赢好礼",
-			"limit": "取现额度100%，每月首笔免费取现",
-			"tags": [{
-				"text": "积分永久有效"
-			}]
-		},
+		// {
+		// 	"order": 8,
+		// 	"icon": "ZhaoShang.png",
+		// 	"name": "招商银行",
+		// 	"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxfhwt/remote?webAddress=N57FHXM2073F672300HZ&dsid=SBJDGFB01",
+		// 	"recommends": [],
+		// 	"time": "新户刷卡赢好礼",
+		// 	"limit": "取现额度100%，每月首笔免费取现",
+		// 	"tags": [{
+		// 		"text": "积分永久有效"
+		// 	}]
+		// },
 		
 		{
 			"order": 6,
@@ -61,7 +61,7 @@ var bankList = {
 			"order": 1,
 			"icon": "XingYe.png",
 			"name": "兴业银行",
-			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=48a94ebc7fc94db1b321517555dd9303",
+			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=e1e57ac876fc4820a6a45645f28d312d",
 			"recommends": [{
 				"text": "大额度",
 				"color": "#E91E63"
@@ -234,19 +234,19 @@ var bankList = {
 		// 	}]
 		// },
 		
- 		{
- 			"order": 13,
- 			"icon": "ShangHai.png",
- 			"name": "上海银行",
- 			"url": "https://mbank.bankofshanghai.com/Latte/#/CreditHot?YLLink=0000001970",
- 			"recommends": [],
- 
- 			"time": "800万旅行保障",
- 			"limit": "新户达标送好礼",
- 			"tags": [{
- 				"text": "刷卡免年费"
- 			}]
- 		},
+ // 		{
+ // 			"order": 13,
+ // 			"icon": "ShangHai.png",
+ // 			"name": "上海银行",
+ // 			"url": "https://mbank.bankofshanghai.com/Latte/#/CreditHot?YLLink=0000001970",
+ // 			"recommends": [],
+ // 
+ // 			"time": "800万旅行保障",
+ // 			"limit": "新户达标送好礼",
+ // 			"tags": [{
+ // 				"text": "刷卡免年费"
+ // 			}]
+ // 		},
 
 		{
 			"order": 14,

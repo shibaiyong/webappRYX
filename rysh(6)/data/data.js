@@ -19,7 +19,7 @@ var bankList = {
 			"order": 10,
 			"icon": "ZhaoShang.png",
 			"name": "招商银行",
-			"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxfhwt/remote?webAddress=N57FHXM2073F672300HZ&dsid=SBJRYX003",
+			"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxapphj/remote?dscontr=89&webAddress=N5700DJ2097261350001",
 			"recommends": [],
 			"time": "新户刷卡赢好礼",
 			"limit": "取现额度100%，每月首笔免费取现",
@@ -63,7 +63,7 @@ var bankList = {
 			"order": 4,
 			"icon": "XingYe.png",
 			"name": "兴业银行",
-			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=7e4ca97362774cfcb4b61c6222645eb8",
+			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=d25d59ad31f44e7caaad08d32382693c",
 			"recommends": [{
 				"text": "易下卡",
 				"color": "#a91a63"
@@ -123,7 +123,7 @@ var bankList = {
 			"order": 6,
 			"icon": "MinSheng.png",
 			"name": "民生银行",
-			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=TEG6NAiOVIMYZywVq8oJSIGIUb4GhcbVJuYll0gVmVhzLfEaCDqhp6Vbfdlc20sxD%2bfJLiFIzB4jPO9XmEovhdECeK8zH2J%2f5OGLpT0EDRUITOSKpMZJjbIm5gWQmGloTvNxesPFi%2bNH7esDTZ7nj7DsF%2bKOEdH5ToFVoylreheuN%2fRkXCArEu%2bLhwCkv0LkQeNVhfuknYfer7ni8y6KJwAMCjG16PeZCtBtuLwIAIHNw6kMkhjJwWvLO%2buOoqt8VvSTagf9HL%2bvHXvRHQtKF9wRlUtB1zRhcycnGNxbhPItd04FX4Mck%2fCO1vAp7AThJ0GtKXFJe7axdJQ9LRzmkQ%3d%3d",
+			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=iD0qIwv6bXtOjjgBWk4JWitBX2%2f%2bpDUMqF10QIWHUA1txQ7q9y6WdlfCFLu2TxSkBarNIpaOMQsa6uZVuq2v7rcAWas2oIez7RCcdsFEVZQMnaFB7WkaxhbdANDUrpE7LWCO%2bFCtNIVwFPqqCzO3RoqaQIEOp3q4zOmz324C449MuMTR3M0NHo7%2byh6n7%2b0PJSrp%2biP5mKr%2bKwh2DdIdRv6JLfrT1rEj7Irq5RVnHq2vpF3VQtJre%2fN1yeMkUtz%2bOEJLyZDumiZe0UxyL4fm%2fdJl1aOR4p%2fCksYTXBkgk1WYemNdrVlvbXnq6cu5OPdLrBos0QCabiDbZkLWHUUFUg%3d%3d",
 			"recommends": [{
 				"text": "三秒核卡",
 				"color": "#a91a63"
@@ -156,7 +156,7 @@ var bankList = {
 			"order": 7,
 			"icon": "ZhongXin.png",
 			"name": "中信银行",
-			"url": "https://creditcard.ecitic.com/h5/shenqing/index.html?sid=SJSSJ186",
+			"url": "https://creditcard.ecitic.com/h5/shenqing/index.html?sid=SJYGDQ92",
 			"recommends": [],
 			"time": "9积分兑豪礼，网购2倍积分",
 			"limit": "刷卡免年费",
@@ -186,7 +186,7 @@ var bankList = {
 			"order": 8,
 			"icon": "GuangFa.png",
 			"name": "广发银行",
-			"url": "http://95508.com/zct3alXd",
+			"url": "http://95508.com/zctY9zjp",
 			"recommends": [],
 			"time": "广发日9大品牌5折优惠",
 			"limit": "新客开卡返现6%",
@@ -251,18 +251,18 @@ var bankList = {
 		// 	}]
 		// },
 		
- 		{
- 			"order": 14,
- 			"icon": "ShangHai.png",
- 			"name": "上海银行",
- 			"url": "https://mbank.bankofshanghai.com/Latte/#/CreditHot?YLLink=0000001772",
- 			"recommends": [],
- 			"time": "800万旅行保障",
- 			"limit": "新户达标送好礼",
- 			"tags": [{
- 				"text": "刷卡免年费"
- 			}]
- 		},
+ 		// {
+ 		// 	"order": 14,
+ 		// 	"icon": "ShangHai.png",
+ 		// 	"name": "上海银行",
+ 		// 	"url": "https://mbank.bankofshanghai.com/Latte/#/CreditHot?YLLink=0000001772",
+ 		// 	"recommends": [],
+ 		// 	"time": "800万旅行保障",
+ 		// 	"limit": "新户达标送好礼",
+ 		// 	"tags": [{
+ 		// 		"text": "刷卡免年费"
+ 		// 	}]
+ 		// },
 
 		{
 			"order": 16,
@@ -282,7 +282,7 @@ var bankList = {
 			"order": 17,
 			"icon": "GuangZhou.png",
 			"name": "广州银行",
-			"url": "https://ccmp.creditcard.gzcb.com.cn/ccmp/applypc/index.html#/?td_channelid=gzzx_APPgz043&channelCd=gzzx&channelSource=APPgz043",
+			"url": "http://w3z.gzfsnet.cn/1YJw30",
 			"recommends": [],
 			"time": "额度最高8万",
 			"limit": "取现比例高",

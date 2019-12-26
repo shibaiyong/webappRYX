@@ -102,21 +102,21 @@ body{
 }
 .checkboxContainer .checks{
 	/* visibility:hidden; */
-	display: none;
+	/* display: none; */
 }
-.checkboxContainer label{
+.checkboxContainer span{
 	display: inline-block;
 	position: absolute;
 	top:0;left:0;right: 0;bottom:0;
 	z-index: 2;
 }
 
-.checkboxContainer.checkedBg label{
+.checkboxContainer.checkedBg span{
 	background:url(../../img/checked@2x.png) no-repeat center center;
 	background-size:100% 100%;
 }
 
-.checkboxContainer.uncheckedBg label{
+.checkboxContainer.uncheckedBg span{
 	background:url(../../img/unchecked@2x.png) no-repeat center center;
 	background-size:100% 100%;
 }
