@@ -6,6 +6,18 @@ body{
 	padding:0.2rem 0.15rem;
 	box-sizing: border-box;
 	background:white;
+	position: relative;
+}
+
+.progressquery .searcharea label{
+	position: absolute;
+	right: 0.25rem;
+	top:50%;
+	transform: translateY(-50%);
+	display: inline-block;
+	width:0.25rem;
+	height:0.25rem;
+	background:transparent;
 }
 
 .progressquery .searcharea input{
@@ -44,5 +56,196 @@ body{
 	background:url(../img/bottomline@2x.png) no-repeat center bottom;
 	background-size:100% 0.04rem;
 }
+
+
+.bankcardinfo{
+	padding:0 0.1rem;
+	box-sizing: border-box;
+	background: white;
+	margin:0 0.15rem;
+	margin-top: 0.15rem;
+	border-radius: 6px;
+	box-shadow: #eee 0 0 0.1rem 0.05rem;
+}
+
+.bankcardinfo .bankcardbottom,.bankcardinfo .bankcardtop{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:0.12rem 0;
+	box-sizing: border-box;
+
+}
+
+.bankcardinfo .bankcardtop{
+	border-bottom:0.01rem solid rgb(233,233,233);
+}
+
+.bankcardinfo .bankcardtop h4{
+	font-size: 0.15rem;
+	color:rgb(51,51,51);
+
+}
+
+.bankcardinfo .bankcardtop span{
+	font-size: 0.12rem;
+	color:rgb(153,153,153);
+}
+
+.bankcardinfo .bankcardbottom .bankmemeber{
+	font-size: 0.12rem;
+	color:rgb(153,153,153);
+	text-align: left;
+}
+
+.bankcardinfo .bankcardbottom .bankmemeber li:nth-child(1){
+	margin-bottom:0.1rem;
+}
+
+
+.bankcardinfo .bankcardbottom .bankmemeber a{
+	font-size: 0.12rem;
+	color:rgb(36,131,236);
+}
+
+.bankstatus span{
+	display: inline-block;
+	background:rgb(36,131,236);
+	color:white;
+	font-size: 0.12rem;
+	padding:0.05rem 0.1rem;
+	border-radius: 0.06rem;
+}
+
+.bottomBg {
+	margin-top: 0.12rem;
+}
+
+.bottomBg img{
+	width:100%;
+}
+
+.nodata{
+	 width:1.8rem;
+	margin-top:0.6rem;
+ }
+
+.bankcontainer{
+	text-align: center;
+}
+
+.nodataText{
+	text-align: center;
+	font-size:0.14rem;
+	color:#999;
+	margin-top:0.2rem;
+}
+
+
+
+.alert-body .form-grounp:first-child{
+	display: flex;
+	align-items: center;
+
+}
+.alertmodelcontainer{
+	position: fixed;
+	height: 100%;
+	width:100%;
+	background:rgba(0,0,0,0.6);
+	z-index: 100;
+	top:0;
+	left:0;
+	display:none;
+}
+
+.alertmodelcontainer .alert-body{
+	background:white;
+	padding:20px 20px 20px 20px;
+}
+
+.compelet .btn{
+	width:100%;
+	background:#3f41ec;
+	border:none;
+	color:white;
+	height:0.4rem;
+}
+.btn:focus,.btn:active{outline:0;}
+.compelet{
+	text-align:center;
+	margin-top:30px;
+}
+.opreatBtn .btnactivecolor{
+	background:#3d48e3;
+	color:white;
+	border:none;
+}
+.cancelIco{
+	text-align:right;
+	margin-bottom: 12px;
+}
+.cancelIco img{
+	width:24px;
+	height:24px;
+}
+.alertModel{
+	width:80%;
+	margin: 0 auto;
+	margin-top:25%;
+}
+
+.form-group{
+
+	border-bottom:0.5px solid #c7d9fd;
+	margin-bottom:0px;
+	padding:6px 0px;
+	margin-top:6px;
+}
+
+.form-group.row{
+	margin-left:0px;
+	margin-right:0px;
+}
+
+.form-group.row .col-xs-12{
+	padding:0;
+}
+.form-group.row .col-xs-12 .form-control{
+	padding:0;
+	border:none;
+	outline: none;
+	box-shadow: none;
+	-webkit-tap-highlight-color:rgba(0, 0, 0, 0); /*去除点击高亮的颜色*/
+}
+.form-group.row .col-xs-12 .form-control[readonly]{
+	background:white;
+}
+.control-label{
+	padding-right:0px;
+	padding-left:0px;
+}
+.hasend{
+	color:#3e40eb;
+}
+.yanzheng{
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.yanzheng .form-control{
+	width:75%;
+}
+.form-group.errorcontainer{
+	margin:0;
+	padding:0;
+	border:none;
+	display:none;
+}
+.error-tip{
+	font-size:12px;
+}
+
+
 
 

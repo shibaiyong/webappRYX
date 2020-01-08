@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<script src="../../js/rem.js"></script>
+		<link rel="stylesheet" href="../../css/common.css" />
+		<title>推广介绍</title>
+		<style>
+			.introduce img {
+				width:100%;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="introduce">
+			
+			<img src="#"/>
+			
+		</div>
+		
+	</body>
+</html>
+<script src="../../plugin/jquery.3.3.0.js"></script>
+<script>
+	
+	var datas = [{
+					tagName: '1',
+					title: '卡小邦使用指南',
+					image: '../../img/guide@3x.png'
+				},{
+					tagName: '2',
+					title: '常见问题',
+					image: '../../img/commonproblem@3x.png'
+				},{
+					tagName: '3',
+					title: '推广注意事项',
+					image: '../../img/note@2x.png'
+				}
+			]
+			
+	
+	
+	var tagName = getQueryString('tagName')
+	
+	for (var j = 0; j < datas.length; j++) {
+		if (tagName == datas[j].tagName) {
+			$('.introduce img').attr('src',datas[j].image)
+			$('title').html(datas[j].title)
+		}
+	}
+	
+	function getQueryString(name){
+		var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+		var r = window.location.search.substr(1).match(reg);
+		if(r!=null)return  unescape(r[2]); return null;
+	}
+</script>

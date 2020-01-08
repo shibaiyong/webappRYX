@@ -17,31 +17,31 @@ var bankList = {
 			}]
 		},
 		*/
-		// {
-		// 	"order": 8,
-		// 	"icon": "ZhaoShang.png",
-		// 	"name": "招商银行",
-		// 	"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxfhwt/remote?webAddress=N57FHXM2073F672300HZ&dsid=SBJDGFB01",
-		// 	"recommends": [],
-		// 	"time": "新户刷卡赢好礼",
-		// 	"limit": "取现额度100%，每月首笔免费取现",
-		// 	"tags": [{
-		// 		"text": "积分永久有效"
-		// 	}]
-		// },
-		
 		{
-			"order": 6,
-			"icon": "GuangDa.png",
-			"name": "光大银行",
-			"url": "https://xyk.cebbank.com/cebmms/apply/ps/ud-card-list.htm?class=wxps&pro_code=FHTG023536SZ0015RYXZ",
+			"order": 8,
+			"icon": "ZhaoShang.png",
+			"name": "招商银行",
+			"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxapphj/remote?dscontr=89&webAddress=N5700DJ2097263250001",
 			"recommends": [],
-			"time": "10元惠生活，看大片、品美食、洗靓车",
-			"limit": "积分兑豪礼",
+			"time": "新户刷卡赢好礼",
+			"limit": "取现额度100%，每月首笔免费取现",
 			"tags": [{
-				"text": "最高额度30万"
+				"text": "积分永久有效"
 			}]
 		},
+		
+		// {
+		// 	"order": 6,
+		// 	"icon": "GuangDa.png",
+		// 	"name": "光大银行",
+		// 	"url": "https://xyk.cebbank.com/cebmms/apply/ps/ud-card-list.htm?class=wxps&pro_code=FHTG023536SZ0015RYXZ",
+		// 	"recommends": [],
+		// 	"time": "10元惠生活，看大片、品美食、洗靓车",
+		// 	"limit": "积分兑豪礼",
+		// 	"tags": [{
+		// 		"text": "最高额度30万"
+		// 	}]
+		// },
 		// {
 		// 	"order": 3,
 		// 	"icon": "PuFa.png",
@@ -61,7 +61,7 @@ var bankList = {
 			"order": 1,
 			"icon": "XingYe.png",
 			"name": "兴业银行",
-			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=e1e57ac876fc4820a6a45645f28d312d",
+			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=b734c94cbe724ec996b1ca6a71791430",
 			"recommends": [{
 				"text": "大额度",
 				"color": "#E91E63"
@@ -197,25 +197,25 @@ var bankList = {
 // 			]
 // 		},
 // 
-		{
-			"order": 11,
-			"icon": "ICBC.png",
-			"name": "工商银行",
-			"url": "https://elife.icbc.com.cn/OFSTCARD/creditCard/apply.do?channel=109BJSJBJSJ000600000000000&paraPromoCode=EW8880007777680",
-			"recommends": [],
-			"time": "生日消费10倍积分",
-			"limit": "免货币兑换费",
-			"tags": [{
-					"text": "免年费"
-				},
-				{
-					"text": "消费返现"
-				},
-				{
-					"text": "旅行特惠"
-				}
-			]
-		},
+		// {
+		// 	"order": 11,
+		// 	"icon": "ICBC.png",
+		// 	"name": "工商银行",
+		// 	"url": "https://elife.icbc.com.cn/OFSTCARD/creditCard/apply.do?channel=109BJSJBJSJ000600000000000&paraPromoCode=EW8880007777680",
+		// 	"recommends": [],
+		// 	"time": "生日消费10倍积分",
+		// 	"limit": "免货币兑换费",
+		// 	"tags": [{
+		// 			"text": "免年费"
+		// 		},
+		// 		{
+		// 			"text": "消费返现"
+		// 		},
+		// 		{
+		// 			"text": "旅行特惠"
+		// 		}
+		// 	]
+		// },
 		// {
 		// 	"order": 12,
 		// 	"icon": "JianShe.png",

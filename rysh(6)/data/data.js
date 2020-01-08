@@ -63,7 +63,7 @@ var bankList = {
 			"order": 4,
 			"icon": "XingYe.png",
 			"name": "兴业银行",
-			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=d25d59ad31f44e7caaad08d32382693c",
+			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=2fc0719ae10544c2b638fd8735c92d3c",
 			"recommends": [{
 				"text": "易下卡",
 				"color": "#a91a63"
@@ -123,7 +123,7 @@ var bankList = {
 			"order": 6,
 			"icon": "MinSheng.png",
 			"name": "民生银行",
-			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=iD0qIwv6bXtOjjgBWk4JWitBX2%2f%2bpDUMqF10QIWHUA1txQ7q9y6WdlfCFLu2TxSkBarNIpaOMQsa6uZVuq2v7rcAWas2oIez7RCcdsFEVZQMnaFB7WkaxhbdANDUrpE7LWCO%2bFCtNIVwFPqqCzO3RoqaQIEOp3q4zOmz324C449MuMTR3M0NHo7%2byh6n7%2b0PJSrp%2biP5mKr%2bKwh2DdIdRv6JLfrT1rEj7Irq5RVnHq2vpF3VQtJre%2fN1yeMkUtz%2bOEJLyZDumiZe0UxyL4fm%2fdJl1aOR4p%2fCksYTXBkgk1WYemNdrVlvbXnq6cu5OPdLrBos0QCabiDbZkLWHUUFUg%3d%3d",
+			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=Eli%2b6arccV%2f%2fq7FrL9gNWv%2bpBAQHoxbIaUnTbiTn1eou0IgGXmVsCU181d%2fe%2fdfI2cyZBFFbof3ZWSIyaH5ikkKzGkKXLwSYozsDCrcCrYoKUnl%2fwYEB756UaQBI1Q4AQF6yY789X6mmc6XrrO%2bvXLdXIu6XXHeCl810abk8lLEJTIty6fMK4fFqbjRxykBDqkbrcP2WZ%2bPfHSSsOKT0rw4d9nUm%2fl%2fYJQo5NpFSkoeS3rmn0Tf9wPx73QtWpB%2bQB9zthTSChf0hwKqKIi7aC4JGjPCVTPGm7nSev8DbfrIlY2LhYCmlpC8SmGLJ9ewyLgypazksxZE3Jn9oxjmQJA%3d%3d",
 			"recommends": [{
 				"text": "三秒核卡",
 				"color": "#a91a63"
@@ -156,7 +156,7 @@ var bankList = {
 			"order": 7,
 			"icon": "ZhongXin.png",
 			"name": "中信银行",
-			"url": "https://creditcard.ecitic.com/h5/shenqing/index.html?sid=SJYGDQ92",
+			"url": "https://creditcard.ecitic.com/h5/shenqing/index.html?sid=SJSSJ186",
 			"recommends": [],
 			"time": "9积分兑豪礼，网购2倍积分",
 			"limit": "刷卡免年费",
@@ -182,42 +182,42 @@ var bankList = {
 // 			}]
 // 		},
 // 
-		{
-			"order": 8,
-			"icon": "GuangFa.png",
-			"name": "广发银行",
-			"url": "http://95508.com/zctY9zjp",
-			"recommends": [],
-			"time": "广发日9大品牌5折优惠",
-			"limit": "新客开卡返现6%",
-			"tags": [{
-					"text": "自选商户3倍积分"
-				},
-				{
-					"text": "加油返现"
-				}
-			]
-		},
+		// {
+		// 	"order": 8,
+		// 	"icon": "GuangFa.png",
+		// 	"name": "广发银行",
+		// 	"url": "http://95508.com/zctY9zjp",
+		// 	"recommends": [],
+		// 	"time": "广发日9大品牌5折优惠",
+		// 	"limit": "新客开卡返现6%",
+		// 	"tags": [{
+		// 			"text": "自选商户3倍积分"
+		// 		},
+		// 		{
+		// 			"text": "加油返现"
+		// 		}
+		// 	]
+		// },
 
-		{
-			"order": 11,
-			"icon": "ICBC.png",
-			"name": "工商银行",
-			"url": "http://elife.icbc.com.cn/OFSTCARD/creditCard/apply.do?channel=109RYXBRYXB000200000000000&paraPromoCode=EW88802001683824492",
-			"recommends": [],
-			"time": "生日消费10倍积分",
-			"limit": "免货币兑换费",
-			"tags": [{
-					"text": "免年费"
-				},
-				{
-					"text": "消费返现"
-				},
-				{
-					"text": "旅行特惠"
-				}
-			]
-		},
+		// {
+		// 	"order": 11,
+		// 	"icon": "ICBC.png",
+		// 	"name": "工商银行",
+		// 	"url": "http://elife.icbc.com.cn/OFSTCARD/creditCard/apply.do?channel=109RYXBRYXB000200000000000&paraPromoCode=EW88802001683824492",
+		// 	"recommends": [],
+		// 	"time": "生日消费10倍积分",
+		// 	"limit": "免货币兑换费",
+		// 	"tags": [{
+		// 			"text": "免年费"
+		// 		},
+		// 		{
+		// 			"text": "消费返现"
+		// 		},
+		// 		{
+		// 			"text": "旅行特惠"
+		// 		}
+		// 	]
+		// },
 		// {
 		// 	"order": 12,
 		// 	"icon": "JianShe.png",
@@ -282,7 +282,7 @@ var bankList = {
 			"order": 17,
 			"icon": "GuangZhou.png",
 			"name": "广州银行",
-			"url": "http://w3z.gzfsnet.cn/1YJw30",
+			"url": "https://ccmp.creditcard.gzcb.com.cn/ccmp/applypc/index.html#/?td_channelid=gzzx_APPgz009&channelCd=gzzx&channelSource=APPgz009",
 			"recommends": [],
 			"time": "额度最高8万",
 			"limit": "取现比例高",

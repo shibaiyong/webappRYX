@@ -55,29 +55,29 @@ var bankList = {
 		// 		"text": "额度最高8万元"
 		// 	}]
 		// },
-		{
-			"order": 1,
-			"icon": "XingYe.png",
-			"name": "兴业银行",
-			"url": "https://wm.cib.com.cn/html/webapp/fast-issue-con/home.html?id=efb8fde812754a72b4bf2b39a53bc630",
-			"recommends": [{
-				"text": "大额度",
-				"color": "#E91E63"
-			}],
-			"time": "1元办签证，境外刷卡笔笔返现",
-			"limit": "退税免排队，到账零等待",
-			"tags": [{
-					"text": "免年费"
-				},
-				{
-					"text": "大额度"
-				},
-				{
-					"text": "审批快"
-				}
-			]
-		},
-
+// 		{
+// 			"order": 1,
+// 			"icon": "XingYe.png",
+// 			"name": "兴业银行",
+// 			"url": "https://wm.cib.com.cn/html/webapp/fast-issue-con/home.html?id=efb8fde812754a72b4bf2b39a53bc630",
+// 			"recommends": [{
+// 				"text": "大额度",
+// 				"color": "#E91E63"
+// 			}],
+// 			"time": "1元办签证，境外刷卡笔笔返现",
+// 			"limit": "退税免排队，到账零等待",
+// 			"tags": [{
+// 					"text": "免年费"
+// 				},
+// 				{
+// 					"text": "大额度"
+// 				},
+// 				{
+// 					"text": "审批快"
+// 				}
+// 			]
+// 		},
+// 
 		{
 			"order": 2,
 			"icon": "PingAn.png",
@@ -96,7 +96,7 @@ var bankList = {
 					"text": "卡面由你选"
 				}
 			]
-		},
+		}
 
 		// {
 		// 	"order": 7,
@@ -195,25 +195,25 @@ var bankList = {
 // 			]
 // 		},
 // 
-		{
-			"order": 11,
-			"icon": "ICBC.png",
-			"name": "工商银行",
-			"url": "https://elife.icbc.com.cn/OFSTCARD/creditCard/apply.do?channel=109BJSJBJSJ000900000000000&paraPromoCode=EW8880007777680",
-			"recommends": [],
-			"time": "生日消费10倍积分",
-			"limit": "免货币兑换费",
-			"tags": [{
-					"text": "免年费"
-				},
-				{
-					"text": "消费返现"
-				},
-				{
-					"text": "旅行特惠"
-				}
-			]
-		}
+		// {
+		// 	"order": 11,
+		// 	"icon": "ICBC.png",
+		// 	"name": "工商银行",
+		// 	"url": "https://elife.icbc.com.cn/OFSTCARD/creditCard/apply.do?channel=109BJSJBJSJ000900000000000&paraPromoCode=EW8880007777680",
+		// 	"recommends": [],
+		// 	"time": "生日消费10倍积分",
+		// 	"limit": "免货币兑换费",
+		// 	"tags": [{
+		// 			"text": "免年费"
+		// 		},
+		// 		{
+		// 			"text": "消费返现"
+		// 		},
+		// 		{
+		// 			"text": "旅行特惠"
+		// 		}
+		// 	]
+		// }
 		// {
 		// 	"order": 12,
 		// 	"icon": "JianShe.png",

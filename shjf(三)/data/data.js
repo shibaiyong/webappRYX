@@ -1,27 +1,27 @@
 var bankList = {
 	"common": [
-		{
-			"order": 1,
-			"icon": "XingYe.png",
-			"name": "兴业银行",
-			"url": "https://wm.cib.com.cn/html/webapp/fast-issue-con/home.html?id=b193b57fe5e44dc6979df72d227c3550",
-			"recommends": [{
-				"text": "大额度",
-				"color": "#E91E63"
-			}],
-			"time": "1元办签证，境外刷卡笔笔返现",
-			"limit": "退税免排队，到账零等待",
-			"tags": [{
-					"text": "免年费"
-				},
-				{
-					"text": "大额度"
-				},
-				{
-					"text": "审批快"
-				}
-			]
-		},
+		// {
+		// 	"order": 1,
+		// 	"icon": "XingYe.png",
+		// 	"name": "兴业银行",
+		// 	"url": "https://wm.cib.com.cn/html/webapp/fast-issue-con/home.html?id=b193b57fe5e44dc6979df72d227c3550",
+		// 	"recommends": [{
+		// 		"text": "大额度",
+		// 		"color": "#E91E63"
+		// 	}],
+		// 	"time": "1元办签证，境外刷卡笔笔返现",
+		// 	"limit": "退税免排队，到账零等待",
+		// 	"tags": [{
+		// 			"text": "免年费"
+		// 		},
+		// 		{
+		// 			"text": "大额度"
+		// 		},
+		// 		{
+		// 			"text": "审批快"
+		// 		}
+		// 	]
+		// },
 		{
 			"order": 2,
 			"icon": "PingAn.png",
@@ -40,7 +40,7 @@ var bankList = {
 					"text": "卡面由你选"
 				}
 			]
-		},
+		}
 		// {
 		// 	"order": 3,
 		// 	"icon": "GuangDa.png",

@@ -8,20 +8,33 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
 		<script src="../../js/rem.js"></script>
 		<link rel="stylesheet" href="../../css/common.css" />
-		<link rel="stylesheet" href="../../css/helpdetail.css" />
-		<title>帮助中心</title>
+		<link rel="stylesheet" href="../../css/help.css" />
+		<title>卡小邦推广介绍</title>
 		
 	</head>
 	<body>
-		
+		<div class="banner">
+			<img src="../../img/promotionandintroduce.png"/>
+		</div>
 		<div class="introduce">
-			
-			
+			卡小邦介绍
 		</div>
 		<div class="item-container">
-			
+			<div class="item-list">
+				<ul>
+					<li tag='1'><div><span>1、卡小邦使用指南</span></div></li>
+					<li tag='2'><div><span>2、常见问题</span></div></li>
+					<li tag='3'><div><span>3、推广注意事项</span></div></li>
+					
+				</ul>
+			</div>
 		</div>
 	</body>
 </html>
 <script src="../../plugin/jquery.3.3.0.js"></script>
-<script src="../../js/helpdetail.js"></script>
+<script>
+	$('.item-list li').click(function(){
+		var tagName = $(this).attr('tag')
+		window.location.href="introducedetails.html?tagName=" + tagName
+	})
+</script>

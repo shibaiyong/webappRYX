@@ -28,6 +28,13 @@ var times
 		});
 	})
 	
+	$('#code').on('input',function(){
+		var str = $(this).val();
+		if(str.length>=8){
+			$(this).val(str.slice(0,str.length/2))
+		}
+	})
+	
 	//用户点击提交按钮验证
 	
 $('.mui-btn-primary').click(function () {

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="stylesheet" href="plugin/dropload/dropload.css" />
+    <title>表格</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+           
+            background-color: #f0f0f0;
+        }
+		.tablecontainer{
+			box-sizing: border-box;
+			padding:10px 10px;
+		}
+        
+        #table1{
+			width:100%;
+			table-layout: fixed;
+			border-spacing:0;
+			border-collapse:collapse;
+        }
+        #table1 thead th{
+			padding:4px 0;
+            /* border: 1px solid #93CE37;
+            border-bottom: 3px solid #9ED929; */
+			padding:6px 0;
+            border: 1px solid white;
+			border-bottom: 3px solid white;
+            color: #fff;
+            background-color: #9DD929;
+            border-radius: 5px 5px 0px 0px;
+        }
+		#table1 thead th:nth-child(1){
+		  
+		}
+		#table1 thead th:nth-child(2){
+		    width:25%;
+		}
+		#table1 thead th:nth-child(3){
+		    width:10%;
+		}
+		#table1 thead th:nth-child(4){
+		    width:25%
+		}
+		#table1 thead th:nth-child(5){
+		    width:20%;
+		}
+        #table1 thead th:empty{
+            background-color: transparent;
+            border: none;
+        }
+       
+        #table1 tbody td{
+            /* border: 2px solid #E7EFE0; */
+            text-align: center;
+            color: #666;
+            background-color: #DEF3CA;
+			padding:6px 0;
+            /* border-radius: 2px; */
+        }
+		#table1 tbody tr:nth-child(even) td{
+		    background-color: white; 
+		}
+		#table1 tbody tr:nth-child(odd) td{
+		    background-color: #ddd; 
+		}
+		
+		#table1 tbody td:nth-child(2){
+			/* color: red; */
+		}
+		#table1 tbody td:nth-child(4){
+			/* color: red; */
+		}
+        #table1 tbody span.check::before{
+            content: url(images/check0.png);
+        }
+        
+		
+		td a{
+			display: inline-block;
+			/* background: rgb(36,131,236);*/
+			/* background: #DEF3CA; */
+			color: rgb(36,131,236);
+			font-size: 12px;
+			padding: 3px 8px;
+			border-radius: 6px;
+			text-decoration: none;
+			font-weight: 100;
+			letter-spacing: 2px;
+		}
+    </style>
+</head>
+<body>
+<div class="tablecontainer">
+    <table id="table1">
+        <thead>
+            <tr>
+                <th abbr="Starter">编号</th>
+                <th abbr="Medium">本方人数</th>
+                <th abbr="Business">VS</th>
+                <th abbr="Deluxe">对方人数</th>
+				<th abbr="Deluxe">操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- <tr>
+                <td>512</td>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+				<td><a href="javascript:;">查询</a></td>
+            </tr>-->
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
+<script src="plugin/jquery.3.3.0.js"></script>
+<script src="plugin/dropload/dropload.js"></script>
+<script type="text/javascript">
+	
+	// dropload
+	var page = 0;
+	var size =5;
+	var dropload = $('.tablecontainer').dropload({
+	    scrollArea : window,
+	    domUp: {
+	        domClass: 'dropload-up',
+	        domRefresh: '<div class="dropload-refresh">↓下拉刷新</div>',
+	        domUpdate: '<div class="dropload-update">↑释放更新</div>',
+	        domLoad: '<div class="dropload-load"><span class="loading"></span>加载中...</div>'
+	    },
+	    domDown: {
+	        domClass: 'dropload-down',
+	        domRefresh: '<div class="dropload-refresh">↑上拉加载更多</div>',
+	        domLoad: '<div class="dropload-load"><span class="loading"></span>加载中...</div>',
+	        domNoData: '<div class="dropload-noData">暂无数据</div>'
+	    },
+	    loadDownFn: function (me) {
+	        page++;
+	        var result = '';
+	        var data = {
+	            page : page
+	        };
+	        $.ajax({
+	            type: 'get',
+	            url: 'json/more.json',
+	            dataType: 'json',
+	            data:data,
+	            success: function (res) {
+	                var arrLen = res.data.length;
+	                if(arrLen>0){
+	                    for (var i = 0; i < arrLen; i++) {
+	                        result += `<tr>
+	                                <td>${res.data[i].order}</td>
+	                                <td>${res.data[i].ownnum}</td>
+	                                <td>${res.data[i].vs}</td>
+	                                <td>${res.data[i].deversenum}</td>
+	                            	<td><a href="javascript:;">${res.data[i].operation}</a></td>
+	                            </tr>`
+	                    }
+	                }else{
+	                    // 锁定
+	                    me.lock();
+	                    me.noData();
+	                    if (page>1) {
+	                        $('.dropload-down').hide();
+	                    }
+	                }
+	
+	                // 为了测试，延迟1秒加载
+	                $('#table1 tbody').append(result);
+	                // 每次数据加载完，必须重置
+	                dropload.resetload();
+	
+	            },
+	            error: function (xhr, type) {
+	                alert('Ajax error!');
+	                // 即使加载出错，也得重置
+	                dropload.resetload();
+	            }
+	        })
+	    }
+	})
+</script>

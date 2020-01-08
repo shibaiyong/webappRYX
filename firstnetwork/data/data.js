@@ -59,28 +59,28 @@ var bankList = {
 		// 	}]
 		// },
 		
-		{
-			"order": 2,
-			"icon": "XingYe.png",
-			"name": "兴业银行",
-			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=17d6f4cd4c704904a046a1503e2e4df2",
-			"recommends": [{
-				"text": "易下卡",
-				"color": "red"
-			}],
-			"time": "1元办签证，境外刷卡笔笔返现",
-			"limit": "退税免排队，到账零等待",
-			"tags": [{
-					"text": "免年费"
-				},
-				{
-					"text": "大额度"
-				},
-				{
-					"text": "审批快"
-				}
-			]
-		},
+		// {
+		// 	"order": 2,
+		// 	"icon": "XingYe.png",
+		// 	"name": "兴业银行",
+		// 	"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=17d6f4cd4c704904a046a1503e2e4df2",
+		// 	"recommends": [{
+		// 		"text": "易下卡",
+		// 		"color": "red"
+		// 	}],
+		// 	"time": "1元办签证，境外刷卡笔笔返现",
+		// 	"limit": "退税免排队，到账零等待",
+		// 	"tags": [{
+		// 			"text": "免年费"
+		// 		},
+		// 		{
+		// 			"text": "大额度"
+		// 		},
+		// 		{
+		// 			"text": "审批快"
+		// 		}
+		// 	]
+		// },
 
 		{
 			"order": 1,
@@ -100,7 +100,7 @@ var bankList = {
 					"text": "卡面由你选"
 				}
 			]
-		},
+		}
 
 		// {
 		// 	"order": 9,
@@ -119,21 +119,21 @@ var bankList = {
 		// 	]
 		// },
 
-		{
-			"order": 3,
-			"icon": "MinSheng.png",
-			"name": "民生银行",
-			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=DtZBhVg%2bfhkiUrRxyuZlJddbc2x6iXxIGaUbEN0uv0pMeoC%2bSu2ncCM4VhKvS71GdpFQ7z1Qg%2fE8r%2bh%2bd9mmLIU%2baKTw70AsIi8aU8j1xxvuSQkxzBrOSNKZY4JUEje4%2fZdaGsEaK4YXAjmg0azbuJSpglTsS9%2fmR4y80JDA4shyjtfZkD8RZ61190tv%2bis38vvTASbPA5EslrfwQ3avmFIAgpt9OzTRl%2bWGaKOkaF39UCH%2bNXqby8n7r6CtcN92IJjjVwMUmFam54bqQKkqmOSaahA1Hmg9vs39o5wzItBn2KmIPDPoapPI%2f6Hhc%2fMuc5qFXt3s8rUK9uo9EiISkw%3d%3d",
-			"recommends": [{
-				"text": "三秒核卡",
-				"color": "orange"
-			}],
-			"time": "免费体检，机场礼遇，特惠商户",
-			"limit": "境外笔笔1%返现",
-			"tags": [{
-				"text": "消费免年费"
-			}]
-		}
+		// {
+		// 	"order": 3,
+		// 	"icon": "MinSheng.png",
+		// 	"name": "民生银行",
+		// 	"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=DtZBhVg%2bfhkiUrRxyuZlJddbc2x6iXxIGaUbEN0uv0pMeoC%2bSu2ncCM4VhKvS71GdpFQ7z1Qg%2fE8r%2bh%2bd9mmLIU%2baKTw70AsIi8aU8j1xxvuSQkxzBrOSNKZY4JUEje4%2fZdaGsEaK4YXAjmg0azbuJSpglTsS9%2fmR4y80JDA4shyjtfZkD8RZ61190tv%2bis38vvTASbPA5EslrfwQ3avmFIAgpt9OzTRl%2bWGaKOkaF39UCH%2bNXqby8n7r6CtcN92IJjjVwMUmFam54bqQKkqmOSaahA1Hmg9vs39o5wzItBn2KmIPDPoapPI%2f6Hhc%2fMuc5qFXt3s8rUK9uo9EiISkw%3d%3d",
+		// 	"recommends": [{
+		// 		"text": "三秒核卡",
+		// 		"color": "orange"
+		// 	}],
+		// 	"time": "免费体检，机场礼遇，特惠商户",
+		// 	"limit": "境外笔笔1%返现",
+		// 	"tags": [{
+		// 		"text": "消费免年费"
+		// 	}]
+		// }
 
 		// {
 		// 	"order": 8,
