@@ -97,7 +97,6 @@ function settime(obj) {
  
  
 $('.checkboxContainer').click(function(){
-	
 	if(!$(this).hasClass('checkedBg')){
 		$(this).addClass('checkedBg').removeClass('uncheckedBg')
 		$(this).find('span').attr('chec',1)
@@ -105,5 +104,4 @@ $('.checkboxContainer').click(function(){
 		$(this).removeClass('checkedBg').addClass('uncheckedBg')
 		$(this).find('span').attr('chec',0)
 	}
-	// alert($(this).find('span').attr('chec'))
 })

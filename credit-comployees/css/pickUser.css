@@ -106,9 +106,13 @@
 	color:rgb(36,131,236);
 }
 
+.applysteps img{
+	width:100%;
+}
+
 .complete {
 	position:absolute;
-	bottom:0.64rem;
+	bottom:0;
 	left:0;
 	width:100%;
 }

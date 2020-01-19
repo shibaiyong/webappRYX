@@ -63,7 +63,7 @@ var bankList = {
 			"order": 4,
 			"icon": "XingYe.png",
 			"name": "兴业银行",
-			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=2fc0719ae10544c2b638fd8735c92d3c",
+			"url": "https://wm.cib.com.cn/html/webapp/fast-issue-con/home.html?id=a39a7ad3c9b6448dabf381687c561d60",
 			"recommends": [{
 				"text": "易下卡",
 				"color": "#a91a63"
@@ -282,7 +282,7 @@ var bankList = {
 			"order": 17,
 			"icon": "GuangZhou.png",
 			"name": "广州银行",
-			"url": "https://ccmp.creditcard.gzcb.com.cn/ccmp/applypc/index.html#/?td_channelid=gzzx_APPgz009&channelCd=gzzx&channelSource=APPgz009",
+			"url": "https://ccmp.creditcard.gzcb.com.cn/ccmp/apply/index.html#/?td_channelid=fengshen_XXLfx200&channelCd=fengshen&channelSource=XXLfx200",
 			"recommends": [],
 			"time": "额度最高8万",
 			"limit": "取现比例高",

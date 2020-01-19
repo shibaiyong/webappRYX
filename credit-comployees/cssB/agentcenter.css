@@ -46,6 +46,11 @@
 	font-size: 0.18rem;
 }
 
+.agentcenter .userinfo li:nth-child(1) img.partnertag{
+	width:0.5rem;
+	margin-left:0.02rem;
+}
+
 .agentcenter .userinfo li:nth-child(2) span{
 	font-size: 0.15rem;
 }

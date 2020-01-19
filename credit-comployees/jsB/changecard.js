@@ -77,6 +77,17 @@ $('.mui-btn-primary').click(function () {
 		}
 	})
 })
+
+$('.checkboxContainer').click(function(){
+	if(!$(this).hasClass('checkedBg')){
+		$(this).addClass('checkedBg').removeClass('uncheckedBg')
+		$(this).find('span').attr('chec',1)
+	}else{
+		$(this).removeClass('checkedBg').addClass('uncheckedBg')
+		$(this).find('span').attr('chec',0)
+	}
+})
+
 //发送验证码倒计时
 function settime(obj) {
 		if(times){

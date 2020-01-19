@@ -57,3 +57,32 @@
       }, false);
   }
 })(375, 750);
+
+
+/*弹窗展示银行列表*/
+$(function(){
+	
+	$('.supportbank a').click(function(){
+		var str = `<div class="showtoastcontainer">
+				<div class="showtoast">
+					<div class="closeicon"><span>&#xD7;</span></div>
+					<div class="showtoast-title">提现支持银行</div>
+					<div class="content">
+						<ul>
+							<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+							<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+							<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+							<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+							<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>`
+		$('body').append(str)
+	})
+	
+	$(document).on('click','span',function(){
+		$('body .showtoastcontainer').remove();
+	})
+	
+})
