@@ -27,15 +27,31 @@
 				<ul>
 					<li>提现金额</li>
 					<li>
-						<span>￥</span><input class="withdrawmoney" type="text" value="80000.3"/>
+						<span>￥</span><input class="withdrawmoney" type="text" value=""/>
 					</li>
-					<li>当前可提现金额￥<span>80,000.00</span></li>
-					<li>当前最低提现10元，最高提现20,000元，每日限两笔</li>
+					<li>
+						<div class="actually"><span>到账金额</span><span>(自动计算)</span></div>
+						<div class="actuallymon"><span>80,000.00</span></div>
+					</li>
+					<li>
+						<div class="deduct"><span>扣税金额</span><span>4000</span></div>
+					</li>
+					<li><div>当前可提现金额￥<span>80,000.00</span></div><div class="supportbank">
+							<a href="javascript:;">提现支持银行</a>
+						</div></li>
 				</ul>
+				<div class="debuctexplain">
+					<span>
+						扣税说明：
+					</span>
+					<p>
+						按国家税收要求，当月提现金额超出800元，将收取个人所得税，详情请见：<a href="javascript:;">个人所得税计算公式</a>
+					</p>
+				</div>
 			</div>
 			
 			<div class="complete">
-				<button type="button" class="mybtn">下一步</button>
+				<button type="button" class="mybtn">提现</button>
 			</div>
 		</div>
 		

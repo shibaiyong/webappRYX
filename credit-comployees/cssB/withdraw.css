@@ -11,7 +11,7 @@ body{
 	border: none;
 	outline:none;
 	background: white;
-	height:0.5rem;
+	height:0.49rem;
 	width:80%;
 	font-size:0.3rem;
 	vertical-align: middle;
@@ -38,15 +38,17 @@ body{
 	box-sizing: border-box;
 }
 
-.withdraw .cash ul li:nth-child(4){
+.withdraw .cash ul li:nth-child(5){
 	font-size: 0.12rem;
-	color:#999;
 	margin-top: 0.12rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .withdraw .cash li:nth-child(2){
 	font-size:0.3rem;
-	border-bottom: 0.005rem solid #999;
+	/* border-bottom: 0.005rem solid #999; */
 	margin:0.16rem 0;
 }
 
@@ -98,4 +100,54 @@ body{
 	background: rgb(36,131,236);
 	color:white;
 	border-radius:6px;
+}
+
+
+/*添加的样式*/
+.withdraw .cash li:nth-child(3){
+	display: flex;
+	align-items: center;
+	font-size: 0.14rem;
+	background: rgb(235,235,235);
+	margin:0 -0.2rem;
+	padding:0 0.2rem;
+	padding-top:0.1rem;
+}
+.withdraw .cash li:nth-child(4){
+	background: rgb(235,235,235);
+	padding:0 0.2rem;
+	padding-top: 0.18rem;
+	padding-bottom: 0.1rem;
+	margin:0 -0.2rem;
+}
+
+.actually{
+	width:0.68rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.actuallymon{
+	font-size: 0.24rem;
+	margin-left:0.12rem;
+}
+
+.deduct{
+	font-size: 0.14rem;
+	color:rgb(153,153,153);
+}
+.deduct span:first-child{
+	margin-right:0.12rem;
+	display: inline-block;
+	width:0.68rem;
+}
+
+.supportbank a,.debuctexplain p a{
+	color:rgb(81,159,255);
+}
+
+.debuctexplain{
+	font-size: 0.12rem;
+	margin-top:0.12rem;
 }

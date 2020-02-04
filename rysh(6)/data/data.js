@@ -15,18 +15,18 @@ var bankList = {
 		// 		"text": "额度最高10万"
 		// 	}]
 		// },
-		{
-			"order": 10,
-			"icon": "ZhaoShang.png",
-			"name": "招商银行",
-			"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxapphj/remote?dscontr=89&webAddress=N5700DJ2097261350001",
-			"recommends": [],
-			"time": "新户刷卡赢好礼",
-			"limit": "取现额度100%，每月首笔免费取现",
-			"tags": [{
-				"text": "积分永久有效"
-			}]
-		},
+		// {
+		// 	"order": 10,
+		// 	"icon": "ZhaoShang.png",
+		// 	"name": "招商银行",
+		// 	"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxapphj/remote?dscontr=89&webAddress=N5700DJ2097261350001",
+		// 	"recommends": [],
+		// 	"time": "新户刷卡赢好礼",
+		// 	"limit": "取现额度100%，每月首笔免费取现",
+		// 	"tags": [{
+		// 		"text": "积分永久有效"
+		// 	}]
+		// },
 		{
 			"order": 5,
 			"icon": "GuangDa.png",
@@ -123,7 +123,7 @@ var bankList = {
 			"order": 6,
 			"icon": "MinSheng.png",
 			"name": "民生银行",
-			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=Eli%2b6arccV%2f%2fq7FrL9gNWv%2bpBAQHoxbIaUnTbiTn1eou0IgGXmVsCU181d%2fe%2fdfI2cyZBFFbof3ZWSIyaH5ikkKzGkKXLwSYozsDCrcCrYoKUnl%2fwYEB756UaQBI1Q4AQF6yY789X6mmc6XrrO%2bvXLdXIu6XXHeCl810abk8lLEJTIty6fMK4fFqbjRxykBDqkbrcP2WZ%2bPfHSSsOKT0rw4d9nUm%2fl%2fYJQo5NpFSkoeS3rmn0Tf9wPx73QtWpB%2bQB9zthTSChf0hwKqKIi7aC4JGjPCVTPGm7nSev8DbfrIlY2LhYCmlpC8SmGLJ9ewyLgypazksxZE3Jn9oxjmQJA%3d%3d",
+			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=wcHPSbmwb0w2gwWyVPMvvfrTpbGrwBR8JVQ%2fvCA4W87J25E3k5vmcrd7mvRJ77JhQb5GZP7TkFmvzn40aDZqlpYEQGMTuB%2bKfMV8gywwI659%2fcUflB8EYnBenQNxZX4R72%2fV6OenbehmgIYkSac9eNOTbmqT9pMBkGm1Mu%2fXl6wLHWMpCvkZnZAjEtnvJkOTTF67YG6CoFFw8Koz0iAbjbf9dwIuP1ovw8Txgelqh6fmYYXwXm2SuGV07zes%2fVISvTA2cZdwj9U%2fTrFHunJo2Xc7FFDXKfHZ5QKtR%2fVCef6fclUCT5f2tJUQjz3ZfY73zDimtcNBagvikOZsKCPtXQ%3d%3d",
 			"recommends": [{
 				"text": "三秒核卡",
 				"color": "#a91a63"
@@ -264,20 +264,20 @@ var bankList = {
  		// 	}]
  		// },
 
-		{
-			"order": 16,
-			"icon": "HaErBin.png",
-			"name": "哈尔滨银行",
-			"url": "https://apl.cc.hrbb.com.cn/bankcoas/mb/?Channel=C37697077050B7D1&Merchant=C0F9207C197B29AA",
-			"recommends": [],
-			"time": "生日当天双倍积分，积分好礼",
-			"limit": "灵活分期，多种选择",
-			"tags": [{
-				"text": "免年费"
-			}, {
-				"text": "免息期长达56天"
-			}]
-		},
+		// {
+		// 	"order": 16,
+		// 	"icon": "HaErBin.png",
+		// 	"name": "哈尔滨银行",
+		// 	"url": "https://apl.cc.hrbb.com.cn/bankcoas/mb/?Channel=C37697077050B7D1&Merchant=C0F9207C197B29AA",
+		// 	"recommends": [],
+		// 	"time": "生日当天双倍积分，积分好礼",
+		// 	"limit": "灵活分期，多种选择",
+		// 	"tags": [{
+		// 		"text": "免年费"
+		// 	}, {
+		// 		"text": "免息期长达56天"
+		// 	}]
+		// },
 		{
 			"order": 17,
 			"icon": "GuangZhou.png",

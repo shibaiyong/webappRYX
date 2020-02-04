@@ -78,7 +78,7 @@ body{
 .hotbank .hotbankcontent
 {
 	display: flex;
-	justify-content: space-between;
+	/* justify-content: space-between; */
 	flex-wrap: wrap;
 }
 
@@ -133,6 +133,7 @@ body{
 	border-radius: 8px;
 	box-shadow: #eee 0 0 0.1rem 0.06rem;
 	position: relative;
+	margin-right: 0.11rem;
 }
 
 .hotbank .bankitem .charactor{
@@ -148,7 +149,9 @@ body{
 	line-height: 0.16rem;
 }
 
-.hotbank .bankitem:nth-child(3n){
+
+
+.hotbank .bankitem:nth-of-type(3n){
 	margin-right: 0;
 }
 

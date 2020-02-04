@@ -17,18 +17,18 @@ var bankList = {
 			}]
 		},
 		*/
-		{
-			"order": 8,
-			"icon": "ZhaoShang.png",
-			"name": "招商银行",
-			"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxapphj/remote?dscontr=89&webAddress=N5700DJ2097263250001",
-			"recommends": [],
-			"time": "新户刷卡赢好礼",
-			"limit": "取现额度100%，每月首笔免费取现",
-			"tags": [{
-				"text": "积分永久有效"
-			}]
-		},
+		// {
+		// 	"order": 8,
+		// 	"icon": "ZhaoShang.png",
+		// 	"name": "招商银行",
+		// 	"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxapphj/remote?dscontr=89&webAddress=N5700DJ2097263250001",
+		// 	"recommends": [],
+		// 	"time": "新户刷卡赢好礼",
+		// 	"limit": "取现额度100%，每月首笔免费取现",
+		// 	"tags": [{
+		// 		"text": "积分永久有效"
+		// 	}]
+		// },
 		
 		// {
 		// 	"order": 6,
@@ -248,20 +248,20 @@ var bankList = {
  // 			}]
  // 		},
 
-		{
-			"order": 14,
-			"icon": "HaErBin.png",
-			"name": "哈尔滨银行",
-			"url": "https://apl.cc.hrbb.com.cn/bankcoas/mb/?Channel=C37697077050B7D1&Merchant=52AEF1D619821119",
-			"recommends": [],
-			"time": "生日当天双倍积分，积分好礼",
-			"limit": "灵活分期，多种选择",
-			"tags": [{
-				"text": "免年费"
-			}, {
-				"text": "免息期长达56天"
-			}]
-		}
+		// {
+		// 	"order": 14,
+		// 	"icon": "HaErBin.png",
+		// 	"name": "哈尔滨银行",
+		// 	"url": "https://apl.cc.hrbb.com.cn/bankcoas/mb/?Channel=C37697077050B7D1&Merchant=52AEF1D619821119",
+		// 	"recommends": [],
+		// 	"time": "生日当天双倍积分，积分好礼",
+		// 	"limit": "灵活分期，多种选择",
+		// 	"tags": [{
+		// 		"text": "免年费"
+		// 	}, {
+		// 		"text": "免息期长达56天"
+		// 	}]
+		// }
 		// {
 		// 	"order": 16,
 		// 	"icon": "GuangZhou.png",
