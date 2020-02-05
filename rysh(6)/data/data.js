@@ -123,7 +123,7 @@ var bankList = {
 			"order": 6,
 			"icon": "MinSheng.png",
 			"name": "民生银行",
-			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=wcHPSbmwb0w2gwWyVPMvvfrTpbGrwBR8JVQ%2fvCA4W87J25E3k5vmcrd7mvRJ77JhQb5GZP7TkFmvzn40aDZqlpYEQGMTuB%2bKfMV8gywwI659%2fcUflB8EYnBenQNxZX4R72%2fV6OenbehmgIYkSac9eNOTbmqT9pMBkGm1Mu%2fXl6wLHWMpCvkZnZAjEtnvJkOTTF67YG6CoFFw8Koz0iAbjbf9dwIuP1ovw8Txgelqh6fmYYXwXm2SuGV07zes%2fVISvTA2cZdwj9U%2fTrFHunJo2Xc7FFDXKfHZ5QKtR%2fVCef6fclUCT5f2tJUQjz3ZfY73zDimtcNBagvikOZsKCPtXQ%3d%3d",
+			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=CnNRxfWEUVJZ%2b5CP0IQVGpz%2bcDxA5UEiD4nPy3iltQ1vzzmlCHcOC3YUU%2faTufJ93bQ2CsmW%2fO2fW9KVQ12qu62FtIeHQ7UX5w8U%2fLd5dfFIp40vXgehcPb4YFmCjz%2bRIHK3Uegs4Gs72nKMF3jayfS8uKIELMeGcRwy8XcGJ6i5DpGlyvDmPgMgkrqq1Rq92IJcx5P1mvsXuN7NREDfF08LmH7pgJJcKnrjGNqHuBRszlecdURspQZwXOoDdwQma74YY4IGAa0E5izy9gu7E7WZrnHlWQM5a99qSAqMdEJ3XQcvAPsTyCV045ejLqC837jTkTyWXAF%2f7ZLYRxpSDg%3d%3d",
 			"recommends": [{
 				"text": "三秒核卡",
 				"color": "#a91a63"
@@ -282,7 +282,7 @@ var bankList = {
 			"order": 17,
 			"icon": "GuangZhou.png",
 			"name": "广州银行",
-			"url": "https://ccmp.creditcard.gzcb.com.cn/ccmp/apply/index.html#/?td_channelid=fengshen_XXLfx200&channelCd=fengshen&channelSource=XXLfx200",
+			"url": "https://ccmp.creditcard.gzcb.com.cn/ccmp/apply/index.html#/?td_channelid=fengshen_XXLfx043&channelCd=fengshen&channelSource=XXLfx043",
 			"recommends": [],
 			"time": "额度最高8万",
 			"limit": "取现比例高",
