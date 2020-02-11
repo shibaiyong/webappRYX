@@ -202,3 +202,28 @@
 <script src="../plugin/jquery.3.3.0.js"></script>
 <script src="../plugin/swiper-4.5.0/js/swiper.min.js"></script>
 <script src="../jsB/indexB.js"></script>
+<script>
+	var la = [3,4,6,8,9];
+	var lb = [1,2,3,9,10];
+	var lc = [];
+	var i = 0, j =0;
+	var k = 0;
+
+	while(i < la.length && j < lb.length){
+		if(la[i] < lb[j]){
+			lc[k++] = la[i++];
+		}else{
+			lc[k++] = lb[j++];
+		}
+	}
+
+	while( i < la.length ){
+		lc[++K] = la[i++];
+	}
+
+	while( j < lb.length ){
+		lc[++k] = lb[j++];
+	}
+
+	console.log(lc)
+</script>
