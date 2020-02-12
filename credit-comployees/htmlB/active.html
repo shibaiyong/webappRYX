@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script src="../plugin/jquery.3.3.0.js"></script>
+		<script src="../js/rem.js"></script>
+		<link rel="stylesheet" href="../css/common.css" />
+    <title>卡小邦活动页</title>
+    <style>
+      .banner img{
+        width:100%;
+      }
+      .formarea,.rules{
+        padding:0 0.18rem;
+        background:#feeed4;
+        color:#333;
+      }
+      .rules{
+        padding:0.2rem 0.18rem;
+      }
+
+      .rules img {
+        width:100%;
+      }
+
+      .formarea p{
+        font-size: 0.14rem;
+        padding-top:0.2rem;
+        line-height: 0.24rem;
+      }
+
+      .formarea p span{
+        color:red;
+      }
+
+      .formarea ul li{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:0.22rem;
+      }
+      .formarea ul input.myinput {
+        display: inline-block;
+        width: 100%;
+        padding-left: 0.5rem;
+        box-sizing: border-box;
+        height: 0.5rem;
+        border-radius: 0.25rem;
+      }
+      #phone{
+        background: white url(../imgB/activephone@2x.png) no-repeat 0.22rem center;
+        background-size: 0.14rem auto;
+      }
+
+      #code{
+        background: white url(../imgB/vertification@2x.png) no-repeat 0.22rem center;
+        background-size: 0.14rem auto;
+        width:62%;
+      }
+
+      .code-phone{
+        width:31%;
+        color:white;
+        font-size: 0.14rem;
+      }
+
+      .openbagcontainer img{
+        width:100%;
+        margin-top:0.3rem;
+      }
+
+      .agreement{
+        margin-top:0.14rem;
+      }
+
+      .agreement a {
+        font-size: 0.12rem;
+        color: #ff5635;
+      }
+
+      .checkboxContainer.checkedBg span{
+        background:url(../imgB/checkedorange@2x.png) no-repeat center center;
+        background-size:100% 100%;
+      }
+
+      .checkboxContainer.uncheckedBg span{
+        background:url(../imgB/uncheckedorange@2x.png) no-repeat center center;
+        background-size:100% 100%;
+      }
+      
+    </style>
+	</head>
+	<body>
+      <div class="banner">
+        <img src="../imgB/activebanner@2x.png"/>
+      </div>
+
+      <div class="formarea">
+
+        <P>
+          温馨提示：本活动填写的手机号，<span>必须与卡小帮注册手机号保持一致，</span>否则奖励不能正常发放。
+        </P>
+
+        <ul>
+          <li class="phone"><input class="myinput" id="phone" name="phone" type="text" placeholder="请输入手机号"/></li>
+          <li class="checkcode"><input class="myinput" id="code" name="smscode" type="text" placeholder="请输入验证码"/><img class="code-phone" src="../imgB/fetchcode@2x.png"/></li>
+        </ul>
+
+        <div class="openbagcontainer"><img src="../imgB/openbag@2x.png"/></div>
+        
+        <div class="agreement">
+            <div class="checkboxContainer checkedBg">
+              <span for="mycheck1" id="mycheck1" chec="1"></span>
+            </div>
+            <a href="#">我已阅读并同意《用户注册协议》</a>
+          </div>
+
+      </div>
+
+      <div class="rules">
+
+          <img src="../imgB/rules@3x.png"/>
+
+      </div>
+		
+	</body>
+</html>
+
+
+

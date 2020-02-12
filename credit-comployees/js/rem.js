@@ -83,6 +83,16 @@ $(function(){
 	
 	$(document).on('click','span',function(){
 		$('body .showtoastcontainer').remove();
-	})
+    })
+    
+    $('.checkboxContainer').click(function(){
+        if(!$(this).hasClass('checkedBg')){
+            $(this).addClass('checkedBg').removeClass('uncheckedBg')
+            $(this).find('span').attr('chec',1)
+        }else{
+            $(this).removeClass('checkedBg').addClass('uncheckedBg')
+            $(this).find('span').attr('chec',0)
+        }
+    })
 	
 })

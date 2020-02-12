@@ -123,7 +123,7 @@ var bankList = {
 			"order": 6,
 			"icon": "MinSheng.png",
 			"name": "民生银行",
-			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=CnNRxfWEUVJZ%2b5CP0IQVGpz%2bcDxA5UEiD4nPy3iltQ1vzzmlCHcOC3YUU%2faTufJ93bQ2CsmW%2fO2fW9KVQ12qu62FtIeHQ7UX5w8U%2fLd5dfFIp40vXgehcPb4YFmCjz%2bRIHK3Uegs4Gs72nKMF3jayfS8uKIELMeGcRwy8XcGJ6i5DpGlyvDmPgMgkrqq1Rq92IJcx5P1mvsXuN7NREDfF08LmH7pgJJcKnrjGNqHuBRszlecdURspQZwXOoDdwQma74YY4IGAa0E5izy9gu7E7WZrnHlWQM5a99qSAqMdEJ3XQcvAPsTyCV045ejLqC837jTkTyWXAF%2f7ZLYRxpSDg%3d%3d",
+			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=Y8YKn3Ph10C7ZjDimr6yF9%2b3dy1jNG5iuuSOiJsEe2wJnPzazWVOgLh6lDldorFXmJSLPT3oEVje0QAGjdsMuY3SF2bvm%2bMcuGqY3HKuX9wsYfdfDU0ljo%2bOKn6K4YHaa3mjwc%2ffNznZmJiqTOlDvOrBJfzIFizLLra7MRMmGgJ22FI5AuzvR9C3cNPKvjkzNaI7ffhTCflr4vrisIU9QV4Jy6j4Z7s844AZGq0Mdyiau3O08%2bTNBNQRqSWTadk1WD46YPkdMAy0%2bQM0ho5e%2b53GxLRf%2bS5%2f5skx%2bCvnksfKiG5WmkZ6F3ouvmt8Tc%2fPyVMR7E5ZD1Oy4c14wszkhw%3d%3d",
 			"recommends": [{
 				"text": "三秒核卡",
 				"color": "#a91a63"

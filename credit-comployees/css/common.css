@@ -62,6 +62,25 @@ a:active{
 
 /********************************自定义输入框***********************/
 
+/********************************checkbox实现公共样式***********************/
+
+.checkboxContainer{
+	display: inline-block;
+	width:0.13rem;
+	height: 0.13rem;
+	position:relative;
+	vertical-align: middle;
+}
+
+.checkboxContainer span{
+	display: inline-block;
+	position: absolute;
+	top:0;left:0;right: 0;bottom:0;
+	z-index: 2;
+}
+
+/********************************checkbox实现公共样式***********************/
+
 .footercontainer{
 	height: 0.64rem;
 }
