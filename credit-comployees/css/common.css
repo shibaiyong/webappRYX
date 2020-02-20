@@ -8,6 +8,9 @@ body{color:#000000;background:#FFF;}
 a,a:hover{color:#000000;text-decoration:none !important;}
 a:hover{text-decoration:none !important;}
 
+
+body iframe {display: none;}
+
 /* 清除浮动 */
 .clearfixed::after{
   display:block; content:""; height:0; clear:both; overflow:hidden; visibility:hidden;

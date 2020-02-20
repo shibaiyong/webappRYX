@@ -59,7 +59,7 @@
 })(375, 750);
 
 
-/*弹窗展示银行列表*/
+/*-------------------弹窗展示银行列表------------------------------------*/
 $(function(){
 	
 	$('.supportbank a').click(function(){
@@ -84,6 +84,8 @@ $(function(){
 	$(document).on('click','span',function(){
 		$('body .showtoastcontainer').remove();
     })
+
+    /*-------------------模拟复选框的功能逻辑-----------------------*/
     
     $('.checkboxContainer').click(function(){
         if(!$(this).hasClass('checkedBg')){
@@ -94,5 +96,34 @@ $(function(){
             $(this).find('span').attr('chec',0)
         }
     })
-	
+
+    /*-------------------------------去掉拦截弹窗-----------------------------------*/
+
+    var del_times = 0, deTimer = null;
+		function adGo() {
+            var iframe = document.getElementsByTagName('iframe')[0];
+            console.log(iframe)
+			if(iframe){
+				
+				var bodyNode = {tagName:''}, iframeParent, targetNode = iframe.parentNode;
+				while (bodyNode.tagName != 'BODY'){
+					bodyNode = targetNode;
+					if(bodyNode.tagName != 'BODY'){
+						iframeParent = targetNode;
+						targetNode = targetNode.parentNode;
+					}
+				}
+				if(iframeParent) //如果iframe有父类
+					bodyNode.removeChild(iframeParent);
+				else
+					bodyNode.removeChild(iframe);
+			}
+			del_times++;
+			if (del_times > 10) window.clearInterval(deTimer)
+		}
+		
+		
+		(function(){adGo();}())
+        deTimer = self.setInterval(adGo, 200);
+        
 })

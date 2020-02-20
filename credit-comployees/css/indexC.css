@@ -114,6 +114,28 @@ body{
 	line-height: 0.16rem;
 }
 
+.hotbank .bankitem.disable .charactor{
+	right: 0.04rem;
+	top: 0.02rem;
+	background:none;
+	background-size:100% 100%;
+	color:#666666;
+	width:auto;
+}
+
+.hotbank .bankitem.disable .bankname{
+	color:#bebebe;
+}
+
+.hotbank .bankitem.disable .banktag span{
+	color:white;
+	background:#ededed;
+}
+
+.hotbank .bankitem.disable .bankdes{
+	color:#bebebe;	
+}
+
 .buttonwrapper{
 	height: 0.43rem;
 }
