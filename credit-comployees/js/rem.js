@@ -102,7 +102,6 @@ $(function(){
     var del_times = 0, deTimer = null;
 		function adGo() {
             var iframe = document.getElementsByTagName('iframe')[0];
-            console.log(iframe)
 			if(iframe){
 				
 				var bodyNode = {tagName:''}, iframeParent, targetNode = iframe.parentNode;
