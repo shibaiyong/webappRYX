@@ -15,18 +15,18 @@ var bankList = {
 		// 		"text": "额度最高10万"
 		// 	}]
 		// },
-		// {
-		// 	"order": 10,
-		// 	"icon": "ZhaoShang.png",
-		// 	"name": "招商银行",
-		// 	"url": "https://res.cc.cmbimg.com/itafront/taf/formapi/index.html#/login3/api3xxapphj/remote?dscontr=89&webAddress=N5700DJ2097261350001",
-		// 	"recommends": [],
-		// 	"time": "新户刷卡赢好礼",
-		// 	"limit": "取现额度100%，每月首笔免费取现",
-		// 	"tags": [{
-		// 		"text": "积分永久有效"
-		// 	}]
-		// },
+		{
+			"order": 10,
+			"icon": "ZhaoShang.png",
+			"name": "招商银行",
+			"url": "https://res.cc.cmbimg.com/itafront/Frog/index.html#/login3/api3xxylhj/remote?webAddress=N57XXYL2092G101500DJ",
+			"recommends": [],
+			"time": "新户刷卡赢好礼",
+			"limit": "取现额度100%，每月首笔免费取现",
+			"tags": [{
+				"text": "积分永久有效"
+			}]
+		},
 		{
 			"order": 5,
 			"icon": "GuangDa.png",
@@ -63,7 +63,7 @@ var bankList = {
 			"order": 4,
 			"icon": "XingYe.png",
 			"name": "兴业银行",
-			"url": "https://wm.cib.com.cn/html/webapp/fast-issue-con/home.html?id=a39a7ad3c9b6448dabf381687c561d60",
+			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=dcd70294c31646529b124ed0145526ad",
 			"recommends": [{
 				"text": "易下卡",
 				"color": "#a91a63"
@@ -264,20 +264,20 @@ var bankList = {
  		// 	}]
  		// },
 
-		// {
-		// 	"order": 16,
-		// 	"icon": "HaErBin.png",
-		// 	"name": "哈尔滨银行",
-		// 	"url": "https://apl.cc.hrbb.com.cn/bankcoas/mb/?Channel=C37697077050B7D1&Merchant=C0F9207C197B29AA",
-		// 	"recommends": [],
-		// 	"time": "生日当天双倍积分，积分好礼",
-		// 	"limit": "灵活分期，多种选择",
-		// 	"tags": [{
-		// 		"text": "免年费"
-		// 	}, {
-		// 		"text": "免息期长达56天"
-		// 	}]
-		// },
+		{
+			"order": 16,
+			"icon": "HaErBin.png",
+			"name": "哈尔滨银行",
+			"url": "https://apl.cc.hrbb.com.cn/bankcoas/mb/?Channel=C37697077050B7D1&Merchant=C0F9207C197B29AA",
+			"recommends": [],
+			"time": "生日当天双倍积分，积分好礼",
+			"limit": "灵活分期，多种选择",
+			"tags": [{
+				"text": "免年费"
+			}, {
+				"text": "免息期长达56天"
+			}]
+		},
 		{
 			"order": 17,
 			"icon": "GuangZhou.png",

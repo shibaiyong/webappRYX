@@ -12,7 +12,7 @@ body{
 	outline:none;
 	background: white;
 	height:0.49rem;
-	width:80%;
+	width:70%;
 	font-size:0.3rem;
 	vertical-align: middle;
 	margin-left: 0.1rem;
@@ -147,7 +147,7 @@ body{
 	color:rgb(81,159,255);
 }
 
-.debuctexplain{
+.withdraw .cash .debuctexplain{
 	font-size: 0.12rem;
 	margin-top:0.12rem;
 }

@@ -34,12 +34,22 @@
 	<body>
 		<div class="hotbank">
 			<img class="bg" src="../img/promotion@2x.png"/>
-			<img class="bt-icon" src="../img/promotionRegister@2x.png"/>
+			<img class="bt-icon" src="../img/promotionRegister@2x.png" flag='1'/>
 		</div>
 		
 	</body>
 </html>
 <script src="../plugin/jquery.3.3.0.js"></script>
 <script>
-	
+	$('.bt-icon').click(function(){
+		var that = $(this);
+		if(that.attr('flag')!='1'){
+			return false;
+		}
+		alert(that.attr('flag'))
+		that.attr('flag','0')
+		setTimeout(function(){
+			that.attr('flag','1')
+		},2000)
+  })
 </script>
