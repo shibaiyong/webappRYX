@@ -19,7 +19,7 @@ var bankList = {
 			"order": 10,
 			"icon": "ZhaoShang.png",
 			"name": "招商银行",
-			"url": "https://res.cc.cmbimg.com/itafront/Frog/index.html#/login3/api3xxylhj/remote?webAddress=N57XXYL2092G101500DJ",
+			"url": "http://gkekj.cn/UKB",
 			"recommends": [],
 			"time": "新户刷卡赢好礼",
 			"limit": "取现额度100%，每月首笔免费取现",
@@ -123,7 +123,7 @@ var bankList = {
 			"order": 6,
 			"icon": "MinSheng.png",
 			"name": "民生银行",
-			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=Y8YKn3Ph10C7ZjDimr6yF9%2b3dy1jNG5iuuSOiJsEe2wJnPzazWVOgLh6lDldorFXmJSLPT3oEVje0QAGjdsMuY3SF2bvm%2bMcuGqY3HKuX9wsYfdfDU0ljo%2bOKn6K4YHaa3mjwc%2ffNznZmJiqTOlDvOrBJfzIFizLLra7MRMmGgJ22FI5AuzvR9C3cNPKvjkzNaI7ffhTCflr4vrisIU9QV4Jy6j4Z7s844AZGq0Mdyiau3O08%2bTNBNQRqSWTadk1WD46YPkdMAy0%2bQM0ho5e%2b53GxLRf%2bS5%2f5skx%2bCvnksfKiG5WmkZ6F3ouvmt8Tc%2fPyVMR7E5ZD1Oy4c14wszkhw%3d%3d",
+			"url": "https://creditcard.cmbc.com.cn/wsv2/?enstr=Z5VlgjQxe69yng2st4uMO8pMHpETw37kqEHuUxIoYw3lCutjQWZ%2bQDteQ%2fDqX9yoRN%2bwcNaEZwrJvnbRTl93QoJtxWE3QtQW8Vmdh9%2fLmsENcgEXooy1vEmnec6F3Ih9hFgOZyY9FSwlwNPebHqVKL6uRTpzxEIWBrBA9bt9HKqlzbG7qU%2bmcPxliOwHZB%2bFLGyjgSb%2fkcgrKnvuQoxL68%2b3GY%2bLPEDQPMkIsEVMRoIWd%2bd6WGFkwghrNShM3R53c2U%2foHK7U0RBa%2bE3ViTv3dITGjf%2bbVDK2avexO2RI60Yihc7Z3%2b7xcLzzIXyHUdrHKkCycVnVM9hgMOdiir7ZQ%3d%3d",
 			"recommends": [{
 				"text": "三秒核卡",
 				"color": "#a91a63"
@@ -156,7 +156,7 @@ var bankList = {
 			"order": 7,
 			"icon": "ZhongXin.png",
 			"name": "中信银行",
-			"url": "https://creditcard.ecitic.com/h5/shenqing/index.html?sid=SJSSJ186",
+			"url": "http://cuxukj.com/linkUrl/09cdc12c",
 			"recommends": [],
 			"time": "9积分兑豪礼，网购2倍积分",
 			"limit": "刷卡免年费",
@@ -182,22 +182,22 @@ var bankList = {
 // 			}]
 // 		},
 // 
-		// {
-		// 	"order": 8,
-		// 	"icon": "GuangFa.png",
-		// 	"name": "广发银行",
-		// 	"url": "http://95508.com/zctY9zjp",
-		// 	"recommends": [],
-		// 	"time": "广发日9大品牌5折优惠",
-		// 	"limit": "新客开卡返现6%",
-		// 	"tags": [{
-		// 			"text": "自选商户3倍积分"
-		// 		},
-		// 		{
-		// 			"text": "加油返现"
-		// 		}
-		// 	]
-		// },
+		{
+			"order": 8,
+			"icon": "GuangFa.png",
+			"name": "广发银行",
+			"url": "http://95508.com/zct3WPa4",
+			"recommends": [],
+			"time": "广发日9大品牌5折优惠",
+			"limit": "新客开卡返现6%",
+			"tags": [{
+					"text": "自选商户3倍积分"
+				},
+				{
+					"text": "加油返现"
+				}
+			]
+		},
 
 		// {
 		// 	"order": 11,

@@ -1,0 +1,109 @@
+body{
+	background:white;
+}
+.agentbanner{
+	height:0.75rem;
+	background:url(../imgB/agentbanner@2x.png) no-repeat;
+	background-size: 100%;
+	display: flex;
+	align-items: center;
+	padding-left:0.15rem;
+	box-sizing:border-box;
+}
+
+.agentbanner .banklogoContainer{
+	width:0.4rem;
+	height: 0.4rem;
+	border:1px solid white;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 0.12rem;
+}
+
+.agentbanner .banklogoContainer img{
+	width:0.24rem;
+}
+
+.agentbanner dl{
+	color:white;
+}
+
+.agentbanner dl dt{
+	font-size:0.19rem;
+	margin-bottom:0.06rem;
+}
+
+.agentbanner dl dd{
+	font-size:0.12rem;
+}
+
+.mui-card{
+	margin:0;
+}
+
+.mui-active .mui-navigate-right{
+	background-color:white;
+}
+
+.mui-card .mui-table-view-cell.mui-collapse .mui-collapse-content{
+	background-color:#ededed;
+	font-size:0.13rem;
+	color:rgb(153,153,153);
+	letter-spacing: 1px;
+}
+.mui-card .mui-collapse-content li{
+	display: flex;
+	align-items: top;
+}
+
+.mui-card .mui-collapse-content li+li{
+	margin-top:0.02rem;
+}
+
+.mui-card .mui-collapse-content li span{
+	width:21%;
+}
+
+.mui-card .mui-collapse-content li p{
+	width:77%;
+}
+
+.agentbank img{
+	width:100%;
+}
+
+.buttonwrapper{
+	height: 0.58rem;
+	background:#262425;
+}
+
+.buttoncontainer{
+	position:fixed;
+	display: flex;
+	justify-content: space-around;
+	bottom:0.08rem;
+	left:0;
+	width: 100%;
+}
+
+.buttoncontainer span:nth-child(1) {
+	background: rgba(254,145,4,0.9);
+}
+
+.buttoncontainer span{
+	display: inline-block;
+	width: 45%;
+	height: 0.42rem;
+	text-align: center;
+	line-height: 0.42rem;
+	color: white;
+	border-radius: 5px;
+	font-size: 0.15rem;
+	background: rgba(36,131,236,0.9);
+}
+
+
+
+

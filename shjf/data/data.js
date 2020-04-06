@@ -61,7 +61,7 @@ var bankList = {
 			"order": 1,
 			"icon": "XingYe.png",
 			"name": "兴业银行",
-			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=b734c94cbe724ec996b1ca6a71791430",
+			"url": "https://wm.cib.com.cn/html/webapp/fast-issue/home.html?id=e1e57ac876fc4820a6a45645f28d312d",
 			"recommends": [{
 				"text": "大额度",
 				"color": "#E91E63"
