@@ -156,7 +156,7 @@ var bankList = {
 			"order": 7,
 			"icon": "ZhongXin.png",
 			"name": "中信银行",
-			"url": "http://cuxukj.com/linkUrl/09cdc12c",
+			"url": "https://creditcard.ecitic.com/h5/shenqing/index.html?sid=SJODXXY10",
 			"recommends": [],
 			"time": "9积分兑豪礼，网购2倍积分",
 			"limit": "刷卡免年费",
@@ -182,22 +182,22 @@ var bankList = {
 // 			}]
 // 		},
 // 
-		{
-			"order": 8,
-			"icon": "GuangFa.png",
-			"name": "广发银行",
-			"url": "http://95508.com/zct3WPa4",
-			"recommends": [],
-			"time": "广发日9大品牌5折优惠",
-			"limit": "新客开卡返现6%",
-			"tags": [{
-					"text": "自选商户3倍积分"
-				},
-				{
-					"text": "加油返现"
-				}
-			]
-		},
+		// {
+		// 	"order": 8,
+		// 	"icon": "GuangFa.png",
+		// 	"name": "广发银行",
+		// 	"url": "http://95508.com/zct3WPa4",
+		// 	"recommends": [],
+		// 	"time": "广发日9大品牌5折优惠",
+		// 	"limit": "新客开卡返现6%",
+		// 	"tags": [{
+		// 			"text": "自选商户3倍积分"
+		// 		},
+		// 		{
+		// 			"text": "加油返现"
+		// 		}
+		// 	]
+		// },
 
 		// {
 		// 	"order": 11,
