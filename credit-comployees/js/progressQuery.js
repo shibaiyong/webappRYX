@@ -1,11 +1,11 @@
 
-$('.cardstatus span').click(function(){
-	$(this).addClass('bottomline').siblings().removeClass('bottomline')
-
-	$.get('checking.html',function(data){
-		$(".statuslist").html(data);
-	})
-})
+// $('.cardstatus span').click(function(){
+// 	$(this).addClass('bottomline').siblings().removeClass('bottomline')
+// 
+// 	$.get('checking.html',function(data){
+// 		$(".statuslist").html(data);
+// 	})
+// })
 
 
 
