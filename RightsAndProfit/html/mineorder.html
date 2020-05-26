@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<meta charset="UTF-8" />
+			<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+			<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+			<meta name="apple-mobile-web-app-capable" content="yes" />
+			<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+			<script src="../../plugin/jquery.3.3.0.js"></script>
+			<script src="../js/rem.js"></script>
+			<link rel="stylesheet" href="../../plugin/mui/mui.min.css" />
+			<link rel="stylesheet" href="../css/common.css" />
+			<link rel="stylesheet" href="../css/mineorder.css" />
+			<title>我的订单</title>
+	</head>
+	<body>
+		<div class="mui-off-canvas-wrap mui-slide-in mui-draggable">
+			<div class="mui-inner-wrap">
+				<div class="progressquery">
+					<div class="searcharea">
+						<input type="text" class="search" placeholder="输入商品名称、银行等"/>
+					</div>
+					
+					<div class="cardstatus">
+						<span class="bottomline" tag="已申卡">出售中</span>
+						<span>已下架</span>
+						<span>已出售</span>
+						<span>纠纷单</span>
+					</div>
+					
+					<div class="statuslist">
+						<div class="bankcardinfo">
+							<img src="../img/didilogo.png"/>
+							<ul>
+								<li><span>滴滴&nbsp;</span><span>|</span><span>&nbsp;快车&#x2022;50元拆分券</span></li>
+                                <li>下架时间：2020/12/12 06:06</li>
+                                <li>券码：**** **** 686980904567</li>
+                            </ul>
+                            <dl>
+                                <dt><strong>&#xA5;88.8</strong></dt>
+                                <dd><img src="../img/remove.jpg"/></dd>
+                            </dl>
+                        </div>
+                        <div class="reason">
+                            <span>下架原因：</span><span>串码有误</span>
+                        </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="../../plugin/mui/mui.min.js"></script>
+<script src="../js/mineorder.js"></script>
