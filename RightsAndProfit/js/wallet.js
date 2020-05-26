@@ -67,3 +67,8 @@ mui('.timeinput').each(function(index,item){
 		})
 	})
 })
+
+
+$('.restpay').click(function(){
+    window.location.href="withdraw.html"
+})
