@@ -1,0 +1,195 @@
+.goods img {
+    width: 100%;
+}
+
+.pricecontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.15rem 0.12rem;
+}
+
+.price span:nth-child(1) {
+    font-size: 0.22rem;
+    color: rgb(243, 65, 57);
+    margin-right: 0.12rem;
+}
+
+.price span:nth-child(1) strong {
+    font-size: 0.14rem;
+    font-weight: normal;
+    margin-right: 0.02rem;
+}
+
+.price span:nth-child(2) {
+    font-size: 0.14rem;
+}
+
+.countdown {
+    font-size: 0.12rem;
+    color: rgb(255, 255, 255);
+    line-height: 0.23rem;
+    width: 1.18rem;
+    height: 0.23rem;
+    background: rgb(255, 87, 48);
+    border-radius: 3px;
+}
+
+.countdown span {
+    display: inline-block;
+    background: white;
+    color: rgb(255, 87, 48);
+    width: 0.41rem;
+    height: 0.15rem;
+    line-height: 0.15rem;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0 0.03rem;
+}
+
+.goodsname {
+    font-size: 0.16rem;
+    color: rgb(10, 26, 39);
+    line-height: 0.22rem;
+    padding: 0 0.12rem;
+    letter-spacing: 0.01rem;
+}
+
+.goodsTag {
+    padding: 0.12rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 0.12rem;
+}
+
+.goodsTag span {
+    padding: 0.04rem 0.08rem;
+    background: rgb(255, 236, 232);
+    font-size: 0.12rem;
+    color: rgb(242, 86, 79);
+    border-radius: 0.03rem;
+    line-height: 0.13rem;
+    margin-right: 0.06rem;
+    letter-spacing: 0.01rem;
+    margin-bottom: 0.06rem;
+}
+
+.line {
+    background: rgb(247, 248, 249);
+    height: 0.1rem;
+}
+
+.attention {
+    background: rgb(247, 248, 249);
+}
+
+.attention label {
+    font-size: 0.13rem;
+    color: rgb(157, 157, 157);
+    vertical-align: middle;
+    margin-right: 0.2rem;
+}
+
+.attention span,
+.attention strong {
+    font-size: 0.13rem;
+    color: rgb(51, 51, 51);
+    vertical-align: middle;
+}
+
+.attention strong {
+    position: absolute;
+    top: 0.23rem;
+    right: 0.12rem;
+    margin-top: -0.06rem;
+    color: #999;
+}
+
+.attention li {
+    padding: 0.12rem;
+    margin-bottom: 0.1rem;
+    background: white;
+    position: relative;
+}
+
+.detailstitle {
+    text-align: center;
+    font-size: 0;
+    padding: 0.2rem 0 0.15rem;
+    line-height: normal;
+}
+
+.detailstitle p {
+    font-size: 0.14rem;
+    color: #333333;
+    line-height: 0.14rem;
+}
+
+.detailstitle span {
+    display: inline-block;
+    color: #FD3E36;
+    font-size: 0.12rem;
+    transform: scaleY(.6);
+    line-height: 0.12rem;
+}
+
+.detailscontent {
+    height: 2rem;
+    background: #F7F8F9;
+}
+
+.buttonwrapper {
+    height: 0.43rem;
+}
+
+.buttoncontainer {
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background:white;
+}
+
+.buttoncontainer span {
+    display: inline-block;
+
+    height: 0.42rem;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 0.42rem;
+    color: white;
+    
+}
+
+.buttoncontainer span:nth-of-type(1) {
+    background: #F5C845;
+    width: 1.1rem;
+    border-radius: 0.2rem;
+    font-size: 0.14rem;
+}
+
+.buttoncontainer span:nth-of-type(1) strong{
+    font-weight: normal;
+    font-size: 0.12rem;
+    margin-left:0.04rem;
+}
+
+.buttoncontainer span:nth-of-type(2) {
+    background: #F74141;
+    width: 1.65rem;
+    border-radius: 40px;
+    font-size: 0.16rem;
+}
+.buttoncontainer dl{
+    text-align: center;
+    color: rgba(255, 167, 13, 1);
+    font-size: 0.11rem;
+}
+
+.buttoncontainer dl dt .mui-icon{
+    font-size: 0.24rem;
+    color: rgba(255, 167, 13, 1);
+    font-weight: bold;
+}
