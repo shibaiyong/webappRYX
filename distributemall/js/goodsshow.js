@@ -1,15 +1,22 @@
 
-mui('.cardstatus').on('tap','span',function(){
-	$(this).addClass('bottomline').siblings().removeClass('bottomline')
+
+
+
+
+document.getElementById('immediatebuy').addEventListener("tap",function () {
+	mui('#popover').popover('show')
 })
 
-mui('.mui-off-canvas-wrap').on('tap','.mui-icon-close',function(){
-	mui('.mui-off-canvas-wrap').offCanvas('close');
+mui('.relifeshow').on('tap','.mui-icon-close',function(){
+	mui('#popover').popover('hide')
 })
 
+document.getElementById('explain').addEventListener("tap",function () {
+	mui('#popover1').popover('show')
+})
 
-mui('.cardstatus').on('tap','.asidemenu',function(){
-	mui('.mui-off-canvas-wrap').offCanvas('show');
+mui('#popover1').on('tap','.mybtn',function(){
+	mui('#popover1').popover('hide')
 })
 
 

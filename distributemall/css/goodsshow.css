@@ -154,7 +154,6 @@
 
 .buttoncontainer span {
     display: inline-block;
-
     height: 0.42rem;
     border-radius: 5px;
     text-align: center;
@@ -192,4 +191,12 @@
     font-size: 0.24rem;
     color: rgba(255, 167, 13, 1);
     font-weight: bold;
+}
+
+
+#popover,#popover1{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
 }

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script src="../plugin/jquery.3.3.0.js"></script>
+    <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../plugin/mui/mui.min.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>登录</title>
+    <style>
+        .logincontainer,
+        h3 {
+            width: 3.23rem;
+            margin: 0 auto;
+            font-weight: 500;
+        }
+
+        h3 {
+            height: 0.26rem;
+            ;
+            font-size: 0.25rem;
+            color: rgb(34, 34, 34);
+            line-height: 0.23rem;
+            margin-top: 0.8rem;
+            margin-bottom: 0.5rem;
+        }
+
+        #messagecode {
+            display: inline-block;
+            width: 1.1rem;
+            height: 0.5rem;
+            background: #FFD455;
+            border-radius: 0.25rem;
+            text-align: center;
+            line-height: 0.5rem;
+            color: white;
+            font-size: 0.16rem;
+            letter-spacing: 1px;
+        }
+
+        .logincontainer li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.23rem;
+        }
+
+        .logincontainer li .myinput {
+            margin: 0;
+            border: none;
+            width: 100%;
+            height: 0.5rem;
+            background: rgba(242, 243, 247, 1);
+            border-radius: 0.25rem;
+            padding-left:0.26rem;
+            padding-right: 0.26rem;
+        }
+
+        .logincontainer li .verifycode {
+            width: 2rem;
+        }
+
+        .logincontainer li:last-child {
+            margin-top: 0.8rem;
+        }
+
+        #login {
+            width: 100%;
+            height: 0.5rem;
+            background: rgba(245, 72, 72, 1);
+            border-radius: 0.25rem;
+            font-size: 0.18rem;
+            color: white;
+        }
+
+        input::-webkit-input-placeholder {
+            color: #999;
+            font-size: 0.16rem;
+        }
+
+        input::-moz-placeholder {
+            color: #999;
+            font-size: 0.16rem;
+        }
+
+        input:-ms-input-placeholder {
+            color: #999;
+            font-size: 0.16rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h3>您好，请登录！</h3>
+
+    <ul class="logincontainer">
+        <li><input type="text" class="phone myinput" placeholder="请输入手机号"></li>
+        <li><input type="text" class="verifycode myinput" placeholder="请输入验证码"><span id="messagecode">获取验证码</span></li>
+        <li><button id="login" class="mybtn">登录</button></li>
+    </ul>
+
+</body>
+
+</html>
+<script src="../plugin/mui/mui.min.js"></script>
+<script src="../js/login.js"></script>

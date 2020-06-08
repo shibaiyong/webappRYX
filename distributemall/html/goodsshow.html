@@ -8,12 +8,148 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<script src="../../plugin/jquery.3.3.0.js"></script>
+	<script src="../plugin/jquery.3.3.0.js"></script>
 	<script src="../js/rem.js"></script>
-	<link rel="stylesheet" href="../../plugin/mui/mui.min.css" />
+	<link rel="stylesheet" href="../plugin/mui/mui.min.css" />
 	<link rel="stylesheet" href="../css/common.css" />
 	<link rel="stylesheet" href="../css/goodsshow.css" />
 	<title>商品标题</title>
+	<style>
+		#popover .mui-table-view li.relifeshow,
+		#popover .mui-table-view li.count {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		#popover .mui-table-view,#popover1 .mui-table-view {
+			background: white;
+			padding: 0.1rem;
+			max-height: none;
+		}
+
+		#popover .mui-table-view .goodsintroduce {
+			display: flex;
+			align-items: center;
+		}
+
+		#popover .mui-table-view .goodsintroduce dl dt {
+			font-size: 0.22rem;
+			color: rgb(243, 65, 57);
+		}
+
+		#popover .mui-table-view .goodsintroduce dl strong {
+			font-size: 0.14rem;
+			font-weight: normal;
+			margin-right: 0.02rem;
+		}
+
+		#popover .mui-table-view .goodsintroduce dl dd {
+			font-size: 0.12rem;
+			color: rgba(153, 153, 153, 1);
+			margin-top: 0.06rem;
+		}
+
+		#popover .mui-table-view .goodsintroduce img {
+			width: 1rem;
+			height: 1rem;
+			margin-right: 0.12rem;
+		}
+
+		.mui-table-view .count {
+
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0.16rem 0;
+			border-top: 1px solid #eee;
+			border-bottom: 1px solid #eee;
+			margin-top: 0.15rem;
+		}
+
+		.mui-table-view .count strong {
+			font-weight: normal;
+			line-height: 0.25rem;
+			display: inline-block;
+			width: 0.25rem;
+			text-align: center;
+			font-size: 0.16rem;
+		}
+
+		.mui-table-view .count label {
+			color: #262626;
+			font-size: 0.13rem;
+		}
+
+		.mui-table-view .count .changecount input {
+			width: 0.46rem;
+			height: 0.25rem;
+			background: rgba(242, 242, 242, 1);
+			border: none;
+			margin: 0;
+			padding: 0;
+			text-align: center;
+			color: #262626;
+			font-size: 0.12rem;
+		}
+
+		.mui-table-view .form-item label {
+			display: inline-block;
+			width: 23%;
+			font-size: 0.13rem;
+			color: rgba(38, 38, 38, 1);
+		}
+
+		.mui-table-view .form-item {
+			border-bottom: 1px solid #eee;
+		}
+
+		.mui-table-view .form-item label::before {
+			content: '\002A';
+			color: #E43441;
+			display: inline-block;
+			vertical-align: middle;
+			line-height: 0.04rem;
+			margin-right: 0.01rem;
+		}
+
+		.mui-table-view .form-item input {
+			display: inline-block;
+			width: 73%;
+			margin: 0;
+			padding-left: 0;
+			padding-right: 0;
+			border: none;
+		}
+
+		.mui-table-view .operatebtn {
+			text-align: center;
+			margin-top: 0.4rem;
+		}
+
+		.mui-table-view .mybtn {
+			width: 92%;
+			background: rgba(247, 65, 65, 1);
+			border-radius: 0.06rem;
+			font-size: 0.16rem;
+			color: rgba(255, 255, 255, 1);
+			line-height: 0.28rem;
+		}
+
+		#popover1 h3 {
+			font-size: 0.15rem;
+			font-weight: 500;
+			color: rgba(38, 38, 38, 1);
+			margin:0.1rem 0;
+			margin-bottom: 0.06rem;
+		}
+
+		#popover1 p {
+			font-size: 0.14rem;
+			color: rgba(153, 153, 153, 1);
+			line-height: 0.23rem;
+			margin-bottom:0.2rem;
+		}
+	</style>
 </head>
 
 <body>
@@ -40,9 +176,10 @@
 	<div class="line"></div>
 	<ul class="attention">
 		<li><label>运费</label><span>无需配送</span></li>
-		<li class="link"><label>服务</label><span>服务服务服务服务服务 服务服务服务</span><strong
+		<li class="link" id="service"><label>服务</label><span>服务服务服务服务服务 服务服务服务</span><strong
 				class="mui-icon mui-icon-forward"></strong></li>
-		<li class="link"><label>说明</label><span>说明说明说明说明说明说明</span><strong class="mui-icon mui-icon-forward"></strong>
+		<li class="link" id="explain"><label>说明</label><span>说明说明说明说明说明说明</span><strong
+				class="mui-icon mui-icon-forward"></strong>
 		</li>
 	</ul>
 	<div class="line"></div>
@@ -60,8 +197,50 @@
 				<dd>首页</dd>
 			</dl>
 			<span>分享赚<strong>&#xA5;9.90</strong></span>
-			<span>成为合伙人</span>
+			<span id="immediatebuy">立即抢购</span>
 		</div>
+	</div>
+	<div id="popover" class="mui-popover">
+		<ul class="mui-table-view">
+			<li class="relifeshow">
+				<div class="goodsintroduce">
+					<img src="../img/goodsbanner.jpg" />
+					<dl>
+						<dt><strong>&#xA5;</strong>9.90</dt>
+						<dd>剩余<span>319件</span></dd>
+					</dl>
+				</div>
+				<span class="mui-icon mui-icon-close"></span>
+			</li>
+			<li class="count">
+				<label>购买数量</label>
+				<div class="changecount">
+					<strong>-</strong><input type="number" class="myinput" /><strong>+</strong>
+				</div>
+			</li>
+			<li class="form-item"><label>听课手机号</label><input type="text" class="myinput" /></li>
+			<li class="form-item"><label>收件人姓名</label><input type="text" class="myinput" /></li>
+			<li class="form-item"><label>收件手机号</label><input type="text" class="myinput" /></li>
+			<li class="form-item"><label>收件地址</label><input type="text" class="myinput" /></li>
+			<li class="form-item"><label>微 信 号</label><input type="text" class="myinput" /></li>
+
+			<li class="operatebtn"><button class="mybtn">下一步</button></li>
+		</ul>
+	</div>
+	<div id="popover1" class="mui-popover">
+		<ul class="mui-table-view">
+			<li class="notice">
+				<h3>收款后结算</h3>
+				<p>
+					该店铺交易由有赞提供资金存管服务，当符合以下条件时，资金自动结算给商家：买家确认收货或到达约定的自动确认收货日期。交易资金未经有赞存管的情形（储值型、电子卡券等）不在本服务范围内。
+				</p>
+				<h3>不支持申请退款</h3>
+				<p>
+					此商品不支持买家申请退款
+				</p>
+			</li>
+			<li class="operatebtn"><button class="mybtn">我知道了</button></li>
+		</ul>
 	</div>
 </body>
 
