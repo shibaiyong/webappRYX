@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script src="../plugin/jquery.3.3.0.js"></script>
+    <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../plugin/mui/mui.min.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <title>在浏览器打开</title>
+    <style>
+        /* body{
+            height:100%;
+        } */
+        .indicatecontainer{
+            position:fixed;
+            top:0;
+            bottom:0;
+            width:100%;
+            left:0;
+            background:#666;
+        }
+
+        .indicate{
+            text-align: right;
+            
+        }
+
+        .indicate img{
+            width:0.3rem;
+            margin: 0.2rem;
+        }
+        ul li{
+            font-size:0.18rem;
+            color:#EDEDED;
+            text-align: right;
+            margin-bottom:0.1rem;
+        }
+
+        ul{
+            width:2.6rem;
+            margin:0 auto;
+        }
+
+        .twocode {
+            text-align: center;
+            margin-top:1.5rem;
+        }
+
+        .twocode a{
+            text-align: center;
+            font-size: 0.12rem;
+            color:#EDEDED;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="indicatecontainer">
+        <div class="indicate"><img src="../img/indicate.png"/></div>
+        <ul>
+            <li>点击右上角菜单“在Safari中打开”</li>
+            <li>以完成支付</li>
+        </ul>
+        <div class="twocode"><a href="#">Safari内支付失败？点此生成二维码支付</a></div>
+    </div>
+
+</body>
+
+</html>
+<script src="../plugin/mui/mui.min.js"></script>
+<script src="../js/login.js"></script>
