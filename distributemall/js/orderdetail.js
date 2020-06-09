@@ -2,7 +2,6 @@
 $('.ordernum strong').click(function(){
     var txt = $(this).prev().text();
     copyText(txt);
-    
 })
 function copyText(text) {
     const textString = text.toString();
@@ -22,7 +21,7 @@ function copyText(text) {
       document.execCommand('copy');
     }
     input.blur();
-    mui.toast('复制成功',{ duration:1500, type:'div' }) 
+    mui.toast('复制成功',{ duration:1500, type:'div' })
     function selectText(textbox, startIndex, stopIndex) {
       if (textbox.createTextRange) {
         const range = textbox.createTextRange();

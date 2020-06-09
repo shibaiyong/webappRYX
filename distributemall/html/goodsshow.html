@@ -12,14 +12,36 @@
 	<script src="../js/rem.js"></script>
 	<link rel="stylesheet" href="../plugin/mui/mui.min.css" />
 	<link rel="stylesheet" href="../css/common.css" />
+	<link rel="stylesheet" href="../plugin/swiper-4.5.0/css/swiper.min.css" />
 	<link rel="stylesheet" href="../css/goodsshow.css" />
 	<title>商品标题</title>
 </head>
 
 <body>
-	<div class="goods">
-		<img src="../img/goodsbanner.jpg" />
-	</div>
+
+		<div class="swiper-container swiper-banner">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="goods">
+						<img src="../img/goodsbanner.jpg" />
+					</div>
+				</div>
+				
+				<div class="swiper-slide">
+					<div class="goods">
+						<img src="../img/goodsbanner.jpg" />
+					</div>
+				</div>
+				
+				<div class="swiper-slide">
+					<div class="goods">
+						<img src="../img/goodsbanner.jpg" />
+					</div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+	
 	<ul class="pricecontainer">
 		<li class="price">
 			<span><strong>&#xA5;</strong>9.90</span>
@@ -60,8 +82,8 @@
 				<dt><label class="mui-icon mui-icon-home"></label></dt>
 				<dd>首页</dd>
 			</dl>
-			<span>分享赚<strong>&#xA5;9.90</strong></span>
-			<span id="immediatebuy">立即抢购</span>
+			<span class="disabled">分享赚<strong>&#xA5;9.90</strong></span>
+			<span class="disabled" id="immediatebuy">立即抢购</span>
 		</div>
 	</div>
 	<div id="popover" class="mui-popover">
@@ -79,7 +101,7 @@
 			<li class="count">
 				<label>购买数量</label>
 				<div class="changecount">
-					<strong>-</strong><input type="number" class="myinput" /><strong>+</strong>
+					<strong class="decline">-</strong><input type="number" value="1" class="myinput" /><strong class="add">+</strong>
 				</div>
 			</li>
 			<li class="form-item"><label>听课手机号</label><input type="text" class="myinput" /></li>
@@ -87,7 +109,6 @@
 			<li class="form-item"><label>收件手机号</label><input type="text" class="myinput" /></li>
 			<li class="form-item"><label>收件地址</label><input type="text" class="myinput" /></li>
 			<li class="form-item"><label>微 信 号</label><input type="text" class="myinput" /></li>
-
 			<li class="operatebtn"><button class="mybtn">下一步</button></li>
 		</ul>
 	</div>
@@ -110,4 +131,5 @@
 
 </html>
 <script src="../../plugin/mui/mui.min.js"></script>
+<script src="../plugin/swiper-4.5.0/js/swiper.min.js"></script>
 <script src="../js/goodsshow.js"></script>
