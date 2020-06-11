@@ -59,33 +59,48 @@
 })(375, 750);
 
 
-/*-------------------弹窗展示银行列表------------------------------------*/
-$(function(){
-	
-	$('.supportbank a').click(function(){
-		// var str = `<div class="showtoastcontainer">
-		// 		<div class="showtoast">
-		// 			<div class="closeicon"><span>&#xD7;</span></div>
-		// 			<div class="showtoast-title">提现支持银行</div>
-		// 			<div class="content">
-		// 				<ul>
-		// 					<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
-		// 					<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
-		// 					<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
-		// 					<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
-		// 					<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
-		// 				</ul>
-		// 			</div>
-		// 		</div>
-        // 	</div>`
-        //pc端，某些浏览器不支持es6的字符串模板语法。
-		// $('body').append(str)
-	})
-	
-	// $(document).on('click','span',function(){
-	// 	$('body .showtoastcontainer').remove();
-    // })
+//复制
+function copyText(text) {
+    const textString = text.toString();
+    let input = document.querySelector('#copy-input');
+    if (!input) {
+      input = document.createElement('input');
+      input.id = "copy-input";
+      input.readOnly = "readOnly";
+      input.style.position = "absolute";
+      input.style.left = "-1000px";
+      input.style.zIndex = "-1000";
+      document.body.appendChild(input)
+    }
+    input.value = textString;
+    selectText(input, 0, textString.length);
+    if (document.execCommand('copy')) {
+      document.execCommand('copy');
+    }
+    input.blur();
+    return {
+      then:function(success){
+        if(success){
+          success()
+        }
+      }
+    }
+    function selectText(textbox, startIndex, stopIndex) {
+      if (textbox.createTextRange) {
+        const range = textbox.createTextRange();
+        range.collapse(true);
+        range.moveStart('character', startIndex);
+        range.moveEnd('character', stopIndex - startIndex);
+        range.select();
+      } else {
+        textbox.setSelectionRange(startIndex, stopIndex);
+        textbox.focus();
+      }
+    }
+  };
 
+
+$(function(){
     /*-------------------模拟复选框的功能逻辑-----------------------*/
     
     $('.checkboxContainer').click(function(){

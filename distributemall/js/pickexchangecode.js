@@ -1,4 +1,3 @@
-
 $('.ordernum strong').click(function(){
     var txt = $(this).prev().text();
     copyText(txt).then(function(){
