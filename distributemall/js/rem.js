@@ -63,27 +63,28 @@
 $(function(){
 	
 	$('.supportbank a').click(function(){
-		var str = `<div class="showtoastcontainer">
-				<div class="showtoast">
-					<div class="closeicon"><span>&#xD7;</span></div>
-					<div class="showtoast-title">提现支持银行</div>
-					<div class="content">
-						<ul>
-							<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
-							<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
-							<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
-							<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
-							<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
-						</ul>
-					</div>
-				</div>
-			</div>`
-		$('body').append(str)
+		// var str = `<div class="showtoastcontainer">
+		// 		<div class="showtoast">
+		// 			<div class="closeicon"><span>&#xD7;</span></div>
+		// 			<div class="showtoast-title">提现支持银行</div>
+		// 			<div class="content">
+		// 				<ul>
+		// 					<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+		// 					<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+		// 					<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+		// 					<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+		// 					<li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+		// 				</ul>
+		// 			</div>
+		// 		</div>
+        // 	</div>`
+        //pc端，某些浏览器不支持es6的字符串模板语法。
+		// $('body').append(str)
 	})
 	
-	$(document).on('click','span',function(){
-		$('body .showtoastcontainer').remove();
-    })
+	// $(document).on('click','span',function(){
+	// 	$('body .showtoastcontainer').remove();
+    // })
 
     /*-------------------模拟复选框的功能逻辑-----------------------*/
     

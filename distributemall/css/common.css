@@ -95,7 +95,7 @@ a:active{
 	position:fixed;
 	bottom:0;
 	width:100%;
-	leftt:0;
+	left:0;
 	padding:0.1rem 0;
 	background:white;
 }
@@ -103,6 +103,11 @@ a:active{
 
 .footer dl{
 	text-align: center;
+	color:rgb(97,97,103);
+}
+
+.footer dl.chooseActive,.footer dl.chooseActive .iconfont{
+	color:#FFB534;
 }
 
 .footer dl dt img{
@@ -111,9 +116,5 @@ a:active{
 
 .footer dl dd{
 	font-size: 0.12rem;
-	color:rgb(97,97,103);
-	margin-top:0.06rem;
 }
-.footer dl dd.chooseActive{
-	color:rgb(38,115,183);
-}
+

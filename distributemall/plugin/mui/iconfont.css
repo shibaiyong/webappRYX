@@ -1,0 +1,26 @@
+@font-face {font-family: "iconfont";
+  src:url('fonts/iconfont.ttf?t=1591755252689') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+  url('fonts/iconfont.svg?t=1591755252689#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 0.16rem;
+  font-style: normal;
+  color:#999;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-icon:before {
+  content: "\e611";
+}
+
+.icon-shouye:before {
+  content: "\e694";
+}
+
+.icon-wode:before {
+  content: "\e60b";
+}
+
