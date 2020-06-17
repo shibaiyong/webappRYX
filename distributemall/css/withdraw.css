@@ -1,0 +1,217 @@
+body{
+	background:#f8f8f8;
+}
+.withdraw{
+	padding:0 0.15rem;
+	box-sizing: border-box;
+}
+
+.withdraw .cash input{
+	display: inline-block;
+	border: none;
+	outline:none;
+	background: white;
+	height:0.49rem;
+	width:70%;
+	font-size:0.3rem;
+	vertical-align: middle;
+	margin-left: 0.1rem;
+}
+
+.withdraw .cash span{
+	display:inline-block;
+	vertical-align: middle;
+}
+
+.withdraw .bank{
+	background:white;
+	padding:0 0.2rem;
+	box-sizing: border-box;
+	padding-top: 0.2rem;
+	color:rgb(51,51,51);
+}
+
+.withdraw .cash{
+	background:white;
+	padding:0 0.2rem;
+	padding-top:0.4rem;
+	box-sizing: border-box;
+}
+
+.withdraw .cash ul li:nth-child(3){
+	font-size: 0.12rem;
+	margin-top: 0.12rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.withdraw .cash li:nth-child(2){
+	font-size:0.3rem;
+	/* border-bottom: 0.005rem solid #999; */
+	margin:0.16rem 0;
+}
+
+.withdraw .bank ul li:nth-child(1){
+	display: flex;
+	align-items: center;
+	font-size: 0.14rem;
+	position:relative;
+}
+
+.withdraw .bank ul li:nth-child(2){
+	margin-top:0.2rem;
+}
+
+.withdraw .bank ul li:nth-child(2) span{
+	margin-left: 1rem;
+}
+
+.withdraw .bank ul li>img{
+	width:0.08rem;
+	position: absolute;
+	top:50%;
+	right: 0;
+	transform: translateY(-50%);
+}
+
+.withdraw .bank ul li div{
+	margin-left: 0.15rem;
+}
+
+.withdraw .bank ul li div img{
+	width:0.13rem;
+	vertical-align: middle;
+}
+
+.withdraw .bank ul li div span{
+	vertical-align: middle;
+}
+
+.complete{
+	padding:0.3rem 0.1rem;
+	background:white;
+	
+}
+
+.complete .mybtn{
+	width:100%;
+	height: 0.45rem;
+	background: rgb(36,131,236);
+	color:white;
+	border-radius:6px;
+	font-size: 0.18rem;
+}
+
+
+/*添加的样式*/
+
+.cash .request{
+	font-size:0.11rem;
+	color:rgba(153,153,153,1);
+	margin:0.05rem 0 0.1rem;
+}
+
+.actually{
+	width:0.68rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.actuallymon{
+	font-size: 0.24rem;
+	margin-left:0.12rem;
+}
+
+.deduct{
+	font-size: 0.14rem;
+	color:rgb(153,153,153);
+}
+.deduct span:first-child{
+	margin-right:0.12rem;
+	display: inline-block;
+	width:0.68rem;
+}
+
+.supportbank a,.debuctexplain p a{
+	color:rgb(81,159,255);
+	font-size: 0.12rem;
+}
+
+.withdraw .cash .debuctexplain{
+	font-size: 0.12rem;
+	margin-top:0.3rem;
+	display: flex;
+	line-height: 0.2rem;
+}
+
+.withdraw .cash .debuctexplain span{
+	display: inline-block;
+	width:0.62rem;
+}
+
+.withdraw .cash .debuctexplain p{
+	flex:1;
+	color:#333;
+}
+
+
+.showtoastcontainer{
+	position: fixed;
+	top:0;left:0;bottom:0;right: 0;
+	background:rgba(0,0,0,0.7);
+	z-index:1000;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.showtoast{
+		background: white;
+		border-radius: 0.11rem;
+		box-sizing: border-box;
+		width:3rem;
+		padding-bottom: 0.1rem;
+		height: 3.5rem;
+		overflow-y: auto;
+}
+.showtoast .showtoast-title{
+	font-size: 0.18rem;
+	color:black;
+	padding:0.3rem 0;
+	padding-top:0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color:black;
+	font-weight: bold;
+}
+
+.showtoastcontainer .closeicon{
+  text-align: right;
+	font-size: 0.3rem;
+	padding-right: 0.1rem;
+	padding-top:0.05rem;
+}
+
+.showtoast .content ul{
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	font-size: 0.15rem;
+}
+.showtoast .content ul img{
+	width:0.25rem;
+	margin-right: 0.08rem;
+}
+
+.showtoast .content ul li{
+	width:50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 0.05rem;
+}

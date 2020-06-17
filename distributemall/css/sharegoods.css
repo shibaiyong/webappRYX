@@ -1,0 +1,48 @@
+.share .title{
+    padding:0.2rem 0.15rem;
+    font-size:0.14rem;
+    color:rgba(68,68,68,1);
+}
+
+.share .title{
+    padding:0.2rem 0.15rem;
+    font-size:0.14rem;
+    color:rgba(68,68,68,1);
+}
+
+
+.share .description{
+    margin:0 0.15rem;
+    padding:0.15rem;
+    background:#F4F6F9;
+    border-radius:0.1rem;
+}
+
+.share .description p{
+    line-height: 0.24rem;
+    color:#999;
+    font-size: 0.13rem;
+}
+
+.shareimg{
+    margin: 0.15rem;
+    margin-top:0.3rem;
+}
+
+.shareimg img{
+    width:100%;
+}
+
+.share .operatebtn{
+    text-align: center;
+}
+
+.share .btn{
+    width:1.3rem;
+    font-size: 0.14rem;
+    color: rgba(255, 255, 255, 1);
+    height:0.3rem;
+    margin-top:0.2rem;
+    background:#4A8EFF;
+    border-radius:0.05rem;
+}

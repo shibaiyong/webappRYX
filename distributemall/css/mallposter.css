@@ -1,0 +1,42 @@
+body {
+    background: #F5F5F5;
+}
+
+.order {
+    padding: 0.15rem;
+    background: white;
+    margin: 0.15rem;
+    border-radius: 0.06rem;
+}
+
+.orderdetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.orderdetail ul {
+    padding-left: 0.1rem;
+    box-sizing: border-box;
+    width:1.8rem;
+}
+
+.orderdetail .goodstitle {
+    font-size: 0.17rem;
+    color: rgba(10, 26, 39, 1);
+    font-weight:bold;
+}
+
+.orderdetail .gooodsnotice {
+    font-size: 0.15rem;
+    color:rgba(204,204,204,1);
+    margin: 0.06rem 0 0.08rem;
+}
+
+
+
+
+.orderdetail img {
+    width: 1rem;
+    height: 1rem;
+}
