@@ -209,3 +209,60 @@ body {
     color: #999;
     font-size: 0.18rem;
 }
+
+
+.indicatecontainer{
+            position:fixed;
+            top:0;
+            bottom:0;
+            width:100%;
+            left:0;
+            background:#666;
+			display: none;
+        }
+
+        .indicatecontainer .indicate{
+            text-align: right;
+            
+        }
+
+        .indicatecontainer .indicate img{
+            width:0.3rem;
+            margin: 0.2rem;
+        }
+        .indicatecontainer ul li{
+            font-size:0.18rem;
+            color:#EDEDED;
+            text-align: right;
+            margin-bottom:0.1rem;
+        }
+
+        .indicatecontainer ul{
+            width:2.6rem;
+            margin:0 auto;
+        }
+
+        .indicatecontainer .twocode {
+            text-align: center;
+            margin-top:1.5rem;
+        }
+
+        .indicatecontainer .twocode a{
+            text-align: center;
+            font-size: 0.12rem;
+            color:#EDEDED;
+        }
+        .indicatecontainer .operatebtn{
+            text-align: center;
+			display: none;
+        }
+
+        .indicatecontainer .btn{
+            width: 82%;
+            background: #FFBF00;
+            border-radius: 0.25rem;
+            font-size: 0.16rem;
+            color: rgba(255, 255, 255, 1);
+            height:0.5rem;
+            margin-top:0.3rem;
+        } 
