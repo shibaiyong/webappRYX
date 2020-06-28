@@ -204,12 +204,12 @@
 		<div class="asideIco">
 			
 		</div>
-		<div class="buttonwrapper">
+		<!-- <div class="buttonwrapper">
 			<div class="buttoncontainer">
 				<span>邀请亲友办卡</span><span>成为合伙人</span>
 			</div>
-		</div>
-		<div class="footercontainer">
+		</div> -->
+		<!-- <div class="footercontainer">
 			<div class="footer">
 				<dl tag="1">
 					<dt><img src="../img/index/home@2x.png"/></dt>
@@ -228,7 +228,7 @@
 					<dd>个人中心</dd>
 				</dl>
 			</div>
-		</div>
+		</div> -->
 		<div class="showtoastcontainer">
 			
 			<div class="showtoast">
@@ -259,7 +259,13 @@
 			</div>
 			
 		</div>
+		<input type="file" id="file"/>
 	</body>
 </html>
 <script src="../plugin/swiper-4.5.0/js/swiper.min.js"></script>
 <script src="../js/indexC.js"></script>
+<script>
+	$('#file').change(function(file){
+		console.log(file)
+	})
+</script>
