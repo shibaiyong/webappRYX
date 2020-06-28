@@ -7,22 +7,23 @@ document.getElementById('immediatebuy').addEventListener("tap",function () {
 	if($(this).hasClass('disabled')){
 		return false;
 	}
-	$.ajax({
-		type:"get",
-		url:"/goods/user_status",
-		data:{uid,goods_id,pid},
-		dataType:"json",
-		success:function(data){
-			console.log(data)
-			if(data.code==1){
-				mui('#popover').popover('show')
-			}else{
-				window.location.href="/Auth/login?re_url=6&goods_id="+data.goods_id+'&pid='+data.pid
-			}
-		},
-		error:function(jqXHR){
-		}
-	});
+	mui('#popover').popover('show')
+	// $.ajax({
+	// 	type:"get",
+	// 	url:"/goods/user_status",
+	// 	data:{uid,goods_id,pid},
+	// 	dataType:"json",
+	// 	success:function(data){
+			
+	// 		if(data.code==1){
+	// 			mui('#popover').popover('show')
+	// 		}else{
+	// 			window.location.href="/Auth/login?re_url=6&goods_id="+data.goods_id+'&pid='+data.pid
+	// 		}
+	// 	},
+	// 	error:function(jqXHR){
+	// 	}
+	// });
 
 })
 

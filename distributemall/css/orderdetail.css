@@ -7,6 +7,32 @@ body {
     background: white;
     margin: 0.15rem;
     border-radius: 0.06rem;
+
+}
+
+.orderone{
+    margin-top:-0.35rem;
+}
+
+.orderbanner{
+    background:url(../img/bg@2x.png) no-repeat;
+    background-size: 100%;
+    height: 1.1rem;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    font-size: 0.18rem;
+}
+
+.orderbanner img{
+    width:0.18rem;
+    height:0.18rem;
+    margin-bottom: 0.25rem;
+}
+.orderbanner span{
+    margin-left:0.06rem;
+    margin-bottom: 0.25rem;
 }
 
 .orderdetail {
