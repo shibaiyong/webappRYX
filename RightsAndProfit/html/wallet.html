@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <script src="../../plugin/jquery.3.3.0.js"></script>
+        <script src="../js/rem.js"></script>
+        <link rel="stylesheet" href="../../plugin/mui/mui.min.css" />
+        <link rel="stylesheet" href="../../plugin/mui/mui.picker.min.css" />
+        <link rel="stylesheet" href="../css/common.css" />
+        <link rel="stylesheet" href="../css/wallet.css" />
+        <title>钱包交易</title>
+        
+	</head>
+	<body>
+		<div class="cashout">
+            <div class="availablecash">
+                <span>可提现&nbsp;0.06元</span>
+                <div class="restpay">
+                    <span>提现</span>
+                    <span style="font-size:0.2rem;" class="mui-icon mui-icon-forward"></span>
+                </div>
+            </div>
+            <div class="incomecontent">
+                <div class="today">
+                    <dl>
+                        <dt>
+                            0.00
+                        </dt>
+                        <dd>
+                            今日收益
+                        </dd>
+                    </dl>
+                </div>
+                <div class="add">
+                    <dl>
+                        <dt>
+                            0.06
+                        </dt>
+                        <dd>
+                            累计收益
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+
+        <div class="cashlist">
+            <h3>钱包明细</h3>
+            <div class="changemonth">
+                <div><input id="starttime" class="timeinput" type="text" readonly/><strong>月</strong><strong class="mui-icon mui-icon-arrowdown"></strong></div>
+                <span>当月累计收益:&nbsp;0.60元</span>
+            </div>
+        </div>
+        <ul class="cashdetail">
+            <li>
+                <span>惠权益京东券提现到账刚才成功了，你的可提现账户增加0.60元</span>
+                <dl>
+                    <dt>&#xA5;0.60</dt>
+                    <dd>2015/06/06&nbsp;12:30</dd>
+                </dl>
+            </li>
+        </ul>
+	</body>
+</html>
+<script src="../../plugin/mui/mui.min.js"></script>
+<script src="../../plugin/mui/mui.picker.min.js"></script>
+<script src="../js/wallet.js"></script>
+

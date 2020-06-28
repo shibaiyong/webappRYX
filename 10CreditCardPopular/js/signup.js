@@ -12,8 +12,8 @@ var mySwiper = new Swiper ('.swiper-container', {
 
 $('.signup').click(function(){
 	var ifMobile = /^[1][3456789][0-9]{9}$/;
-	var idcard = /^[1-9]{1}[0-9]{14}$|^[1-9]{1}[0-9]{16}([0-9]|[xX])$/;
-	var isname = /^[\u4e00-\u9fa5]{2,4}$/;
+	var idcard = /^[1-9]{1}[0-9]{14}$|^[1-9]{1}[0-9]{16}([0-9]|[xX])$/; //身份证号的正则。
+	var isname = /^[\u4e00-\u9fa5]{2,4}$/; //匹配汉字的正则。
 	var name = $('.username')
 	var phone = $('.phone')
 	var id_card = $('.idcard')

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<script src="../plugin/jquery.3.3.0.js"></script>
+		<script src="../js/rem.js"></script>
+		<link rel="stylesheet" href="../plugin/mui/mui.min.css" />
+		<link rel="stylesheet" href="../css/common.css" />
+		<link rel="stylesheet" href="../css/goodsshow.css" />
+		<title>商品专题</title>
+		<style>
+			.topic {
+				background:white url('../img/topic_bottom.png') no-repeat center top;
+				background-size: 100% auto;
+				padding:0 0.08rem;
+				padding-bottom:0.1rem;
+				box-sizing: border-box;
+			}
+
+			.topic img {
+				width: 100%;
+			}
+			
+			.sectionthree .topic_goods{
+				background:white;
+			}
+
+			.topic_goods {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+
+			.topic .bankname {
+				font-size: 0.12rem;
+				margin-top: 0.1rem;		
+				color:rgba(38,38,38,1);
+				line-height: 0.16rem;
+			}
+
+			.topic .banktag {
+				font-size: 0.11rem;
+				margin: 0.08rem 0 0.08rem;
+			}
+
+			.topic .banktag span {
+				display: inline-block;
+				color: #262626;
+			}
+			
+			.topic .banktag span label{
+				font-size:0.16rem;
+				color:#FF001C;
+			}
+
+			.topic .banktag span:nth-child(1) {
+				margin-right: 0.06rem;
+			}
+			
+			.topic .banktag strong {
+				font-size:0.12rem;
+				color:rgba(179,179,179,1);
+				font-weight: normal;
+			}
+
+			.topic .bankdes {
+				font-size: 0.13rem;
+			}
+
+			.topic .topic_goods_item {
+				padding: 0.2rem 0.06rem 0.14rem;
+				box-sizing: border-box;
+				background: white;
+				text-align: left;
+				width: 48%;
+				margin-top: 0.12rem;
+				border-radius: 8px;
+				position: relative;
+			}
+			
+			.topic .topic_goods_item dd .operatebtn{
+				text-align: center;
+			}
+			
+			.btn{
+				width: 1.3rem;
+				font-size: 0.16rem;
+				color: rgba(255, 255, 255, 1);
+				height: 0.3rem;
+				background: rgba(247,65,65,1);
+				border-radius: 0.15rem;
+				font-size:0.14rem;
+				color:rgba(255,255,255,1);
+			}
+			.img-title{
+				margin-top:0.2rem;
+			}
+			.img-title.one{
+				margin-top:4.2rem;
+			}
+			
+			.sectiontwo .topic_goods_item{
+				width:100%;
+				margin-top:0;
+				border-top-left-radius: 0;
+				border-top-right-radius: 0;
+			}
+			
+			.topic .sectiontwo .banktag{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+		
+		</style>
+	</head>
+
+	<body>
+		<div class="topic">
+			
+			<div class="sectionone cleartop">
+				<div class="img-title one">
+					<img src="../img/20@2x.png" />
+				</div>
+				<div class="topic_goods">
+					<div class="topic_goods_item">
+						<dl>
+							<dt>
+								<img src="../img/topic_ico.jpg">
+							</dt>
+							<dd>
+								<ul>
+									<li class="bankname">【作业帮】13节语文直播课，一线名师带队教，配送1对1答疑服务，再送12件套实物礼盒</li>
+									<li class="banktag"><span>惊爆价：<label>&#xA5;36.00</label></span><strong>&#xA5;36.00</strong></li>
+								</ul>
+								<div class="operatebtn"><button class="mybtn btn">马上抢</button></div>
+							</dd>
+						</dl>
+					</div>
+					
+					<div class="topic_goods_item">
+						<dl>
+							<dt>
+								<img src="../img/topic_ico.jpg">
+							</dt>
+							<dd>
+								<ul>
+									<li class="bankname">【作业帮】13节语文直播课，一线名师带队教，配送1对1答疑服务，再送12件套实物礼盒</li>
+									<li class="banktag"><span>惊爆价：<label>&#xA5;36.00</label></span><strong>&#xA5;36.00</strong></li>
+								</ul>
+								<div class="operatebtn"><button class="mybtn btn">马上抢</button></div>
+							</dd>
+						</dl>
+					</div>
+					
+				</div>
+			</div>
+			
+			<div class="sectiontwo cleartop">
+				<div class="img-title">
+					<img src="../img/21@2x.png" />
+				</div>
+				<div class="topic_goods">
+					<div class="topic_goods_item">
+						<dl>
+							<dt>
+								<img src="../img/topic_banner.jpg"/>
+							</dt>
+							<dd>
+								<ul>
+									<li class="bankname">【作业帮】13节语文直播课，一线名师带队教，配送1对1答疑服务，再送12件套实物礼盒</li>
+									<li class="banktag"><div><span>惊爆价：<label>&#xA5;36.00</label></span><strong>&#xA5;36.00</strong></div><button class="mybtn btn">马上抢</button></li>
+								</ul>
+							</dd>
+						</dl>
+					</div>
+				</div>
+			</div>
+			
+			<div class="sectionthree">
+			<div class="img-title">
+				<img src="../img/22@2x.png" />
+			</div>
+			<div class="topic_goods">
+			
+				<div class="topic_goods_item">
+					<dl>
+						<dt>
+							<img src="../img/topic_ico.jpg">
+						</dt>
+						<dd>
+							<ul>
+								<li class="bankname">【作业帮】13节语文直播课，一线名师带队教，配送1对1答疑服务，再送12件套实物礼盒</li>
+								<li class="banktag"><span>惊爆价：<label>&#xA5;36.00</label></span><strong>&#xA5;36.00</strong></li>
+							</ul>
+							<div class="operatebtn"><button class="mybtn btn">马上抢</button></div>
+						</dd>
+					</dl>
+				</div>
+				
+				<div class="topic_goods_item">
+					<dl>
+						<dt>
+							<img src="../img/topic_ico.jpg">
+						</dt>
+						<dd>
+							<ul>
+								<li class="bankname">【作业帮】13节语文直播课，一线名师带队教，配送1对1答疑服务，再送12件套实物礼盒</li>
+								<li class="banktag"><span>惊爆价：<label>&#xA5;36.00</label></span><strong>&#xA5;36.00</strong></li>
+							</ul>
+							<div class="operatebtn"><button class="mybtn btn">马上抢</button></div>
+						</dd>
+					</dl>
+				</div>
+				
+				<div class="topic_goods_item">
+					<dl>
+						<dt>
+							<img src="../img/topic_ico.jpg">
+						</dt>
+						<dd>
+							<ul>
+								<li class="bankname">【作业帮】13节语文直播课，一线名师带队教，配送1对1答疑服务，再送12件套实物礼盒</li>
+								<li class="banktag"><span>惊爆价：<label>&#xA5;36.00</label></span><strong>&#xA5;36.00</strong></li>
+							</ul>
+							<div class="operatebtn"><button class="mybtn btn">马上抢</button></div>
+						</dd>
+					</dl>
+				</div>
+				
+				<div class="topic_goods_item">
+					<dl>
+						<dt>
+							<img src="../img/topic_ico.jpg">
+						</dt>
+						<dd>
+							<ul>
+								<li class="bankname">【作业帮】13节语文直播课，一线名师带队教，配送1对1答疑服务，再送12件套实物礼盒</li>
+								<li class="banktag"><span>惊爆价：<label>&#xA5;36.00</label></span><strong>&#xA5;36.00</strong></li>
+							</ul>
+							<div class="operatebtn"><button class="mybtn btn">马上抢</button></div>
+						</dd>
+					</dl>
+				</div>
+				
+			</div>
+			</div>
+
+		</div>
+	</body>
+
+</html>

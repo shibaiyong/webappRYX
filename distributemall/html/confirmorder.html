@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script src="../plugin/jquery.3.3.0.js"></script>
+    <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../plugin/mui/mui.min.css" />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/confirmorder.css" />
+    <title>确认订单</title>
+</head>
+
+<body>
+
+    <div class="order">
+        <div class="orderdetail">
+
+            <img src="../img/goodslogo.jpg" />
+            <ul>
+                <li class="goodstitle">产品名称产品名称产品名称产品名 称产品名称产品名称产品名称...</li>
+                <li class="gooodsnotice">1节直播课+10节分级阅读录播课</li>
+                <li class="ordernotice"><span>&#xA5;9.90</span><span>&times;1</span></li>
+                <li class="extrainfo"><strong>听课手机号：</strong><span>15999990999</span></li>
+                <li class="countorder"><span>共计1件</span><span><strong>商品小计：</strong>&#xA5;9.90</span></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="leaveword"><label>买家留言：</label><input type="text" placeholder="留言建议提前协商（50字以内）" class="myinput" /></div>
+
+    <div class="buttonwrapper">
+        <div class="buttoncontainer">
+            <span>
+                <div class="total">应付：<span>¥39.00</span></div>
+            </span>
+            <span id="submitorder">提交订单</span>
+        </div>
+    </div>
+
+    <div id="popover2" class="mui-popover">
+        <ul class="mui-table-view">
+            <li class="title">请选择付款方式</li>
+            <li class="payway alipay">
+                <div><img src="../img/alipay@2x.png" /><span>支付宝支付</span></div><strong
+                    class="mui-icon mui-icon-forward"></strong>
+            </li>
+            <li class="payway"><img src="../img/bankico@2x.png" /><span>银行卡支付</span></li>
+            <!-- <li class="operatebtn"><button class="mybtn">确认支付</button></li> -->
+        </ul>
+    </div>
+	
+	<div class="indicatecontainer">
+	    <div class="indicate"><img src="../img/indicate.png"/></div>
+	    <ul>
+	        <li>点击右上角菜单“在Safari中打开”</li>
+	        <li>以完成支付</li>
+	    </ul>
+	    <div class="twocode"><a href="#">Safari内支付失败？点此生成二维码支付</a></div>
+	    <div class="operatebtn"><button class="mybtn btn">支付完成 查看支付结果</button></div>
+	</div>
+
+</body>
+
+</html>
+<script src="../plugin/mui/mui.min.js"></script>
+<script src="../js/confirmorder.js"></script>

@@ -1,0 +1,151 @@
+body {
+    background: #F5F5F5;
+}
+
+.order {
+    padding: 0.15rem;
+    background: white;
+    margin: 0.15rem;
+    border-radius: 0.06rem;
+}
+
+.orderdetail {
+    display: flex;
+}
+
+.orderdetail ul {
+    padding-left: 0.1rem;
+    box-sizing: border-box;
+}
+
+.orderdetail .goodstitle {
+    font-size: 0.15rem;
+    color: rgba(10, 26, 39, 1);
+}
+
+.orderdetail .gooodsnotice {
+    font-size: 0.12rem;
+    color: rgba(153, 153, 153, 1);
+    margin: 0.06rem 0 0.08rem;
+}
+
+.orderdetail .ordernotice {
+    display: flex;
+    justify-content: space-between;
+}
+
+.orderdetail .ordernotice span:nth-child(1) {
+    font-size: 0.18rem;
+}
+
+.orderdetail .ordernotice span:nth-child(2) {
+    font-size: 0.13rem;
+    color: #999;
+}
+
+.orderdetail img {
+    width: 0.9rem;
+    height: 0.9rem;
+}
+
+.orderdetail .extrainfo {
+    font-size: 0.13rem;
+    margin: 0.04rem 0 0.1rem;
+}
+
+.orderdetail .extrainfo strong {
+
+    font-weight: 500;
+    color: rgba(10, 26, 39, 1);
+}
+
+.orderdetail .extrainfo span {
+    color: rgba(153, 153, 153, 1);
+}
+
+.orderdetail .countorder {
+    font-size: 0.13rem;
+    font-weight: 500;
+    text-align: right;
+    color: #999;
+    margin-top: 0.1rem;
+}
+
+.orderdetail .countorder strong {
+    font-size: 0.13rem;
+    font-weight: normal;
+}
+
+.orderdetail .countorder span:nth-child(2) {
+    margin-left: 0.06rem;
+    font-size: 0.14rem;
+}
+
+.orderdetail div a {
+    display: inline-block;
+    color: #3698FD;
+    font-size: 0.12rem;
+    text-align: center;
+    border: 1px solid #3698FD;
+    padding: 0.02rem 0.08rem;
+    border-radius: 0.1rem;
+    line-height: 0.14rem;
+    height: 0.2rem;
+    margin-top: 0.12rem;
+}
+
+.orderinfo h3 {
+    font-size: 0.15rem;
+    color: rgba(10, 26, 39, 1);
+    line-height: 0.2rem;
+    margin: 0;
+}
+
+.orderinfo label,
+.orderinfo span {
+    font-size: 0.13rem;
+    color: rgba(153, 153, 153, 1);
+}
+
+.orderinfo .ordernum,.orderinfo .ordertime{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:0.1rem;
+}
+
+.orderinfo .ordernum div{
+    display: inline-block;
+}
+
+.orderinfo .ordernum div strong {
+    font-size: 0.13rem;
+    color: rgba(76, 160, 255, 1);
+    margin-left:0.08rem;
+}
+.bottombanner{
+    margin: 0.15rem;
+    margin-top:0.4rem;
+}
+
+.bottombanner img{
+    width:100%;
+}
+
+.operatebtn{
+    text-align: center;
+}
+
+.btn{
+    width:1.7rem;
+    font-size: 0.16rem;
+    color: rgba(255, 255, 255, 1);
+    height:0.4rem;
+    margin-top:0.4rem;
+    background:rgba(247,65,65,1);
+    border-radius:0.1rem;
+} 
+
+.mui-toast-container{
+    bottom:50%;
+}

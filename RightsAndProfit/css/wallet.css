@@ -1,0 +1,117 @@
+.cashout{
+    padding:0 0.15rem;
+    background:#5b8fdb;
+}
+.cashout .availablecash{
+    padding:0.2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    color: white;
+    border-bottom: 1px solid #6f9fe9;
+    font-size: 0.14rem;
+}
+.availablecash .restpay{
+    color:#6c8eb3;
+    background:white;
+    padding:0.03rem 0.13rem;
+    padding-right: 0.08rem;
+    border-radius:0.14rem;
+}
+
+.availablecash .restpay span:first-child{
+    vertical-align: top;
+}
+.incomecontent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+}
+.incomecontent .today, .incomecontent .add{
+    width:50%;
+    padding:0.25rem 0;
+}
+.incomecontent dl{
+    text-align: center;
+}
+.incomecontent dl dt{
+    font-size: 0.2rem;
+    margin-bottom:0.04rem;
+}
+.incomecontent dl dd{
+    font-size: 0.14rem;
+}
+.incomecontent .add dl{
+    border-left:1px solid #6f9fe9;
+}
+
+.cashlist h3{
+    font-size:0.16rem;
+    padding:0.15rem;
+}
+.cashlist .changemonth{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.14rem;
+    background:#f5f5f5;
+    padding:0.15rem;
+}
+.cashlist .changemonth div{
+    width:1rem;
+    height: 0.4rem;
+    background:white;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+.cashlist .changemonth div strong:nth-of-type(1){
+    font-size: 0.14rem;
+}
+.cashlist .changemonth div strong{
+    font-weight: normal;
+    font-size: 0.2rem;
+    vertical-align: middle;
+}
+.cashlist .changemonth div input[type=text]{
+    border:none;
+    background:white;
+    width:0.5rem;
+    margin:0;
+    vertical-align: middle;
+    height:100%;
+    padding:0;
+    text-align: center;
+}
+.cashdetail{
+    padding:0.15rem;
+    box-sizing: border-box;
+}
+.cashdetail li{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    line-height: 0.26rem;
+}
+
+.cashdetail li dl{
+    width:39%;
+    text-align: right;
+}
+.cashdetail li dl dt{
+    color: #f1855f;
+    font-size:0.2rem;
+    font-weight:bold;
+}
+.cashdetail li dl dd{
+    color: #c5c5c5;
+
+}
+.cashdetail li span{
+    font-size: 0.14rem;
+    display: inline-block;
+    width:60%;
+    color:#808080;
+}

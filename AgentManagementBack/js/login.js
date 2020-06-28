@@ -17,7 +17,7 @@ $(".formgroup").validate({
                 type: "post",
                 data: {},
                 dataFilter: function (data) {
-                    var jsObject = JSON.parse(data);
+                    var jsObject = JSON.parse(data); 
                     if (jsObject.data > 0) {
                         //this.validateMessage在前面定义为通用属性
                         this.validateMessage = "该设备已分配权重为" + jsObject.weightYet + ",所有权重之和不能大于1";

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script src="../plugin/jquery.3.3.0.js"></script>
+    <script src="../js/rem.js"></script>
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/withdraw.css" />
+    <title>提现</title>
+</head>
+
+<body>
+    <div class="withdraw">
+        <div class="bank">
+            <ul>
+                <li>
+                    <span>到账银行卡</span>
+                    <div><img src="../img/bankico@2x.png" /><span>中国银行（1197）</span></div>
+                    <img src="../img/WRarow@2x.png" />
+                </li>
+                <li><span>2小时到账</span></li>
+            </ul>
+        </div>
+        <div class="cash">
+            <ul>
+                <li>提现金额</li>
+                <li>
+                    <span>￥</span><input class="withdrawmoney" type="text" value="5" />
+                </li>
+
+                <li>
+                    <div>当前可提现金额￥<span>80,000.00</span></div>
+                </li>
+
+                <li class="request">当日最低提现10元，最高提现金额20,000元，每日限2笔</li>
+
+                <li>
+                    <div class="supportbank">
+                        <a href="javascript:;">提现支持银行</a>
+                    </div>
+                </li>
+            </ul>
+            <div class="debuctexplain">
+                <span>
+                    特别提示：
+                </span>
+                <p>
+                    根据国家税收要求，提现金额为扣除个人所得税金额， 您的个税缴纳也会出现相应记录。
+                </p>
+            </div>
+        </div>
+
+        <div class="complete">
+            <button type="button" class="mybtn">提现</button>
+        </div>
+    </div>
+
+    <div class="showtoastwrapper">
+        <div class="showtoastcontainer">
+            <div class="showtoast">
+                <div class="closeicon"><span>&#xD7;</span></div>
+                <div class="showtoast-title">提现支持银行</div>
+                <div class="content">
+                    <ul>
+                        <li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+                        <li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+                        <li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+                        <li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+                        <li><img src="../img/index/JT@2x.png" /><span>招商银行</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<script src="../js/withdraw.js"></script>
