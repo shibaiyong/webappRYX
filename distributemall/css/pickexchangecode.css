@@ -13,13 +13,13 @@ body {
 }
 
 .orderinfo h3 {
-	background:url('../img/codetitle@2x.jpg') no-repeat center top;
-	background-size: 100% 100%;
-	letter-spacing: 1px;
+    background:url('../img/codetitle@2x.jpg') no-repeat center top;
+    background-size: 100% 100%;
+    letter-spacing: 1px;
     font-size: 0.15rem;
     color: white;
     margin: 0 -0.15rem;
-	padding:0.15rem 0.15rem;
+    padding:0.15rem 0.15rem;
     line-height: 0.22rem;
     margin-bottom: 0.5rem;
 }

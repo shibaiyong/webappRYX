@@ -156,6 +156,9 @@ body{
 	color:#333;
 }
 
+.showtoastwrapper{
+	display: none;
+}
 
 .showtoastcontainer{
 	position: fixed;
@@ -214,4 +217,10 @@ body{
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 0.05rem;
+}
+
+
+.mui-toast-container .mui-toast-message{
+	padding-left:0.08rem;
+	padding-right: 0.08rem;
 }

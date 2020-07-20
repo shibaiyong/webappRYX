@@ -7,15 +7,13 @@ body {
     background: white;
     margin: 0.15rem;
     border-radius: 0.06rem;
-
 }
-
 .orderone{
     margin-top:-0.35rem;
 }
 
 .orderbanner{
-    background:url(../img/bg@2x.png) no-repeat;
+    background:url(../../goods/img/bg@2x.png) no-repeat;
     background-size: 100%;
     height: 1.1rem;
     display:flex;
@@ -34,10 +32,15 @@ body {
     margin-left:0.06rem;
     margin-bottom: 0.25rem;
 }
-
 .orderdetail {
     display: flex;
 }
+
+.orderdetail>div{
+    display: inline-grid;
+}
+
+
 
 .orderdetail ul {
     padding-left: 0.1rem;
@@ -58,6 +61,7 @@ body {
 .orderdetail .ordernotice {
     display: flex;
     justify-content: space-between;
+    margin-top:0.1rem;
 }
 
 .orderdetail .ordernotice span:nth-child(1) {
@@ -170,7 +174,7 @@ body {
     margin-top:0.4rem;
     background:rgba(247,65,65,1);
     border-radius:0.1rem;
-} 
+}
 
 .mui-toast-container{
     bottom:50%;

@@ -15,6 +15,11 @@ var login_uid = $.trim($('.login_uid').val());
         success:function(res){
             var str = '';
             if( res.code == 1 ){
+                if(res.data.length == 0){
+                    $('.cashdetail').hide();
+                    $('.nodata').show();
+                }else{
+
                     for(var i = 0; i < res.data.length; i++){
                         if(res.data[i].withdraw_status == '提现失败'){
                             var redLi = `<li class="title red"><span>${res.data[i].withdraw_status}</span><a href="javascript:;" style="color:#999;font-size: 0.1rem;margin-left:0.1rem;">${res.data[i].return_json}</a></li>`
@@ -34,7 +39,12 @@ var login_uid = $.trim($('.login_uid').val());
                               </div>`
                     }
 
-                $('.bankcardinfocontainer').html(str)
+                    $('.bankcardinfocontainer').html(str)
+                    $('.cashdetail').show();
+                    $('.nodata').hide();
+
+                }
+
             }
         }
     })

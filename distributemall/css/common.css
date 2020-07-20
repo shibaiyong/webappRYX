@@ -32,15 +32,18 @@ body iframe {display: none;}
 }
 
 input::-webkit-input-placeholder{
-  color:rgb(204,204,204)
+  color:rgb(204,204,204);
+	font-size:0.12rem;
 }
 
 input::-moz-placeholder{
-  color:rgb(204,204,204)
+  color:rgb(204,204,204);
+	font-size:0.12rem;
 }
 
 input:-ms-input-placeholder {
-  color:rgb(204,204,204)
+  color:rgb(204,204,204);
+	font-size:0.12rem;
 }
 
 /* 点击a标签消除底色阴影 */
@@ -117,4 +120,3 @@ a:active{
 .footer dl dd{
 	font-size: 0.12rem;
 }
-

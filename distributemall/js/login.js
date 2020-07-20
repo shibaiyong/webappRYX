@@ -15,7 +15,7 @@ $('#messagecode').click(function () {
     settime($('#messagecode'));
     $.ajax({
         type:"POST",
-        url:"/auth/sendusercode",
+        url:"/Auth/sendusercode",
         data:{phone:phone},
         dataType:"json",
         success:function(data){

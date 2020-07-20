@@ -29,7 +29,7 @@
     font-size: 0.12rem;
     color: rgb(255, 255, 255);
     line-height: 0.23rem;
-    width: 1.18rem;
+    width: 140px;
     height: 0.23rem;
     background: rgb(255, 87, 48);
     border-radius: 3px;
@@ -134,8 +134,12 @@
 }
 
 .detailscontent {
-    height: 2rem;
+    min-height: 2rem;
     background: #F7F8F9;
+}
+
+.detailscontent p img{
+    width:100%;
 }
 
 .buttonwrapper {
@@ -200,7 +204,7 @@
 }
 
 
-#popover,#popover1{
+#popover,#popover1,#popover2{
     position:fixed;
     bottom:0;
     left:0;
@@ -213,7 +217,7 @@
 			justify-content: space-between;
 		}
 
-		#popover .mui-table-view,#popover1 .mui-table-view {
+		#popover .mui-table-view,#popover1 .mui-table-view,#popover2 .mui-table-view {
 			background: white;
 			padding: 0.1rem;
 			max-height: none;
@@ -254,7 +258,6 @@
 			align-items: center;
 			padding: 0.16rem 0;
 			border-top: 1px solid #eee;
-			border-bottom: 1px solid #eee;
 			margin-top: 0.15rem;
 		}
 
@@ -327,7 +330,7 @@
 			line-height: 0.28rem;
 		}
 
-		#popover1 h3 {
+#popover2 h3,#popover1 h3 {
 			font-size: 0.15rem;
 			font-weight: 500;
 			color: rgba(38, 38, 38, 1);
@@ -335,9 +338,14 @@
 			margin-bottom: 0.06rem;
 		}
 
-		#popover1 p {
+#popover2 p,#popover1 p {
 			font-size: 0.14rem;
 			color: rgba(153, 153, 153, 1);
 			line-height: 0.23rem;
 			margin-bottom:0.2rem;
 		}
+		
+.thirdnotice{
+	font-size:0.11rem;
+	color:rgba(194,192,192,1);
+}

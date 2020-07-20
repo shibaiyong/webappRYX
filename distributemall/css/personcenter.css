@@ -72,6 +72,10 @@
     height: 0.16rem;
 }
 
+.agentcenter .carddata .detail span a{
+	color:white;
+}
+
 .agentcenter .carddata .detail .mui-icon-arrowright{
     font-size: 0.14rem;
     display: inline-block;

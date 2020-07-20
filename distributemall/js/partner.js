@@ -16,7 +16,7 @@ var pid = $.trim($('.pid').val());
 		settime($('#code'));
 		$.ajax({
 			type:"get",
-			url:"sendusercode",
+			url:"/Shop/sendusercode",
 			data:{phone:phone,uid:uid},
 			dataType:"json",
 			success:function(data){
@@ -67,7 +67,7 @@ $('.mui-btn-primary').click(function () {
 	}
 	$.ajax({
 		type: 'get',
-		url: 'apiaddpartner',
+		url: '/Shop/apiaddpartner',
 		data: {
 			phone,
 			code:messagecode,
