@@ -1,6 +1,5 @@
 /**
  * dropload
- * 西门(http://ons.me/526.html)
  * 0.9.1(161205)
  */
 
@@ -228,6 +227,7 @@
     function loadDown(me){
         me.direction = 'up';
         me.$domDown.html(me.opts.domDown.domLoad);
+        //通过loading来节流。防止连续请求
         me.loading = true;
         me.opts.loadDownFn(me);
     }

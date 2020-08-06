@@ -46,8 +46,9 @@ $(function () {
                         me.lock();
                         // 无数据 
                         me.noData();
-                        if (page > 1) {
-                            $('.dropload-down').hide();
+                        if (page == 0) {
+                            //$('.dropload-down').hide();
+                            dropload.resetload();
                         }
                     }
 
@@ -55,7 +56,7 @@ $(function () {
                     setTimeout(function () {
                         $('.wrapperr').append(result);
                         // 每次数据加载完，必须重置
-                        dropload.resetload();
+                        //dropload.resetload();
                     }, 1000);
                 },
                 error: function (xhr, type) {
@@ -70,7 +71,7 @@ $(function () {
 
 //点击查询按钮
 
-$('.cancelIco img').click(function () {
+$('.cancelIco img').click(function (e) {
     $('.alertmodelcontainer').hide();
 })
 

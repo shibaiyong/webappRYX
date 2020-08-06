@@ -91,12 +91,12 @@ $('.decline').click(function(){
 		$(this).next().val(1);
 	}
 })
-var endTimeText = $('.countdown').val();
+var endTimeText = new Date().getTime() + 3 * 3600 * 1000;
 var endTimeDate = new Date(endTimeText);
 var timeinterval;
 function gameOver(){
 
-	var endTimes = endTimeDate.getTime()-new Date().getTime();
+	var endTimes = endTimeDate.getTime() - new Date().getTime();
 	if(endTimes<=0){
 		clearInterval(timeinterval);
 		$('.countdown strong').text('00天'+'00:'+'00');
@@ -104,9 +104,10 @@ function gameOver(){
 	}
 
 	var day = parseInt(endTimes/3600/1000/24);
-	var hour = parseInt(endTimes/3600/1000%24);
-	var minutes = parseInt((endTimes-day*24*3600*1000-hour*3600*1000)/1000/60);
-	var secons = parseInt((endTimes-day*24*3600*1000-hour*3600*1000-minutes*1000*60)/1000);
+	var hour = parseInt(endTimes/1000/3600%24);
+	var minutes = parseInt((endTimes/1000/60%60));
+	var secons = parseInt((endTimes/1000%60));
+	
 	var hour = hour < 10 ? "0"+hour : hour;
 	var minutes = minutes < 10 ? "0"+minutes : minutes;
 	var secons = secons < 10 ? "0"+secons : secons;
