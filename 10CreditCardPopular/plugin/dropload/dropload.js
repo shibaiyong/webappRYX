@@ -1,17 +1,17 @@
 /**
  * dropload
- * 西门(http://ons.me/526.html)
  * 0.9.1(161205)
  */
 
-;(function($){
+;
+var CreateDropLoad = (function($){
     'use strict';
     var win = window;
     var doc = document;
     var $win = $(win);
     var $doc = $(doc);
-    $.fn.dropload = function(options){
-        return new MyDropLoad(this, options);
+    var dropload = function(ele,options){
+        return new MyDropLoad(ele,options);
     };
     var MyDropLoad = function(element, options){
         var me = this;
@@ -56,14 +56,17 @@
 
         // 如果加载下方，事先在下方插入DOM
         if(me.opts.loadDownFn != ''){
-            me.$element.append('<div class="'+me.opts.domDown.domClass+'">'+me.opts.domDown.domRefresh+'</div>');
-            me.$domDown = $('.'+me.opts.domDown.domClass);
+            var domDown = document.createElement('div');
+            domDown.setAttribute('class',me.opts.domDown.domClass);
+            domDown.innerHTML = me.opts.domDown.domRefresh
+            me.$element.appendChild(domDown);
+            me.$domDown = document.querySelector('.'+me.opts.domDown.domClass);
         }
 
         // 计算提前加载距离
         if(!!me.$domDown && me.opts.threshold === ''){
             // 默认滑到加载区2/3处时加载
-            me._threshold = Math.floor(me.$domDown.height()*1/3);
+            me._threshold = Math.floor(me.$domDown.offsetHeight*1/3);
         }else{
             me._threshold = me.opts.threshold;
         }
@@ -72,13 +75,13 @@
         if(me.opts.scrollArea == win){
             me.$scrollArea = $win;
             // 获取文档高度
-            me._scrollContentHeight = $doc.height();
+            me._scrollContentHeight = doc.documentElement.scrollHeight;
             // 获取win显示区高度  —— 这里有坑
             me._scrollWindowHeight = doc.documentElement.clientHeight;
         }else{
             me.$scrollArea = me.opts.scrollArea;
-            me._scrollContentHeight = me.$element[0].scrollHeight;
-            me._scrollWindowHeight = me.$element.height();
+            me._scrollContentHeight = me.$element.scrollHeight;
+            me._scrollWindowHeight = me.$element.offsetHeight;
         }
         fnAutoLoad(me);
 
@@ -90,7 +93,7 @@
                 // 重新获取win显示区高度
                 me._scrollWindowHeight = win.innerHeight;
                 }else{
-                    me._scrollWindowHeight = me.$element.height();
+                    me._scrollWindowHeight = me.$element.offsetHeight;
                 }
                 fnAutoLoad(me);
             },150);
@@ -98,27 +101,27 @@
         });
 
         // 绑定触摸
-        me.$element.on('touchstart',function(e){
+        me.$element.addEventListener('touchstart',function(e){
             if(!me.loading){
                 fnTouches(e);
                 fnTouchstart(e, me);
             }
         });
-        me.$element.on('touchmove',function(e){
+        me.$element.addEventListener('touchmove',function(e){
             if(!me.loading){
                 fnTouches(e, me);
                 fnTouchmove(e, me);
             }
         });
-        me.$element.on('touchend',function(){
+        me.$element.addEventListener('touchend',function(){
             if(!me.loading){
                 fnTouchend(me);
             }
         });
 
         // 加载下方
-        me.$scrollArea.on('scroll',function(){
-            me._scrollTop = me.$scrollArea.scrollTop();
+        me.$scrollArea.addEventListener('scroll',function(){
+            me._scrollTop = me.$scrollArea.scrollTop;
 
             // 滚动页面触发加载数据
             if(me.opts.loadDownFn != '' && !me.loading && !me.isLockDown && (me._scrollContentHeight - me._threshold) <= (me._scrollWindowHeight + me._scrollTop)){
@@ -138,7 +141,7 @@
     function fnTouchstart(e, me){
         me._startY = e.touches[0].pageY;
         // 记住触摸时的scrolltop值
-        me.touchScrollTop = me.$scrollArea.scrollTop();
+        me.touchScrollTop = me.$scrollArea.scrollTop;
     }
 
     // touchmove
@@ -218,16 +221,17 @@
     // 重新获取文档高度
     function fnRecoverContentHeight(me){
         if(me.opts.scrollArea == win){
-            me._scrollContentHeight = $doc.height();
+            me._scrollContentHeight = doc.documentElement.scrollHeight;
         }else{
-            me._scrollContentHeight = me.$element[0].scrollHeight;
+            me._scrollContentHeight = me.$element.scrollHeight;
         }
     }
 
     // 加载下方
     function loadDown(me){
         me.direction = 'up';
-        me.$domDown.html(me.opts.domDown.domLoad);
+        me.$domDown.innerHTML = me.opts.domDown.domLoad;
+        //这是用来节流的
         me.loading = true;
         me.opts.loadDownFn(me);
     }
@@ -293,12 +297,12 @@
             // 如果有数据
             if(me.isData){
                 // 加载区修改样式
-                me.$domDown.html(me.opts.domDown.domRefresh);
+                me.$domDown.innerHTML = me.opts.domDown.domRefresh;
                 fnRecoverContentHeight(me);
                 fnAutoLoad(me);
             }else{
                 // 如果没数据
-                me.$domDown.html(me.opts.domDown.domNoData);
+                me.$domDown.innerHTML = me.opts.domDown.domNoData;
             }
         }
     };
@@ -310,4 +314,5 @@
             'transition':'all '+num+'ms'
         });
     }
+    return dropload;
 })(window.Zepto || window.jQuery);

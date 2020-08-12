@@ -3,12 +3,14 @@
 $(function () {
 
     // 页数
-    var page = 0;
+    var page = 1;
     // 每页展示5个
     var size = 5;
-
+    //var dropload = $('.inner').dropload({
+    var inner = document.querySelector('.inner')
+    //var dropload = CreateDropLoad(inner,{
     // dropload
-    var dropload = $('.inner').dropload({
+    var dropload = CreateDropLoad(inner,{
         domUp: {
             domClass: 'dropload-up',
             domRefresh: '<div class="dropload-refresh">↓下拉刷新</div>',
@@ -42,12 +44,13 @@ $(function () {
                         }
 
                     } else {
-                        // 锁定
+                        // 锁定   它可以阻止请求，阻止继续加载数据
                         me.lock();
                         // 无数据 
                         me.noData();
-                        if (page == 0) {
+                        if (page == 1) {
                             //$('.dropload-down').hide();
+                            //它可以阻止请求，阻止继续加载数据
                             dropload.resetload();
                         }
                     }
@@ -55,8 +58,9 @@ $(function () {
                     // 为了测试，延迟1秒加载
                     setTimeout(function () {
                         $('.wrapperr').append(result);
-                        // 每次数据加载完，必须重置
-                        //dropload.resetload();
+                        // 每次数据加载完，必须重置。
+                        //他会改变me.loading属性，一次来判断是否可以再次加载数据。他可以释放被截断的请求。
+                        dropload.resetload();
                     }, 1000);
                 },
                 error: function (xhr, type) {
