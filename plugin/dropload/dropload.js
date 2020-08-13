@@ -205,7 +205,7 @@
         }
     }
 
-    // 如果文档高度不大于窗口高度，数据较少，自动加载下方数据
+    // 如果文档高度不大于窗口高度，数据较少，没有滚动事件可以触发，所以此时需要手动调用此方法，自动加载下方数据。
     function fnAutoLoad(me){
         if(me.opts.loadDownFn != '' && me.opts.autoLoad){
             if((me._scrollContentHeight - me._threshold) <= me._scrollWindowHeight){

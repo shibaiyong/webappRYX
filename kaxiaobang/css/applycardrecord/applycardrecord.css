@@ -1,23 +1,17 @@
 
 body{
     background: white;
-    display: flex;
-    justify-content: flex-start;
-    align-content: center;
-    flex-direction: column;
+    
 }
 html{
     height: 100%;
 }
 .eyebrow{
-    height: 0.12rem;
+    height: 0.4rem;
     background:#edf3ff;
 }
-.outer{
-    flex:1;
-    background:white;
-    width:100%;
-}
+
+
 .bankcardwrapper{
     padding:0 0.1rem;
     background:white;
