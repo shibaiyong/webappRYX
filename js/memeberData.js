@@ -51,37 +51,37 @@ $(function () {
             domLoad: '<div class="dropload-load"><span class="loading"></span>加载中...</div>',
             domNoData: '<div class="dropload-noData">暂无数据</div>'
         },
-        // loadUpFn: function (me) {
-        //     $.ajax({
-        //         type: 'GET',
-        //         url: 'json/update.json',
-        //         dataType: 'json',
-        //         success: function (data) {
-        //             var result = '';
-        //             var arrLen = data.lists.length;
-        //             for (var i = 0; i < arrLen; i++) {
-        //                 result += '<tr>' +
-        //                     '<td>' + data.lists[i].link + '</td>' +
-        //                     '<td>' + data.lists[i].title + '</td>' +
-        //                     '<td>' + data.lists[i].date + '</td>' +
-        //                     '<td>' + data.lists[i].title + '</td>' +
-        //                     '<td></td>' +
-        //                     '</tr>'
-        //             }
-        //             // 为了测试，延迟1秒加载
-        //             setTimeout(function () {
-        //                 $('.lists').html(result);
-        //                 // 每次数据加载完，必须重置
-        //                 dropload.resetload();
-        //             }, 1000);
-        //         },
-        //         error: function (xhr, type) {
-        //             alert('Ajax error!');
-        //             // 即使加载出错，也得重置
-        //             dropload.resetload();
-        //         }
-        //     });
-        // },
+        loadUpFn: function (me) {
+            $.ajax({
+                type: 'GET',
+                url: 'json/update.json',
+                dataType: 'json',
+                success: function (data) {
+                    var result = '';
+                    var arrLen = data.lists.length;
+                    for (var i = 0; i < arrLen; i++) {
+                        result += '<tr>' +
+                            '<td>' + data.lists[i].link + '</td>' +
+                            '<td>' + data.lists[i].title + '</td>' +
+                            '<td>' + data.lists[i].date + '</td>' +
+                            '<td>' + data.lists[i].title + '</td>' +
+                            '<td></td>' +
+                            '</tr>'
+                    }
+                    // 为了测试，延迟1秒加载
+                    setTimeout(function () {
+                        $('.lists').html(result);
+                        // 每次数据加载完，必须重置
+                        dropload.resetload();
+                    }, 1000);
+                },
+                error: function (xhr, type) {
+                    alert('Ajax error!');
+                    // 即使加载出错，也得重置
+                    dropload.resetload();
+                }
+            });
+        },
         loadDownFn: function (me) {
             $.ajax({
                 type: 'GET',
