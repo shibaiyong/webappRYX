@@ -60,7 +60,7 @@
 
 
 //复制
-function copyText(text) {
+function copyText(text,startIndex,stopIndex) {
     const textString = text.toString();
     let input = document.querySelector('#copy-input');
     if (!input) {
@@ -73,7 +73,17 @@ function copyText(text) {
       document.body.appendChild(input)
     }
     input.value = textString;
-    selectText(input, 0, textString.length);
+
+    if (input.createTextRange) {
+        const range = input.createTextRange();
+        range.collapse(true);
+        range.moveStart('character', startIndex);
+        range.moveEnd('character', stopIndex - startIndex);
+        range.select();
+      } else {
+        input.setSelectionRange(startIndex, stopIndex);
+        input.focus();
+      }
     if (document.execCommand('copy')) {
       document.execCommand('copy');
     }
@@ -86,16 +96,7 @@ function copyText(text) {
       }
     }
     function selectText(textbox, startIndex, stopIndex) {
-      if (textbox.createTextRange) {
-        const range = textbox.createTextRange();
-        range.collapse(true);
-        range.moveStart('character', startIndex);
-        range.moveEnd('character', stopIndex - startIndex);
-        range.select();
-      } else {
-        textbox.setSelectionRange(startIndex, stopIndex);
-        textbox.focus();
-      }
+      
     }
   };
 
