@@ -48,7 +48,7 @@ $(function () {
                     }, 1000);
                 },
                 error: function (xhr, type) {
-                    alert('Ajax error!');
+                    //alert('Ajax error!');
                     // 即使加载出错，也得重置
                     dropload.resetload();
                 }

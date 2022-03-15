@@ -9,6 +9,11 @@ html{
 .eyebrow{
     height: 0.4rem;
     background:#edf3ff;
+    font-size:0.16rem;
+}
+
+tr td{
+    font-size:0.16rem;
 }
 
 

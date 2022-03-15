@@ -4,27 +4,27 @@ var times
 //获取验证码
 
 $('#messagecode').click(function () {
-    if($(this).text()!='获取验证码'){
-        return false;
-    }
-    var phone = $.trim($('.phone').val());
-    if(!phone){
-        mui.toast('请输入手机号',{ duration:'long', type:'div' })
-        return;
-    }
-    settime($('#messagecode'));
-    $.ajax({
-        type:"POST",
-        url:"/Auth/sendusercode",
-        data:{phone:phone},
-        dataType:"json",
-        success:function(data){
+    // if($(this).text()!='获取验证码'){
+    //     return false;
+    // }
+    // var phone = $.trim($('.phone').val());
+    // if(!phone){
+    //     mui.toast('请输入手机号',{ duration:'long', type:'div' })
+    //     return;
+    // }
+    // settime($('#messagecode'));
+    // $.ajax({
+    //     type:"POST",
+    //     url:"/Auth/sendusercode",
+    //     data:{phone:phone},
+    //     dataType:"json",
+    //     success:function(data){
 
-        },
-        error:function(jqXHR){
-            console.log("Error: "+jqXHR.status);
-        }
-    });
+    //     },
+    //     error:function(jqXHR){
+    //         console.log("Error: "+jqXHR.status);
+    //     }
+    // });
 })
 
 //用户点击提交按钮验证
@@ -122,3 +122,17 @@ function settime(obj) {
 //         $(this).find('span').attr('chec',0)
 //     }
 // })
+
+const h3 = document.getElementsByTagName('p')[0];
+
+
+$('#messagecode').click(function () {
+    
+    const selection = window.getSelection();
+    const range = document.createRange();
+    range.selectNodeContents(h3);
+    selection.addRange(range);
+    console.log('hahah')
+    
+})
+

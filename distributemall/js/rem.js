@@ -61,6 +61,7 @@
 
 //复制
 function copyText(text,startIndex,stopIndex) {
+    console.log(456768)
     const textString = text.toString();
     let input = document.querySelector('#copy-input');
     if (!input) {
@@ -75,16 +76,20 @@ function copyText(text,startIndex,stopIndex) {
     input.value = textString;
 
     if (input.createTextRange) {
+        console.log('000000')
         const range = input.createTextRange();
         range.collapse(true);
         range.moveStart('character', startIndex);
         range.moveEnd('character', stopIndex - startIndex);
         range.select();
       } else {
+        console.log('11111')
         input.setSelectionRange(startIndex, stopIndex);
         input.focus();
       }
+      
     if (document.execCommand('copy')) {
+        console.log('22222')
       document.execCommand('copy');
     }
     input.blur();
